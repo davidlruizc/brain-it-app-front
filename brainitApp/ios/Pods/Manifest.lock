@@ -1,0 +1,42 @@
+PODS:
+  - GoogleToolboxForMac/Defines (2.1.0)
+  - GoogleToolboxForMac/Logger (2.1.0):
+    - GoogleToolboxForMac/Defines (= 2.1.0)
+  - GTMSessionFetcher/Core (1.1.6)
+  - GVRAudioSDK (1.120.0)
+  - GVRSDK (1.120.0):
+    - GoogleToolboxForMac/Logger (= 2.1.0)
+    - GTMSessionFetcher/Core (= 1.1.6)
+  - ViroKit (1.0):
+    - GVRAudioSDK (= 1.120.0)
+    - GVRSDK (= 1.120.0)
+  - ViroReact (1.0)
+
+DEPENDENCIES:
+  - ViroKit (from `../node_modules/react-viro/ios/dist/ViroRenderer/`)
+  - ViroReact (from `../node_modules/react-viro/ios/`)
+
+SPEC REPOS:
+  trunk:
+    - GoogleToolboxForMac
+    - GTMSessionFetcher
+    - GVRAudioSDK
+    - GVRSDK
+
+EXTERNAL SOURCES:
+  ViroKit:
+    :path: "../node_modules/react-viro/ios/dist/ViroRenderer/"
+  ViroReact:
+    :path: "../node_modules/react-viro/ios/"
+
+SPEC CHECKSUMS:
+  GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
+  GTMSessionFetcher: 6aacd0ab48ddf0c3633ab2642d792abfcad1b08a
+  GVRAudioSDK: 302f0a8f190d855868ea07f246ce4f9b44c392ae
+  GVRSDK: 0cb9d0ce06a84d698e61e3db9509766022dcf815
+  ViroKit: b3c0e0d4a40c2e78d31bb09740a49cd8bf6bd68f
+  ViroReact: 7ec32276dcd1883662b4587eaedfff67f7fc3625
+
+PODFILE CHECKSUM: cf55468a3f3afb8cfe32e0938c3413db4d5f729c
+
+COCOAPODS: 1.8.3

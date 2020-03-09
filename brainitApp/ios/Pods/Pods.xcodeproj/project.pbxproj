@@ -1,0 +1,1509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6BBB3E60359E7C748AA5FAC6C3E17075 /* ViroKit */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5997AD02E69FBFFB21BC0E617128B160 /* Build configuration list for PBXAggregateTarget "ViroKit" */;
+			buildPhases = (
+			);
+			dependencies = (
+				813D16E06D7D7BEB9E4A2DD41A59736C /* PBXTargetDependency */,
+				5A3A00FB83F6FE25D46FAC883CDF480E /* PBXTargetDependency */,
+			);
+			name = ViroKit;
+		};
+		7A6C27B7627BF95E3D1B75D331186634 /* ViroReact */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A232D182F37F204A9EB1B6DC5BBA6C44 /* Build configuration list for PBXAggregateTarget "ViroReact" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = ViroReact;
+		};
+		9E23A7A27C92FCE19B573FF6484B7380 /* GVRSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5A894947ED2D55A2EA82995CF1324B61 /* Build configuration list for PBXAggregateTarget "GVRSDK" */;
+			buildPhases = (
+			);
+			dependencies = (
+				B8A621AF7AE0829354E12D9610B66272 /* PBXTargetDependency */,
+				27B6ECD15DCEB93DA05D1D1B9C6C69B7 /* PBXTargetDependency */,
+			);
+			name = GVRSDK;
+		};
+		E43577B40E70FAC5079A7EF09EA68876 /* GVRAudioSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 202B904D802B9F7C2DB605C950F3E88F /* Build configuration list for PBXAggregateTarget "GVRAudioSDK" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GVRAudioSDK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0ABEC30B6D9B4C62C07648CFFBDF1F21 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 25BCDA32DD06F18892C21B1827E54825 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BAB0491AE5A822D70D8C0851F258082 /* GTMLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 3029C7E08AE2B05E7A132A12C97386A5 /* GTMLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B92E1964FBF6B39D939DF521B4BEF4D /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 370C2BCB4346717E9A034DF6606D632E /* GTMSessionFetcherService.m */; };
+		4623402F285482726AB75AFFF5593587 /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F61D7813B31F0E290CE7C3B0F13FE047 /* GTMSessionUploadFetcher.m */; };
+		68B3C59ECB5FB2983C500A9200511485 /* GTMSessionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DECE850A890F5839B9E3468462E3288E /* GTMSessionFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		691F23A6EECDF9CE49FEB4EA1B0E64AA /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 027080BE39653C8B4080499A30BD05D3 /* GTMSessionFetcher.m */; };
+		69B2F95E6522A4451316C7B0A2D58792 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8083F114342B86BEA1BFC1CE37D6640 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70E9A5322DA380CA139CF8D60F669BE8 /* GTMSessionUploadFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = EC5797DC9CC975B6391875D506514FF5 /* GTMSessionUploadFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		791CDF915B9014154EFC83707174A76A /* Pods-brainitApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F902F94B9A285304B8862C72CFAF3A9 /* Pods-brainitApp-dummy.m */; };
+		7A18CB453E44A2ECA41B64A08E0B7184 /* GTMLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F28D974C4B699A0D4E0946150E4E1271 /* GTMLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		92C727D05DE40DD921CBDD5F372C6A24 /* Pods-brainitApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF55DF2B38A6DB62E8B13E754A166C4 /* Pods-brainitApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		988E801832CB8B489E7981156CBF09D2 /* GTMSessionFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD69B9D4B17D8BA47D3D4EE00034C1DB /* GTMSessionFetcher-dummy.m */; };
+		A123452D4925FF9FDA28CCCA81A74D77 /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7FBED2C4C19E811A8BDBBD3C6C5BDF /* GoogleToolboxForMac-dummy.m */; };
+		A905AA76672114102E05E51A9078CD3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */; };
+		AF3C6F3AE9213FD229041303FC1486B9 /* GTMSessionFetcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 090ED0429A8DAEAECDF3CF9F0909BDFE /* GTMSessionFetcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1705A6D0333B40D12CEE6DC89494660 /* GTMSessionFetcherService.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B50F2C5F7F3B02E67F82A69A604EEDA /* GTMSessionFetcherService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C146093AE4E3EDF60D57093EEF819120 /* GTMSessionFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E7CE3BDDEFC92AB57B2CF069AA2AC7 /* GTMSessionFetcherLogging.m */; };
+		D7F07469F3280C023AB4563DDADE31B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */; };
+		EDE0C353988821339C2F57C27CD08170 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C6FBEEEFA5DEBF6E6E83512D4F03EE /* Security.framework */; };
+		F56546354C4FD3AEFA896CCF4761282A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */; };
+		FEE4C9D594D110D041FC457BA1057F3E /* GTMSessionFetcherLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = D882DE294CE482F29F951A79CA065A0A /* GTMSessionFetcherLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09E6B03EFF88E3A7ADEAEB2D3F06133C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D47C581D39D227080F83B16A22A56664;
+			remoteInfo = GoogleToolboxForMac;
+		};
+		1022715E345CCE294B3C906F71C47628 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D47C581D39D227080F83B16A22A56664;
+			remoteInfo = GoogleToolboxForMac;
+		};
+		44794AF9585059E8350BCC3DAF3F8583 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D676E21115185671D7258A56944ABE98;
+			remoteInfo = GTMSessionFetcher;
+		};
+		518B33406C85AC5A216C69A3BDB6E60C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E43577B40E70FAC5079A7EF09EA68876;
+			remoteInfo = GVRAudioSDK;
+		};
+		757CD51A2F3D892C88A0372E1FA1F036 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E43577B40E70FAC5079A7EF09EA68876;
+			remoteInfo = GVRAudioSDK;
+		};
+		B4860AA40FD0AABC84A59EA6A1098F51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D676E21115185671D7258A56944ABE98;
+			remoteInfo = GTMSessionFetcher;
+		};
+		C69AAA96CDB87A1485AFB4216B106346 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E23A7A27C92FCE19B573FF6484B7380;
+			remoteInfo = GVRSDK;
+		};
+		D1AF5BA43B0FFF7D94CA33C65BD0A200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BBB3E60359E7C748AA5FAC6C3E17075;
+			remoteInfo = ViroKit;
+		};
+		D33FAF6BA98A35959970F0447D8A3FB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A6C27B7627BF95E3D1B75D331186634;
+			remoteInfo = ViroReact;
+		};
+		E870C0E4429B54E2B986681E6D5208B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E23A7A27C92FCE19B573FF6484B7380;
+			remoteInfo = GVRSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0056B095A38F8B85C1BF1B6C2AC8EFEC /* VRT360ImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRT360ImageManager.h; path = dist/include/VRT360ImageManager.h; sourceTree = "<group>"; };
+		00CE97BCAEBDA45D76C57240134D4D39 /* VRTView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTView.h; path = dist/include/VRTView.h; sourceTree = "<group>"; };
+		027080BE39653C8B4080499A30BD05D3 /* GTMSessionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcher.m; path = Source/GTMSessionFetcher.m; sourceTree = "<group>"; };
+		090ED0429A8DAEAECDF3CF9F0909BDFE /* GTMSessionFetcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-umbrella.h"; sourceTree = "<group>"; };
+		0B5E8EF8FE690D0BBAC3DCF9BD40B22D /* VRTPortalSceneManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTPortalSceneManager.h; path = dist/include/VRTPortalSceneManager.h; sourceTree = "<group>"; };
+		0B9B881C5CAA558AE847AF5E233552DB /* VRTPortal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTPortal.h; path = dist/include/VRTPortal.h; sourceTree = "<group>"; };
+		0DDBAB6900E4D2917343A184ED64E787 /* VRTLightManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTLightManager.h; path = dist/include/VRTLightManager.h; sourceTree = "<group>"; };
+		1169158C25C9BFAC7630FB16C8C9CF93 /* VRTSoundModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTSoundModule.h; path = dist/include/VRTSoundModule.h; sourceTree = "<group>"; };
+		11A93CFA724BAD55A26C248FD59C33C9 /* GVRAudioEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRAudioEngine.h; path = Sources/GVRAudioEngine.h; sourceTree = "<group>"; };
+		13B147440E33897AE9F6CCC9055D98CD /* VRTController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTController.h; path = dist/include/VRTController.h; sourceTree = "<group>"; };
+		14FAED0A53CE71CDD225883C736707B2 /* ViroReact.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViroReact.xcconfig; sourceTree = "<group>"; };
+		1527C1F5B658C25211271E43B79BAD77 /* VRTUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTUtils.h; path = dist/include/VRTUtils.h; sourceTree = "<group>"; };
+		16DBBC7FDDFAC21DD88A805DD8D5CB30 /* GVROverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVROverlayView.h; path = Sources/GVROverlayView.h; sourceTree = "<group>"; };
+		19EA3A8AEC93DBCA1A3866E80C9D129B /* CardboardSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = CardboardSDK.bundle; path = Resources/CardboardSDK.bundle; sourceTree = "<group>"; };
+		1AC2214F797AF027A449FE2AC71486A0 /* VROHUDManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VROHUDManager.h; path = dist/include/VROHUDManager.h; sourceTree = "<group>"; };
+		1B0AB40EB617C2C2384649A4765C5198 /* VRTARSceneManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTARSceneManager.h; path = dist/include/VRTARSceneManager.h; sourceTree = "<group>"; };
+		1B50F2C5F7F3B02E67F82A69A604EEDA /* GTMSessionFetcherService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherService.h; path = Source/GTMSessionFetcherService.h; sourceTree = "<group>"; };
+		1EF55DF2B38A6DB62E8B13E754A166C4 /* Pods-brainitApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-brainitApp-umbrella.h"; sourceTree = "<group>"; };
+		20564A3CC89C02FDD94635DBB40FF4A1 /* gvr_audio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_audio.h; path = Sources/vr/gvr/capi/include/gvr_audio.h; sourceTree = "<group>"; };
+		21777D0BE837F679F3704AD322BE281A /* Pods-brainitApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-brainitApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		238C4E50A94CCA1F501CA7E3A0D8B25D /* VRTLight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTLight.h; path = dist/include/VRTLight.h; sourceTree = "<group>"; };
+		24E2D558640FFD19915AFA6920BB389D /* VRTPerfMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTPerfMonitor.h; path = dist/include/VRTPerfMonitor.h; sourceTree = "<group>"; };
+		251C6319AD50CB50F18D50CBF727F8B2 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25BCDA32DD06F18892C21B1827E54825 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		26A8EF12E39E8DAF837594CD30B8FA65 /* VRTAnimatedComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTAnimatedComponent.h; path = dist/include/VRTAnimatedComponent.h; sourceTree = "<group>"; };
+		296B0D6AEEEB9BFCAC532A00EF7838A9 /* VRTLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTLog.h; path = dist/include/VRTLog.h; sourceTree = "<group>"; };
+		2B71C0BA8FCB8F52768FC172042832A9 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		2DDC37C1B6D48B693402D9020493BAB1 /* gvr_audio_surround.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_audio_surround.h; path = Sources/vr/gvr/capi/include/gvr_audio_surround.h; sourceTree = "<group>"; };
+		2E7CA7C593ADBD18F35986863E04AD94 /* VRTARSceneNavigatorModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTARSceneNavigatorModule.h; path = dist/include/VRTARSceneNavigatorModule.h; sourceTree = "<group>"; };
+		2FE196D9BB2864A8C76016BB57C3D861 /* VRTPortalFrameManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTPortalFrameManager.h; path = dist/include/VRTPortalFrameManager.h; sourceTree = "<group>"; };
+		3029C7E08AE2B05E7A132A12C97386A5 /* GTMLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMLogger.h; path = Foundation/GTMLogger.h; sourceTree = "<group>"; };
+		32D4F434664A603EB797BD9BCF1D5709 /* VRTNodeModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTNodeModule.h; path = dist/include/VRTNodeModule.h; sourceTree = "<group>"; };
+		341B1414B6103179E2A5B0E6FE7BDC42 /* VRT3DObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRT3DObject.h; path = dist/include/VRT3DObject.h; sourceTree = "<group>"; };
+		359A38AFAA95688F9B965630E72D7DD4 /* VRTSurface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTSurface.h; path = dist/include/VRTSurface.h; sourceTree = "<group>"; };
+		35A60EB2CAB429EBA59DD159D52315C8 /* GTMSessionFetcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GTMSessionFetcher.modulemap; sourceTree = "<group>"; };
+		35BFDEB5A95468B06CFBFF41DD8FB84E /* gvr_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_types.h; path = Sources/vr/gvr/capi/include/gvr_types.h; sourceTree = "<group>"; };
+		370C2BCB4346717E9A034DF6606D632E /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
+		3B50CD9A7E0762DFD686602F4B0F0AAE /* gvr_version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_version.h; path = Sources/vr/gvr/capi/include/gvr_version.h; sourceTree = "<group>"; };
+		405C4CE3CC0184822F67126CE8CF6924 /* GVRPanoramaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRPanoramaView.h; path = Sources/GVRPanoramaView.h; sourceTree = "<group>"; };
+		40C6FBEEEFA5DEBF6E6E83512D4F03EE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		453916E91D6A469B9B8DE940C4E5D713 /* GVRAudioSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GVRAudioSDK.xcconfig; sourceTree = "<group>"; };
+		46FFB9A9DE5C44B771C5952A7378A511 /* VRTSkyboxManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTSkyboxManager.h; path = dist/include/VRTSkyboxManager.h; sourceTree = "<group>"; };
+		487C7F14473E839E1A5BCAC48C096CF4 /* VRTBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTBox.h; path = dist/include/VRTBox.h; sourceTree = "<group>"; };
+		4BC1F12BAB1FD0972D8D2531893F67ED /* VRTNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTNode.h; path = dist/include/VRTNode.h; sourceTree = "<group>"; };
+		4C0B6BF19074DA34690FA2D0212DA2CF /* GVRWidgetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRWidgetView.h; path = Sources/GVRWidgetView.h; sourceTree = "<group>"; };
+		4CB9E6621BA40A7A352B1F8B50571392 /* VRTImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTImage.h; path = dist/include/VRTImage.h; sourceTree = "<group>"; };
+		4E7851D37B2987F285A86FAB9874FC09 /* VRTSound.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTSound.h; path = dist/include/VRTSound.h; sourceTree = "<group>"; };
+		4E86B2047CFACFDB58B97AF44515C2F5 /* VRTPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTPolyline.h; path = dist/include/VRTPolyline.h; sourceTree = "<group>"; };
+		4F2E3D8F228FB03C8C99C4914584C46D /* Pods-brainitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-brainitApp.debug.xcconfig"; sourceTree = "<group>"; };
+		55861396EC4793E438911F38CFF59E8E /* VRTHUDComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTHUDComponent.h; path = dist/include/VRTHUDComponent.h; sourceTree = "<group>"; };
+		5710203C6856B69EB7F3422092C7AB1A /* VRTBundleURLProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTBundleURLProvider.h; path = dist/include/VRTBundleURLProvider.h; sourceTree = "<group>"; };
+		59D2763B78501CD5A6D2819BEDC01CC1 /* VRTControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTControl.h; path = dist/include/VRTControl.h; sourceTree = "<group>"; };
+		5B02469C9DB7467718FE7F6B43ED90C2 /* VRTShadowFlexView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTShadowFlexView.h; path = dist/include/VRTShadowFlexView.h; sourceTree = "<group>"; };
+		5BAEB7492FA6A4C3595092649DC50F30 /* VRTNotifications.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTNotifications.h; path = dist/include/VRTNotifications.h; sourceTree = "<group>"; };
+		5F8302AE6E457EA833C007F5AEFDA6CC /* VRTImageAsyncLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTImageAsyncLoader.h; path = dist/include/VRTImageAsyncLoader.h; sourceTree = "<group>"; };
+		5FF080B402AE9C6B847C9A6ECCAC9D84 /* VRTSceneShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTSceneShadowView.h; path = dist/include/VRTSceneShadowView.h; sourceTree = "<group>"; };
+		65959E0CD247FBD20F1797C9EA0025CD /* VRTARSceneNavigator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTARSceneNavigator.h; path = dist/include/VRTARSceneNavigator.h; sourceTree = "<group>"; };
+		66138D81099EAB0E6C45A8D46D946DA9 /* gvr_version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_version.h; path = Sources/vr/gvr/capi/include/gvr_version.h; sourceTree = "<group>"; };
+		6C625EC869C4C308518318CB81ABC30C /* VRTTreeNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTTreeNode.h; path = dist/include/VRTTreeNode.h; sourceTree = "<group>"; };
+		6F5A4C018EBF89A86B3C023C42157DA0 /* VRTSceneModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTSceneModule.h; path = dist/include/VRTSceneModule.h; sourceTree = "<group>"; };
+		6F902F94B9A285304B8862C72CFAF3A9 /* Pods-brainitApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-brainitApp-dummy.m"; sourceTree = "<group>"; };
+		76566B7B53276A64EE051306559D3F80 /* VRTCameraModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTCameraModule.h; path = dist/include/VRTCameraModule.h; sourceTree = "<group>"; };
+		767C358AA78322D009A74C2DB772FC59 /* VRTAnimationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTAnimationManager.h; path = dist/include/VRTAnimationManager.h; sourceTree = "<group>"; };
+		769FDA91B3183EC7A4C19EC9C74A3D94 /* VRTText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTText.h; path = dist/include/VRTText.h; sourceTree = "<group>"; };
+		7956C6D10D5CB06A7DCE57087BD60199 /* VRTNodeContainerShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTNodeContainerShadowView.h; path = dist/include/VRTNodeContainerShadowView.h; sourceTree = "<group>"; };
+		79851F9F2161267537FABA22A053B074 /* VRTSceneNavigator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTSceneNavigator.h; path = dist/include/VRTSceneNavigator.h; sourceTree = "<group>"; };
+		798ECF3807DB772D7D45746E812550E6 /* VRTOrbitCameraManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTOrbitCameraManager.h; path = dist/include/VRTOrbitCameraManager.h; sourceTree = "<group>"; };
+		79A289DD776C757536ED885AF20CF34F /* VRTARSceneNavigatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTARSceneNavigatorManager.h; path = dist/include/VRTARSceneNavigatorManager.h; sourceTree = "<group>"; };
+		7A4387CC1C2811DC2FC7D994F367AAA4 /* VRTControllerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTControllerManager.h; path = dist/include/VRTControllerManager.h; sourceTree = "<group>"; };
+		7B90C2861477F583F1E42A16B7A47B67 /* Pods-brainitApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-brainitApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		7D01F10816E61C360AA67623BCC66CE9 /* Pods_brainitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_brainitApp.framework; path = "Pods-brainitApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0C7A4A5ACC07573A456ABC2E44A0C7 /* Pods-brainitApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-brainitApp-frameworks.sh"; sourceTree = "<group>"; };
+		7D277668418DD2A807D19FC5E668100D /* libViroReact.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libViroReact.a; path = dist/lib/libViroReact.a; sourceTree = "<group>"; };
+		7D7B50AC917E59FED67BBFBFC11DA74F /* VRTQuadEmitterManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTQuadEmitterManager.h; path = dist/include/VRTQuadEmitterManager.h; sourceTree = "<group>"; };
+		7F65109DE009997D9552DC4B0BAB1BB4 /* Pods-brainitApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-brainitApp.modulemap"; sourceTree = "<group>"; };
+		7F75C535F7AF087C60E0837F1910A028 /* VRTAnimatedComponentShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTAnimatedComponentShadowView.h; path = dist/include/VRTAnimatedComponentShadowView.h; sourceTree = "<group>"; };
+		8251352383A04FA6FE08F26F4029A2DB /* VRTPolygonManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTPolygonManager.h; path = dist/include/VRTPolygonManager.h; sourceTree = "<group>"; };
+		82BA4CFAFF0C98391F865AF104AEBB95 /* VRTHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTHUD.h; path = dist/include/VRTHUD.h; sourceTree = "<group>"; };
+		853CECE2A6EE26BDB261A914DB1E39CD /* VRTSphere.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTSphere.h; path = dist/include/VRTSphere.h; sourceTree = "<group>"; };
+		86507D93B76D744FE7378C26D2F2D531 /* VRTNodeContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTNodeContainer.h; path = dist/include/VRTNodeContainer.h; sourceTree = "<group>"; };
+		8704CC1D15A2AEA7FC5B8817E0FC394A /* VRTVideoSurface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTVideoSurface.h; path = dist/include/VRTVideoSurface.h; sourceTree = "<group>"; };
+		884FFEE0EA8C8C2CA45A80DDBAFAA5CA /* VRTARSceneModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTARSceneModule.h; path = dist/include/VRTARSceneModule.h; sourceTree = "<group>"; };
+		8B11DA0802CA2C3B7B1FCA1E71F54ECF /* VRTHDRImageAsyncLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTHDRImageAsyncLoader.h; path = dist/include/VRTHDRImageAsyncLoader.h; sourceTree = "<group>"; };
+		8BEE64DDF8E34E6E4613ECF6734AB36D /* Pods-brainitApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-brainitApp-Info.plist"; sourceTree = "<group>"; };
+		8DEB0EF44A0BB059EDDA8D3EFD8B4453 /* GVRHeadTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRHeadTransform.h; path = Sources/GVRHeadTransform.h; sourceTree = "<group>"; };
+		8E00AF0DA872918C24C6C9B3159ED864 /* VRTTextManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTTextManager.h; path = dist/include/VRTTextManager.h; sourceTree = "<group>"; };
+		911D88846F33F3902F417F25BF09EF21 /* GVRAudioEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRAudioEngine.h; path = Sources/GVRAudioEngine.h; sourceTree = "<group>"; };
+		914F500867E9715B81022894E5D40B11 /* VRTViewContainerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTViewContainerManager.h; path = dist/include/VRTViewContainerManager.h; sourceTree = "<group>"; };
+		91E81AF62895581F8A6A2829016DA200 /* VRTSphereManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTSphereManager.h; path = dist/include/VRTSphereManager.h; sourceTree = "<group>"; };
+		939BE80B56B91529514CA1BD81B814A6 /* Pods-brainitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-brainitApp.release.xcconfig"; sourceTree = "<group>"; };
+		9946662D28F8F0C55331B306D6A3F221 /* Pods-brainitApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-brainitApp-resources.sh"; sourceTree = "<group>"; };
+		9A0C81F3F61107C4FEA8591BC8D14C43 /* GoogleKitCore.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitCore.bundle; path = Resources/GoogleKitCore.bundle; sourceTree = "<group>"; };
+		9A83D6F89B86F481703D84CFEBF9C665 /* libGVRAudioSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGVRAudioSDK.a; path = Libraries/libGVRAudioSDK.a; sourceTree = "<group>"; };
+		9BE4D4E1E95302659C791367E3685774 /* VRTSoundManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTSoundManager.h; path = dist/include/VRTSoundManager.h; sourceTree = "<group>"; };
+		9D73CF3A06DAC66F1B228B5C9FFC1F48 /* VRTARPlaneManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTARPlaneManager.h; path = dist/include/VRTARPlaneManager.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DBCE5113C8CB05B7794E93BD45FDA25 /* VRTPolylineManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTPolylineManager.h; path = dist/include/VRTPolylineManager.h; sourceTree = "<group>"; };
+		9F53CEF275FCE0296EABEE39B77F3408 /* VRTPortalFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTPortalFrame.h; path = dist/include/VRTPortalFrame.h; sourceTree = "<group>"; };
+		A055445BF225BF424F54E535CD923C95 /* gvr_audio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_audio.h; path = Sources/vr/gvr/capi/include/gvr_audio.h; sourceTree = "<group>"; };
+		A1C44AB0558E3A663B5F3B91B82F5529 /* VRT3DObjectManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRT3DObjectManager.h; path = dist/include/VRT3DObjectManager.h; sourceTree = "<group>"; };
+		A41CB65093753941696FCAD4430E907D /* VRTControllerModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTControllerModule.h; path = dist/include/VRTControllerModule.h; sourceTree = "<group>"; };
+		A57FE88D91B504CAFABAE37E9699337A /* VRT360VideoManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRT360VideoManager.h; path = dist/include/VRT360VideoManager.h; sourceTree = "<group>"; };
+		A6843ACC0BE49C10E38E32FAD52C9BFF /* VRTSurfaceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTSurfaceManager.h; path = dist/include/VRTSurfaceManager.h; sourceTree = "<group>"; };
+		A7685D91F667E0F88F5C816416D5AA9B /* VRTShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTShadowView.h; path = dist/include/VRTShadowView.h; sourceTree = "<group>"; };
+		A8083F114342B86BEA1BFC1CE37D6640 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		A8C6D8E413D676D5FF6400AD623E0DF5 /* ViroReact.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ViroReact.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8E23D434976FA6AA383A4932D5B39A0 /* VRTSceneNavigatorModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTSceneNavigatorModule.h; path = dist/include/VRTSceneNavigatorModule.h; sourceTree = "<group>"; };
+		AE83209E582C289F6E35FB25DF5443CA /* VRTFlexViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTFlexViewManager.h; path = dist/include/VRTFlexViewManager.h; sourceTree = "<group>"; };
+		AF9AE87DF0537D9A599395327EA261AE /* ViroKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViroKit.xcconfig; sourceTree = "<group>"; };
+		B09845A279F969A301D6368A7D729956 /* VRTBoxManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTBoxManager.h; path = dist/include/VRTBoxManager.h; sourceTree = "<group>"; };
+		B1922A00078E0EE4DA928FFE70F789C3 /* VRTCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTCamera.h; path = dist/include/VRTCamera.h; sourceTree = "<group>"; };
+		B2E7CE3BDDEFC92AB57B2CF069AA2AC7 /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
+		B6D8A28DCA76F8374668B4B8D3008039 /* ViroKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ViroKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B7020FF0CA910034638CA7F63C839D7D /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		B7E4A0748F41B2004A31D918C600BF8A /* VRTCameraManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTCameraManager.h; path = dist/include/VRTCameraManager.h; sourceTree = "<group>"; };
+		BB48CC4FF5165EA6EDBE8AAE4207D6CD /* GTMSessionFetcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMSessionFetcher.xcconfig; sourceTree = "<group>"; };
+		BBF25A01E032F0943809D9A0F7C7B423 /* GVRCardboardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRCardboardView.h; path = Sources/GVRCardboardView.h; sourceTree = "<group>"; };
+		BD5106279E9FC852014C8FE1AF206745 /* VRTVideoSurfaceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTVideoSurfaceManager.h; path = dist/include/VRTVideoSurfaceManager.h; sourceTree = "<group>"; };
+		C0A649BC66F1997FA0CA0C75791BB50A /* MaterialRobotoFontLoader.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MaterialRobotoFontLoader.bundle; path = Resources/MaterialRobotoFontLoader.bundle; sourceTree = "<group>"; };
+		C10469A4E20B6BA92863BA6BF4BF4E7C /* gvr_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_types.h; path = Sources/vr/gvr/capi/include/gvr_types.h; sourceTree = "<group>"; };
+		C1998E0D8085221AD87F89B614C10E52 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GTMSessionFetcher.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4ED73AC5281760B92CC63A97E54ED7F /* ViroKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ViroKit.framework; sourceTree = "<group>"; };
+		C577B12F9513E666FB57FF1BA4574066 /* ViroViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ViroViewManager.h; path = dist/include/ViroViewManager.h; sourceTree = "<group>"; };
+		C57C01AEAB3ECE94D346618F003A2E24 /* VRTAnimatedComponentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTAnimatedComponentManager.h; path = dist/include/VRTAnimatedComponentManager.h; sourceTree = "<group>"; };
+		C5EEA108C73AB510DEFD084FA3F3A845 /* VRTImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTImageManager.h; path = dist/include/VRTImageManager.h; sourceTree = "<group>"; };
+		C79976A146AEB84BF329DA01844F4B62 /* GoogleToolboxForMac-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GoogleToolboxForMac-Info.plist"; sourceTree = "<group>"; };
+		C80E1DE0D0B205C575F41FD6282A0E16 /* gvr_audio_surround.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_audio_surround.h; path = Sources/vr/gvr/capi/include/gvr_audio_surround.h; sourceTree = "<group>"; };
+		C8755B8B941EE3C862D1AA33FBEED777 /* VRTSkybox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTSkybox.h; path = dist/include/VRTSkybox.h; sourceTree = "<group>"; };
+		C9A2986144123E1D261712FC6C368C0C /* VRTScene.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTScene.h; path = dist/include/VRTScene.h; sourceTree = "<group>"; };
+		CBE6468C153F4639E0DA7BDE4D7960B7 /* VRTMaterialManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTMaterialManager.h; path = dist/include/VRTMaterialManager.h; sourceTree = "<group>"; };
+		CD69B9D4B17D8BA47D3D4EE00034C1DB /* GTMSessionFetcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMSessionFetcher-dummy.m"; sourceTree = "<group>"; };
+		CEB5520FE16A746CF7D97654766586A2 /* VRT360Video.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRT360Video.h; path = dist/include/VRT360Video.h; sourceTree = "<group>"; };
+		D1C5D8E4A1C96A8360BB2CD186919928 /* VRTOrbitCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTOrbitCamera.h; path = dist/include/VRTOrbitCamera.h; sourceTree = "<group>"; };
+		D81BA40E3D220EBC99245C1188F6A22F /* VRTSceneManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTSceneManager.h; path = dist/include/VRTSceneManager.h; sourceTree = "<group>"; };
+		D882DE294CE482F29F951A79CA065A0A /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogging.h; path = Source/GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
+		D9682E6A0EDDEC78E2671AA9430780B8 /* VRT360Image.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRT360Image.h; path = dist/include/VRT360Image.h; sourceTree = "<group>"; };
+		D9809982751E0119DC51FBCDB265BE9E /* VRTMaterialChangedDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTMaterialChangedDelegate.h; path = dist/include/VRTMaterialChangedDelegate.h; sourceTree = "<group>"; };
+		DBF55F25660C5607090B91EE9DB4C58D /* VRTQuadEmitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTQuadEmitter.h; path = dist/include/VRTQuadEmitter.h; sourceTree = "<group>"; };
+		DD1EA0EB633972C7355512D521B91317 /* VRTARAnchorNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTARAnchorNode.h; path = dist/include/VRTARAnchorNode.h; sourceTree = "<group>"; };
+		DE07D51DF5B45D98C335AEAA4EBE63F9 /* VRTPortalManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTPortalManager.h; path = dist/include/VRTPortalManager.h; sourceTree = "<group>"; };
+		DE233C07662292282CECC2E18B9C3363 /* README.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = README.txt; sourceTree = "<group>"; };
+		DECE850A890F5839B9E3468462E3288E /* GTMSessionFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcher.h; path = Source/GTMSessionFetcher.h; sourceTree = "<group>"; };
+		E0682E2DAC3CED506E780E3158A62709 /* VRTQuad.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTQuad.h; path = dist/include/VRTQuad.h; sourceTree = "<group>"; };
+		E435B8236A8BD773EE99590C36F0BD20 /* VRTCubeMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTCubeMap.h; path = dist/include/VRTCubeMap.h; sourceTree = "<group>"; };
+		E5683E8373E1F9346B5AFA81C1B86635 /* VRTLabelShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTLabelShadowView.h; path = dist/include/VRTLabelShadowView.h; sourceTree = "<group>"; };
+		E68CF8A23BA49EA4A0D26ECF7EF591BF /* libGVRSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGVRSDK.a; path = Libraries/libGVRSDK.a; sourceTree = "<group>"; };
+		E68F85F69C14AA034D38E62C97591A6C /* GVRVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRVideoView.h; path = Sources/GVRVideoView.h; sourceTree = "<group>"; };
+		E96B51920BBC8A5FFDDEB11328E31BBC /* GVRSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GVRSDK.xcconfig; sourceTree = "<group>"; };
+		EA2696EDF4914CA82DB7F4F6F13180E8 /* GTMSessionFetcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-prefix.pch"; sourceTree = "<group>"; };
+		EA834D851F8418D96DD7F0FFB0A9CC75 /* VRTSceneNavigatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTSceneNavigatorManager.h; path = dist/include/VRTSceneNavigatorManager.h; sourceTree = "<group>"; };
+		EC5797DC9CC975B6391875D506514FF5 /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
+		ECE490B16320E7CE2A948D261AE7B264 /* gvr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr.h; path = Sources/vr/gvr/capi/include/gvr.h; sourceTree = "<group>"; };
+		EE35BFE340E284217A4A1F091933BB22 /* VRTQuadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTQuadManager.h; path = dist/include/VRTQuadManager.h; sourceTree = "<group>"; };
+		EEA4A6EDF8B05D5941F0294AF4EF726A /* VRTPortalScene.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTPortalScene.h; path = dist/include/VRTPortalScene.h; sourceTree = "<group>"; };
+		EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F0CEA0B60074BEC211D4144B9405C1F7 /* GTMSessionFetcher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GTMSessionFetcher-Info.plist"; sourceTree = "<group>"; };
+		F28D974C4B699A0D4E0946150E4E1271 /* GTMLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMLogger.m; path = Foundation/GTMLogger.m; sourceTree = "<group>"; };
+		F2B9A6AAEAC913B686D97838C8396BA8 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		F59DCA808AB9F16B0E05E00A05186FEE /* GoogleKitDialogs.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitDialogs.bundle; path = Resources/GoogleKitDialogs.bundle; sourceTree = "<group>"; };
+		F5ECC40606D40A233B1AEC052C8A8593 /* VRTARScene.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTARScene.h; path = dist/include/VRTARScene.h; sourceTree = "<group>"; };
+		F61D7813B31F0E290CE7C3B0F13FE047 /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = Source/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
+		F95E061CA4E484FDBC7BEA6CDB248F0F /* VRTARPlane.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTARPlane.h; path = dist/include/VRTARPlane.h; sourceTree = "<group>"; };
+		FA7CDD35C09EAB444C8D5EEE5EB12085 /* GoogleKitHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitHUD.bundle; path = Resources/GoogleKitHUD.bundle; sourceTree = "<group>"; };
+		FC7FBED2C4C19E811A8BDBBD3C6C5BDF /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		FF45BD61B0A08D13A72AF887FB41A7C3 /* VRTFlexView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VRTFlexView.h; path = dist/include/VRTFlexView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C352A28BAFEBA25974905EE08F1D8F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A905AA76672114102E05E51A9078CD3B /* Foundation.framework in Frameworks */,
+				EDE0C353988821339C2F57C27CD08170 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71351502811CE7E8C83CA97D5AA65550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56546354C4FD3AEFA896CCF4761282A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB056B94099C2176391CDF0548070F99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F07469F3280C023AB4563DDADE31B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DEF2EAC4719AAEFCB1319B406BACBED /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				957EFB9628E49FD4ED4D913DA97AB570 /* Defines */,
+				4F14D0ED9A2C6E757E4D40DFF2660878 /* Logger */,
+				2E23109D1B3CA307C954CCF1E022687B /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
+		0F9F432EBDEF880EA2D502922382A622 /* Pods-brainitApp */ = {
+			isa = PBXGroup;
+			children = (
+				7F65109DE009997D9552DC4B0BAB1BB4 /* Pods-brainitApp.modulemap */,
+				21777D0BE837F679F3704AD322BE281A /* Pods-brainitApp-acknowledgements.markdown */,
+				7B90C2861477F583F1E42A16B7A47B67 /* Pods-brainitApp-acknowledgements.plist */,
+				6F902F94B9A285304B8862C72CFAF3A9 /* Pods-brainitApp-dummy.m */,
+				7D0C7A4A5ACC07573A456ABC2E44A0C7 /* Pods-brainitApp-frameworks.sh */,
+				8BEE64DDF8E34E6E4613ECF6734AB36D /* Pods-brainitApp-Info.plist */,
+				9946662D28F8F0C55331B306D6A3F221 /* Pods-brainitApp-resources.sh */,
+				1EF55DF2B38A6DB62E8B13E754A166C4 /* Pods-brainitApp-umbrella.h */,
+				4F2E3D8F228FB03C8C99C4914584C46D /* Pods-brainitApp.debug.xcconfig */,
+				939BE80B56B91529514CA1BD81B814A6 /* Pods-brainitApp.release.xcconfig */,
+			);
+			name = "Pods-brainitApp";
+			path = "Target Support Files/Pods-brainitApp";
+			sourceTree = "<group>";
+		};
+		128DCC583C28B5189F9841533507FCF2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DECE850A890F5839B9E3468462E3288E /* GTMSessionFetcher.h */,
+				027080BE39653C8B4080499A30BD05D3 /* GTMSessionFetcher.m */,
+				D882DE294CE482F29F951A79CA065A0A /* GTMSessionFetcherLogging.h */,
+				B2E7CE3BDDEFC92AB57B2CF069AA2AC7 /* GTMSessionFetcherLogging.m */,
+				1B50F2C5F7F3B02E67F82A69A604EEDA /* GTMSessionFetcherService.h */,
+				370C2BCB4346717E9A034DF6606D632E /* GTMSessionFetcherService.m */,
+				EC5797DC9CC975B6391875D506514FF5 /* GTMSessionUploadFetcher.h */,
+				F61D7813B31F0E290CE7C3B0F13FE047 /* GTMSessionUploadFetcher.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		143B316F98EDCA5F78083B8BD09FB356 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DE233C07662292282CECC2E18B9C3363 /* README.txt */,
+				A8C6D8E413D676D5FF6400AD623E0DF5 /* ViroReact.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B475D44F9DE8B3EB70D1C14FDE147B9 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D9BFA99AE5EEC70377A781C8EEE727E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B6D8A28DCA76F8374668B4B8D3008039 /* ViroKit.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2E23109D1B3CA307C954CCF1E022687B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7020FF0CA910034638CA7F63C839D7D /* GoogleToolboxForMac.modulemap */,
+				2B71C0BA8FCB8F52768FC172042832A9 /* GoogleToolboxForMac.xcconfig */,
+				FC7FBED2C4C19E811A8BDBBD3C6C5BDF /* GoogleToolboxForMac-dummy.m */,
+				C79976A146AEB84BF329DA01844F4B62 /* GoogleToolboxForMac-Info.plist */,
+				F2B9A6AAEAC913B686D97838C8396BA8 /* GoogleToolboxForMac-prefix.pch */,
+				A8083F114342B86BEA1BFC1CE37D6640 /* GoogleToolboxForMac-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		30DFF348642E3C99A0FFA0766292C10F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E96B51920BBC8A5FFDDEB11328E31BBC /* GVRSDK.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GVRSDK";
+			sourceTree = "<group>";
+		};
+		3A22EF917C97F280FC0CF0BDDD42AA08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D277668418DD2A807D19FC5E668100D /* libViroReact.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47D81EB5F80F46D8F814FE2BAA192C8B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19EA3A8AEC93DBCA1A3866E80C9D129B /* CardboardSDK.bundle */,
+				9A0C81F3F61107C4FEA8591BC8D14C43 /* GoogleKitCore.bundle */,
+				F59DCA808AB9F16B0E05E00A05186FEE /* GoogleKitDialogs.bundle */,
+				FA7CDD35C09EAB444C8D5EEE5EB12085 /* GoogleKitHUD.bundle */,
+				C0A649BC66F1997FA0CA0C75791BB50A /* MaterialRobotoFontLoader.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4F14D0ED9A2C6E757E4D40DFF2660878 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				3029C7E08AE2B05E7A132A12C97386A5 /* GTMLogger.h */,
+				F28D974C4B699A0D4E0946150E4E1271 /* GTMLogger.m */,
+			);
+			name = Logger;
+			sourceTree = "<group>";
+		};
+		4FB83FC164AD6E35D18A2A3A7080B38A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF9AE87DF0537D9A599395327EA261AE /* ViroKit.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../../../../ios/Pods/Target Support Files/ViroKit";
+			sourceTree = "<group>";
+		};
+		672326952220CF8B613750072E2468E9 /* ViroReact */ = {
+			isa = PBXGroup;
+			children = (
+				C577B12F9513E666FB57FF1BA4574066 /* ViroViewManager.h */,
+				1AC2214F797AF027A449FE2AC71486A0 /* VROHUDManager.h */,
+				D9682E6A0EDDEC78E2671AA9430780B8 /* VRT360Image.h */,
+				0056B095A38F8B85C1BF1B6C2AC8EFEC /* VRT360ImageManager.h */,
+				CEB5520FE16A746CF7D97654766586A2 /* VRT360Video.h */,
+				A57FE88D91B504CAFABAE37E9699337A /* VRT360VideoManager.h */,
+				341B1414B6103179E2A5B0E6FE7BDC42 /* VRT3DObject.h */,
+				A1C44AB0558E3A663B5F3B91B82F5529 /* VRT3DObjectManager.h */,
+				26A8EF12E39E8DAF837594CD30B8FA65 /* VRTAnimatedComponent.h */,
+				C57C01AEAB3ECE94D346618F003A2E24 /* VRTAnimatedComponentManager.h */,
+				7F75C535F7AF087C60E0837F1910A028 /* VRTAnimatedComponentShadowView.h */,
+				767C358AA78322D009A74C2DB772FC59 /* VRTAnimationManager.h */,
+				DD1EA0EB633972C7355512D521B91317 /* VRTARAnchorNode.h */,
+				F95E061CA4E484FDBC7BEA6CDB248F0F /* VRTARPlane.h */,
+				9D73CF3A06DAC66F1B228B5C9FFC1F48 /* VRTARPlaneManager.h */,
+				F5ECC40606D40A233B1AEC052C8A8593 /* VRTARScene.h */,
+				1B0AB40EB617C2C2384649A4765C5198 /* VRTARSceneManager.h */,
+				884FFEE0EA8C8C2CA45A80DDBAFAA5CA /* VRTARSceneModule.h */,
+				65959E0CD247FBD20F1797C9EA0025CD /* VRTARSceneNavigator.h */,
+				79A289DD776C757536ED885AF20CF34F /* VRTARSceneNavigatorManager.h */,
+				2E7CA7C593ADBD18F35986863E04AD94 /* VRTARSceneNavigatorModule.h */,
+				487C7F14473E839E1A5BCAC48C096CF4 /* VRTBox.h */,
+				B09845A279F969A301D6368A7D729956 /* VRTBoxManager.h */,
+				5710203C6856B69EB7F3422092C7AB1A /* VRTBundleURLProvider.h */,
+				B1922A00078E0EE4DA928FFE70F789C3 /* VRTCamera.h */,
+				B7E4A0748F41B2004A31D918C600BF8A /* VRTCameraManager.h */,
+				76566B7B53276A64EE051306559D3F80 /* VRTCameraModule.h */,
+				59D2763B78501CD5A6D2819BEDC01CC1 /* VRTControl.h */,
+				13B147440E33897AE9F6CCC9055D98CD /* VRTController.h */,
+				7A4387CC1C2811DC2FC7D994F367AAA4 /* VRTControllerManager.h */,
+				A41CB65093753941696FCAD4430E907D /* VRTControllerModule.h */,
+				E435B8236A8BD773EE99590C36F0BD20 /* VRTCubeMap.h */,
+				FF45BD61B0A08D13A72AF887FB41A7C3 /* VRTFlexView.h */,
+				AE83209E582C289F6E35FB25DF5443CA /* VRTFlexViewManager.h */,
+				8B11DA0802CA2C3B7B1FCA1E71F54ECF /* VRTHDRImageAsyncLoader.h */,
+				82BA4CFAFF0C98391F865AF104AEBB95 /* VRTHUD.h */,
+				55861396EC4793E438911F38CFF59E8E /* VRTHUDComponent.h */,
+				4CB9E6621BA40A7A352B1F8B50571392 /* VRTImage.h */,
+				5F8302AE6E457EA833C007F5AEFDA6CC /* VRTImageAsyncLoader.h */,
+				C5EEA108C73AB510DEFD084FA3F3A845 /* VRTImageManager.h */,
+				E5683E8373E1F9346B5AFA81C1B86635 /* VRTLabelShadowView.h */,
+				238C4E50A94CCA1F501CA7E3A0D8B25D /* VRTLight.h */,
+				0DDBAB6900E4D2917343A184ED64E787 /* VRTLightManager.h */,
+				296B0D6AEEEB9BFCAC532A00EF7838A9 /* VRTLog.h */,
+				D9809982751E0119DC51FBCDB265BE9E /* VRTMaterialChangedDelegate.h */,
+				CBE6468C153F4639E0DA7BDE4D7960B7 /* VRTMaterialManager.h */,
+				4BC1F12BAB1FD0972D8D2531893F67ED /* VRTNode.h */,
+				86507D93B76D744FE7378C26D2F2D531 /* VRTNodeContainer.h */,
+				7956C6D10D5CB06A7DCE57087BD60199 /* VRTNodeContainerShadowView.h */,
+				32D4F434664A603EB797BD9BCF1D5709 /* VRTNodeModule.h */,
+				5BAEB7492FA6A4C3595092649DC50F30 /* VRTNotifications.h */,
+				D1C5D8E4A1C96A8360BB2CD186919928 /* VRTOrbitCamera.h */,
+				798ECF3807DB772D7D45746E812550E6 /* VRTOrbitCameraManager.h */,
+				24E2D558640FFD19915AFA6920BB389D /* VRTPerfMonitor.h */,
+				8251352383A04FA6FE08F26F4029A2DB /* VRTPolygonManager.h */,
+				4E86B2047CFACFDB58B97AF44515C2F5 /* VRTPolyline.h */,
+				9DBCE5113C8CB05B7794E93BD45FDA25 /* VRTPolylineManager.h */,
+				0B9B881C5CAA558AE847AF5E233552DB /* VRTPortal.h */,
+				9F53CEF275FCE0296EABEE39B77F3408 /* VRTPortalFrame.h */,
+				2FE196D9BB2864A8C76016BB57C3D861 /* VRTPortalFrameManager.h */,
+				DE07D51DF5B45D98C335AEAA4EBE63F9 /* VRTPortalManager.h */,
+				EEA4A6EDF8B05D5941F0294AF4EF726A /* VRTPortalScene.h */,
+				0B5E8EF8FE690D0BBAC3DCF9BD40B22D /* VRTPortalSceneManager.h */,
+				E0682E2DAC3CED506E780E3158A62709 /* VRTQuad.h */,
+				DBF55F25660C5607090B91EE9DB4C58D /* VRTQuadEmitter.h */,
+				7D7B50AC917E59FED67BBFBFC11DA74F /* VRTQuadEmitterManager.h */,
+				EE35BFE340E284217A4A1F091933BB22 /* VRTQuadManager.h */,
+				C9A2986144123E1D261712FC6C368C0C /* VRTScene.h */,
+				D81BA40E3D220EBC99245C1188F6A22F /* VRTSceneManager.h */,
+				6F5A4C018EBF89A86B3C023C42157DA0 /* VRTSceneModule.h */,
+				79851F9F2161267537FABA22A053B074 /* VRTSceneNavigator.h */,
+				EA834D851F8418D96DD7F0FFB0A9CC75 /* VRTSceneNavigatorManager.h */,
+				A8E23D434976FA6AA383A4932D5B39A0 /* VRTSceneNavigatorModule.h */,
+				5FF080B402AE9C6B847C9A6ECCAC9D84 /* VRTSceneShadowView.h */,
+				5B02469C9DB7467718FE7F6B43ED90C2 /* VRTShadowFlexView.h */,
+				A7685D91F667E0F88F5C816416D5AA9B /* VRTShadowView.h */,
+				C8755B8B941EE3C862D1AA33FBEED777 /* VRTSkybox.h */,
+				46FFB9A9DE5C44B771C5952A7378A511 /* VRTSkyboxManager.h */,
+				4E7851D37B2987F285A86FAB9874FC09 /* VRTSound.h */,
+				9BE4D4E1E95302659C791367E3685774 /* VRTSoundManager.h */,
+				1169158C25C9BFAC7630FB16C8C9CF93 /* VRTSoundModule.h */,
+				853CECE2A6EE26BDB261A914DB1E39CD /* VRTSphere.h */,
+				91E81AF62895581F8A6A2829016DA200 /* VRTSphereManager.h */,
+				359A38AFAA95688F9B965630E72D7DD4 /* VRTSurface.h */,
+				A6843ACC0BE49C10E38E32FAD52C9BFF /* VRTSurfaceManager.h */,
+				769FDA91B3183EC7A4C19EC9C74A3D94 /* VRTText.h */,
+				8E00AF0DA872918C24C6C9B3159ED864 /* VRTTextManager.h */,
+				6C625EC869C4C308518318CB81ABC30C /* VRTTreeNode.h */,
+				1527C1F5B658C25211271E43B79BAD77 /* VRTUtils.h */,
+				8704CC1D15A2AEA7FC5B8817E0FC394A /* VRTVideoSurface.h */,
+				BD5106279E9FC852014C8FE1AF206745 /* VRTVideoSurfaceManager.h */,
+				00CE97BCAEBDA45D76C57240134D4D39 /* VRTView.h */,
+				914F500867E9715B81022894E5D40B11 /* VRTViewContainerManager.h */,
+				3A22EF917C97F280FC0CF0BDDD42AA08 /* Frameworks */,
+				143B316F98EDCA5F78083B8BD09FB356 /* Pod */,
+				E67B5E3FF1FE91FA224354B993F2E503 /* Support Files */,
+			);
+			name = ViroReact;
+			path = "../../node_modules/react-viro/ios";
+			sourceTree = "<group>";
+		};
+		6B475D44F9DE8B3EB70D1C14FDE147B9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */,
+				40C6FBEEEFA5DEBF6E6E83512D4F03EE /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6BC2E72F6302177DAB5F3F792F7A5E3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DEF2EAC4719AAEFCB1319B406BACBED /* GoogleToolboxForMac */,
+				DEEC3160195C158A14693512B6A6C748 /* GTMSessionFetcher */,
+				A24F2B2DDDA5EB5C9FF2FDED015EDB4A /* GVRAudioSDK */,
+				6DEF6CB1FDB4B551331F0AA0CD283B1A /* GVRSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6DEF6CB1FDB4B551331F0AA0CD283B1A /* GVRSDK */ = {
+			isa = PBXGroup;
+			children = (
+				ECE490B16320E7CE2A948D261AE7B264 /* gvr.h */,
+				A055445BF225BF424F54E535CD923C95 /* gvr_audio.h */,
+				C80E1DE0D0B205C575F41FD6282A0E16 /* gvr_audio_surround.h */,
+				35BFDEB5A95468B06CFBFF41DD8FB84E /* gvr_types.h */,
+				3B50CD9A7E0762DFD686602F4B0F0AAE /* gvr_version.h */,
+				911D88846F33F3902F417F25BF09EF21 /* GVRAudioEngine.h */,
+				BBF25A01E032F0943809D9A0F7C7B423 /* GVRCardboardView.h */,
+				8DEB0EF44A0BB059EDDA8D3EFD8B4453 /* GVRHeadTransform.h */,
+				16DBBC7FDDFAC21DD88A805DD8D5CB30 /* GVROverlayView.h */,
+				405C4CE3CC0184822F67126CE8CF6924 /* GVRPanoramaView.h */,
+				E68F85F69C14AA034D38E62C97591A6C /* GVRVideoView.h */,
+				4C0B6BF19074DA34690FA2D0212DA2CF /* GVRWidgetView.h */,
+				6FEF6FC412616CBD0A644B407DF91C17 /* Frameworks */,
+				47D81EB5F80F46D8F814FE2BAA192C8B /* Resources */,
+				30DFF348642E3C99A0FFA0766292C10F /* Support Files */,
+			);
+			name = GVRSDK;
+			path = GVRSDK;
+			sourceTree = "<group>";
+		};
+		6FEF6FC412616CBD0A644B407DF91C17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E68CF8A23BA49EA4A0D26ECF7EF591BF /* libGVRSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		838F1A4005602E628B27C60CF86CB7A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				251C6319AD50CB50F18D50CBF727F8B2 /* GoogleToolboxForMac.framework */,
+				C1998E0D8085221AD87F89B614C10E52 /* GTMSessionFetcher.framework */,
+				7D01F10816E61C360AA67623BCC66CE9 /* Pods_brainitApp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		892C8A19FCB97563E5E0F74CF0C43E6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4ED73AC5281760B92CC63A97E54ED7F /* ViroKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		957EFB9628E49FD4ED4D913DA97AB570 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				25BCDA32DD06F18892C21B1827E54825 /* GTMDefines.h */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		A07912752A24A5F9262213F9225BCD94 /* ViroKit */ = {
+			isa = PBXGroup;
+			children = (
+				892C8A19FCB97563E5E0F74CF0C43E6B /* Frameworks */,
+				2D9BFA99AE5EEC70377A781C8EEE727E /* Pod */,
+				4FB83FC164AD6E35D18A2A3A7080B38A /* Support Files */,
+			);
+			name = ViroKit;
+			path = "../../node_modules/react-viro/ios/dist/ViroRenderer";
+			sourceTree = "<group>";
+		};
+		A24F2B2DDDA5EB5C9FF2FDED015EDB4A /* GVRAudioSDK */ = {
+			isa = PBXGroup;
+			children = (
+				20564A3CC89C02FDD94635DBB40FF4A1 /* gvr_audio.h */,
+				2DDC37C1B6D48B693402D9020493BAB1 /* gvr_audio_surround.h */,
+				C10469A4E20B6BA92863BA6BF4BF4E7C /* gvr_types.h */,
+				66138D81099EAB0E6C45A8D46D946DA9 /* gvr_version.h */,
+				11A93CFA724BAD55A26C248FD59C33C9 /* GVRAudioEngine.h */,
+				AE83332DE7749E73C63DC713F9555C2C /* Frameworks */,
+				E70B320408950FB49753F889EC416D3F /* Support Files */,
+			);
+			name = GVRAudioSDK;
+			path = GVRAudioSDK;
+			sourceTree = "<group>";
+		};
+		AE83332DE7749E73C63DC713F9555C2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A83D6F89B86F481703D84CFEBF9C665 /* libGVRAudioSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD6B9ADB254812BF7D8CBDF63843EEDD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35A60EB2CAB429EBA59DD159D52315C8 /* GTMSessionFetcher.modulemap */,
+				BB48CC4FF5165EA6EDBE8AAE4207D6CD /* GTMSessionFetcher.xcconfig */,
+				CD69B9D4B17D8BA47D3D4EE00034C1DB /* GTMSessionFetcher-dummy.m */,
+				F0CEA0B60074BEC211D4144B9405C1F7 /* GTMSessionFetcher-Info.plist */,
+				EA2696EDF4914CA82DB7F4F6F13180E8 /* GTMSessionFetcher-prefix.pch */,
+				090ED0429A8DAEAECDF3CF9F0909BDFE /* GTMSessionFetcher-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GTMSessionFetcher";
+			sourceTree = "<group>";
+		};
+		C1FC2A71554585B0F17CE8DE028D8BBF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A07912752A24A5F9262213F9225BCD94 /* ViroKit */,
+				672326952220CF8B613750072E2468E9 /* ViroReact */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C1FC2A71554585B0F17CE8DE028D8BBF /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				6BC2E72F6302177DAB5F3F792F7A5E3E /* Pods */,
+				838F1A4005602E628B27C60CF86CB7A0 /* Products */,
+				E8018E2EE65CA179B1BDE422AFD39268 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DEEC3160195C158A14693512B6A6C748 /* GTMSessionFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				128DCC583C28B5189F9841533507FCF2 /* Core */,
+				BD6B9ADB254812BF7D8CBDF63843EEDD /* Support Files */,
+			);
+			name = GTMSessionFetcher;
+			path = GTMSessionFetcher;
+			sourceTree = "<group>";
+		};
+		E67B5E3FF1FE91FA224354B993F2E503 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				14FAED0A53CE71CDD225883C736707B2 /* ViroReact.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../../ios/Pods/Target Support Files/ViroReact";
+			sourceTree = "<group>";
+		};
+		E70B320408950FB49753F889EC416D3F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				453916E91D6A469B9B8DE940C4E5D713 /* GVRAudioSDK.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GVRAudioSDK";
+			sourceTree = "<group>";
+		};
+		E8018E2EE65CA179B1BDE422AFD39268 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F9F432EBDEF880EA2D502922382A622 /* Pods-brainitApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3D03D80F09EF76ADA5B59EDBF171A9B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3C6F3AE9213FD229041303FC1486B9 /* GTMSessionFetcher-umbrella.h in Headers */,
+				68B3C59ECB5FB2983C500A9200511485 /* GTMSessionFetcher.h in Headers */,
+				FEE4C9D594D110D041FC457BA1057F3E /* GTMSessionFetcherLogging.h in Headers */,
+				B1705A6D0333B40D12CEE6DC89494660 /* GTMSessionFetcherService.h in Headers */,
+				70E9A5322DA380CA139CF8D60F669BE8 /* GTMSessionUploadFetcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845B0BBC0E170E11CAABE3566899C09E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69B2F95E6522A4451316C7B0A2D58792 /* GoogleToolboxForMac-umbrella.h in Headers */,
+				0ABEC30B6D9B4C62C07648CFFBDF1F21 /* GTMDefines.h in Headers */,
+				1BAB0491AE5A822D70D8C0851F258082 /* GTMLogger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F20933CC5EADEAEF08570D6EBB80EA4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C727D05DE40DD921CBDD5F372C6A24 /* Pods-brainitApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7A4495E4257A280E1A714A83608E018E /* Pods-brainitApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0894E2B457C8D8AD6ACF6023333CC80 /* Build configuration list for PBXNativeTarget "Pods-brainitApp" */;
+			buildPhases = (
+				F20933CC5EADEAEF08570D6EBB80EA4E /* Headers */,
+				3E34AE3CCB82AD06D2966C0F30A52811 /* Sources */,
+				FB056B94099C2176391CDF0548070F99 /* Frameworks */,
+				E8662E79FF4B2380A68C844143C15363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26E83A3EC5941399BB550D7CF52D6F6A /* PBXTargetDependency */,
+				F2950280726F11DC25188E4C02CBFC8C /* PBXTargetDependency */,
+				A668860D2B53F080F5385D432D81E41C /* PBXTargetDependency */,
+				B02C4AE064FE8B7076083510841A8B59 /* PBXTargetDependency */,
+				52A8E8F939C2E4CF76B728113CE91114 /* PBXTargetDependency */,
+				46F645D486242131A5DB96287C0DA7AF /* PBXTargetDependency */,
+			);
+			name = "Pods-brainitApp";
+			productName = "Pods-brainitApp";
+			productReference = 7D01F10816E61C360AA67623BCC66CE9 /* Pods_brainitApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D47C581D39D227080F83B16A22A56664 /* GoogleToolboxForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE1781EBF1D53800203ED4061724C9FB /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */;
+			buildPhases = (
+				845B0BBC0E170E11CAABE3566899C09E /* Headers */,
+				AD4208619C52E38756B4146B5373E6EC /* Sources */,
+				71351502811CE7E8C83CA97D5AA65550 /* Frameworks */,
+				5866B2DF7D026E29D3AA02ABD1A15C31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleToolboxForMac;
+			productName = GoogleToolboxForMac;
+			productReference = 251C6319AD50CB50F18D50CBF727F8B2 /* GoogleToolboxForMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D676E21115185671D7258A56944ABE98 /* GTMSessionFetcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C681106BE2360432658044BF006581C2 /* Build configuration list for PBXNativeTarget "GTMSessionFetcher" */;
+			buildPhases = (
+				3D03D80F09EF76ADA5B59EDBF171A9B3 /* Headers */,
+				573987861AF0E2356DA709F149C4B17C /* Sources */,
+				5C352A28BAFEBA25974905EE08F1D8F9 /* Frameworks */,
+				10A3170AD1DF59E83FE4761177F064D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTMSessionFetcher;
+			productName = GTMSessionFetcher;
+			productReference = C1998E0D8085221AD87F89B614C10E52 /* GTMSessionFetcher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 838F1A4005602E628B27C60CF86CB7A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D47C581D39D227080F83B16A22A56664 /* GoogleToolboxForMac */,
+				D676E21115185671D7258A56944ABE98 /* GTMSessionFetcher */,
+				E43577B40E70FAC5079A7EF09EA68876 /* GVRAudioSDK */,
+				9E23A7A27C92FCE19B573FF6484B7380 /* GVRSDK */,
+				7A4495E4257A280E1A714A83608E018E /* Pods-brainitApp */,
+				6BBB3E60359E7C748AA5FAC6C3E17075 /* ViroKit */,
+				7A6C27B7627BF95E3D1B75D331186634 /* ViroReact */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10A3170AD1DF59E83FE4761177F064D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5866B2DF7D026E29D3AA02ABD1A15C31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8662E79FF4B2380A68C844143C15363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E34AE3CCB82AD06D2966C0F30A52811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				791CDF915B9014154EFC83707174A76A /* Pods-brainitApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		573987861AF0E2356DA709F149C4B17C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				988E801832CB8B489E7981156CBF09D2 /* GTMSessionFetcher-dummy.m in Sources */,
+				691F23A6EECDF9CE49FEB4EA1B0E64AA /* GTMSessionFetcher.m in Sources */,
+				C146093AE4E3EDF60D57093EEF819120 /* GTMSessionFetcherLogging.m in Sources */,
+				3B92E1964FBF6B39D939DF521B4BEF4D /* GTMSessionFetcherService.m in Sources */,
+				4623402F285482726AB75AFFF5593587 /* GTMSessionUploadFetcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4208619C52E38756B4146B5373E6EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A123452D4925FF9FDA28CCCA81A74D77 /* GoogleToolboxForMac-dummy.m in Sources */,
+				7A18CB453E44A2ECA41B64A08E0B7184 /* GTMLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26E83A3EC5941399BB550D7CF52D6F6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMSessionFetcher;
+			target = D676E21115185671D7258A56944ABE98 /* GTMSessionFetcher */;
+			targetProxy = B4860AA40FD0AABC84A59EA6A1098F51 /* PBXContainerItemProxy */;
+		};
+		27B6ECD15DCEB93DA05D1D1B9C6C69B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMSessionFetcher;
+			target = D676E21115185671D7258A56944ABE98 /* GTMSessionFetcher */;
+			targetProxy = 44794AF9585059E8350BCC3DAF3F8583 /* PBXContainerItemProxy */;
+		};
+		46F645D486242131A5DB96287C0DA7AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ViroReact;
+			target = 7A6C27B7627BF95E3D1B75D331186634 /* ViroReact */;
+			targetProxy = D33FAF6BA98A35959970F0447D8A3FB1 /* PBXContainerItemProxy */;
+		};
+		52A8E8F939C2E4CF76B728113CE91114 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ViroKit;
+			target = 6BBB3E60359E7C748AA5FAC6C3E17075 /* ViroKit */;
+			targetProxy = D1AF5BA43B0FFF7D94CA33C65BD0A200 /* PBXContainerItemProxy */;
+		};
+		5A3A00FB83F6FE25D46FAC883CDF480E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GVRSDK;
+			target = 9E23A7A27C92FCE19B573FF6484B7380 /* GVRSDK */;
+			targetProxy = C69AAA96CDB87A1485AFB4216B106346 /* PBXContainerItemProxy */;
+		};
+		813D16E06D7D7BEB9E4A2DD41A59736C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GVRAudioSDK;
+			target = E43577B40E70FAC5079A7EF09EA68876 /* GVRAudioSDK */;
+			targetProxy = 518B33406C85AC5A216C69A3BDB6E60C /* PBXContainerItemProxy */;
+		};
+		A668860D2B53F080F5385D432D81E41C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GVRSDK;
+			target = 9E23A7A27C92FCE19B573FF6484B7380 /* GVRSDK */;
+			targetProxy = E870C0E4429B54E2B986681E6D5208B4 /* PBXContainerItemProxy */;
+		};
+		B02C4AE064FE8B7076083510841A8B59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = D47C581D39D227080F83B16A22A56664 /* GoogleToolboxForMac */;
+			targetProxy = 1022715E345CCE294B3C906F71C47628 /* PBXContainerItemProxy */;
+		};
+		B8A621AF7AE0829354E12D9610B66272 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = D47C581D39D227080F83B16A22A56664 /* GoogleToolboxForMac */;
+			targetProxy = 09E6B03EFF88E3A7ADEAEB2D3F06133C /* PBXContainerItemProxy */;
+		};
+		F2950280726F11DC25188E4C02CBFC8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GVRAudioSDK;
+			target = E43577B40E70FAC5079A7EF09EA68876 /* GVRAudioSDK */;
+			targetProxy = 757CD51A2F3D892C88A0372E1FA1F036 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		45E5B66B8980E89AA62907780246FED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F2E3D8F228FB03C8C99C4914584C46D /* Pods-brainitApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-brainitApp/Pods-brainitApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-brainitApp/Pods-brainitApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		471F04F5FD25EE80769B264AEEFD52ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B71C0BA8FCB8F52768FC172042832A9 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				PRODUCT_MODULE_NAME = GoogleToolboxForMac;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		50F9CEF8B6A108D026B4A9EDBCB84FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB48CC4FF5165EA6EDBE8AAE4207D6CD /* GTMSessionFetcher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher.modulemap";
+				PRODUCT_MODULE_NAME = GTMSessionFetcher;
+				PRODUCT_NAME = GTMSessionFetcher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C73ECDACC153792E44D40CC0CB193C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF9AE87DF0537D9A599395327EA261AE /* ViroKit.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80B3DD1D3DB2BA9DDB1A9614CD45E0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B71C0BA8FCB8F52768FC172042832A9 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				PRODUCT_MODULE_NAME = GoogleToolboxForMac;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B9ACF423D36170A3629E8F2339EE63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 453916E91D6A469B9B8DE940C4E5D713 /* GVRAudioSDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FDE14603A8A1E89C0F5DD1A81416CC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 939BE80B56B91529514CA1BD81B814A6 /* Pods-brainitApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-brainitApp/Pods-brainitApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-brainitApp/Pods-brainitApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A45C77957CE9770FBC9105B38C3F8DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF9AE87DF0537D9A599395327EA261AE /* ViroKit.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BB93AD1779DE7611F74770FCE1E7AA41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14FAED0A53CE71CDD225883C736707B2 /* ViroReact.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C10FF78D35E1F8C2938049573C7F56D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E96B51920BBC8A5FFDDEB11328E31BBC /* GVRSDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFCF80CDF663EA40A90F5AC2DA15E88F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 453916E91D6A469B9B8DE940C4E5D713 /* GVRAudioSDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0AC7F177473ACDD45BCA73D8D9D0CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14FAED0A53CE71CDD225883C736707B2 /* ViroReact.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D63CF17F353FF85D6DCA89FD5EE32219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB48CC4FF5165EA6EDBE8AAE4207D6CD /* GTMSessionFetcher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher.modulemap";
+				PRODUCT_MODULE_NAME = GTMSessionFetcher;
+				PRODUCT_NAME = GTMSessionFetcher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB8202546EB73C84CF9ACB2B74955202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E96B51920BBC8A5FFDDEB11328E31BBC /* GVRSDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		202B904D802B9F7C2DB605C950F3E88F /* Build configuration list for PBXAggregateTarget "GVRAudioSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9ACF423D36170A3629E8F2339EE63B /* Debug */,
+				CFCF80CDF663EA40A90F5AC2DA15E88F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5997AD02E69FBFFB21BC0E617128B160 /* Build configuration list for PBXAggregateTarget "ViroKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C73ECDACC153792E44D40CC0CB193C2 /* Debug */,
+				A45C77957CE9770FBC9105B38C3F8DFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A894947ED2D55A2EA82995CF1324B61 /* Build configuration list for PBXAggregateTarget "GVRSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB8202546EB73C84CF9ACB2B74955202 /* Debug */,
+				C10FF78D35E1F8C2938049573C7F56D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A232D182F37F204A9EB1B6DC5BBA6C44 /* Build configuration list for PBXAggregateTarget "ViroReact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0AC7F177473ACDD45BCA73D8D9D0CB0 /* Debug */,
+				BB93AD1779DE7611F74770FCE1E7AA41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0894E2B457C8D8AD6ACF6023333CC80 /* Build configuration list for PBXNativeTarget "Pods-brainitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E5B66B8980E89AA62907780246FED5 /* Debug */,
+				9FDE14603A8A1E89C0F5DD1A81416CC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C681106BE2360432658044BF006581C2 /* Build configuration list for PBXNativeTarget "GTMSessionFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D63CF17F353FF85D6DCA89FD5EE32219 /* Debug */,
+				50F9CEF8B6A108D026B4A9EDBCB84FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE1781EBF1D53800203ED4061724C9FB /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80B3DD1D3DB2BA9DDB1A9614CD45E0F4 /* Debug */,
+				471F04F5FD25EE80769B264AEEFD52ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
