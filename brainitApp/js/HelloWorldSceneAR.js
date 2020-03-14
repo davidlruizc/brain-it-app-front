@@ -43,7 +43,7 @@ export default class HelloWorldSceneAR extends Component {
   }
 }
 
-var styles = StyleSheet.create({
+const styles = StyleSheet.create({
   helloWorldTextStyle: {
     fontFamily: 'Arial',
     fontSize: 30,

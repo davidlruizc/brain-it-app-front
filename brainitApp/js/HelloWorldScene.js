@@ -29,7 +29,7 @@ export default class HelloWorldScene extends Component {
 
 }
 
-var styles = StyleSheet.create({
+const styles = StyleSheet.create({
   helloWorldTextStyle: {
     fontFamily: 'Arial',
     fontSize: 60,
