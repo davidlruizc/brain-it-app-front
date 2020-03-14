@@ -7,12 +7,30 @@ PODS:
   - GVRSDK (1.120.0):
     - GoogleToolboxForMac/Logger (= 2.1.0)
     - GTMSessionFetcher/Core (= 1.1.6)
+  - React (0.11.0):
+    - React/Core (= 0.11.0)
+  - react-native-safe-area-context (0.7.3):
+    - React
+  - React/Core (0.11.0)
+  - RNCMaskedView (0.1.7):
+    - React
+  - RNGestureHandler (1.6.0):
+    - React
+  - RNReanimated (1.7.0):
+    - React
+  - RNScreens (2.3.0):
+    - React
   - ViroKit (1.0):
     - GVRAudioSDK (= 1.120.0)
     - GVRSDK (= 1.120.0)
   - ViroReact (1.0)
 
 DEPENDENCIES:
+  - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
+  - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
+  - RNScreens (from `../node_modules/react-native-screens`)
   - ViroKit (from `../node_modules/react-viro/ios/dist/ViroRenderer/`)
   - ViroReact (from `../node_modules/react-viro/ios/`)
 
@@ -22,8 +40,19 @@ SPEC REPOS:
     - GTMSessionFetcher
     - GVRAudioSDK
     - GVRSDK
+    - React
 
 EXTERNAL SOURCES:
+  react-native-safe-area-context:
+    :path: "../node_modules/react-native-safe-area-context"
+  RNCMaskedView:
+    :path: "../node_modules/@react-native-community/masked-view"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
+  RNScreens:
+    :path: "../node_modules/react-native-screens"
   ViroKit:
     :path: "../node_modules/react-viro/ios/dist/ViroRenderer/"
   ViroReact:
@@ -34,9 +63,15 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 6aacd0ab48ddf0c3633ab2642d792abfcad1b08a
   GVRAudioSDK: 302f0a8f190d855868ea07f246ce4f9b44c392ae
   GVRSDK: 0cb9d0ce06a84d698e61e3db9509766022dcf815
+  React: ab1a2e21deb34965c38328d5ec40cc7d12c6050a
+  react-native-safe-area-context: 8260e5157617df4b72865f44006797f895b2ada7
+  RNCMaskedView: 90dd32f5b786bd562e876e1421ea77c700cbf71e
+  RNGestureHandler: dde546180bf24af0b5f737c8ad04b6f3fa51609a
+  RNReanimated: 031fe8d9ea93c2bd689a40f05320ef9d96f74d7f
+  RNScreens: 03bf608b92ac0acf323f47d8f5b63a8f829340c8
   ViroKit: b3c0e0d4a40c2e78d31bb09740a49cd8bf6bd68f
   ViroReact: 7ec32276dcd1883662b4587eaedfff67f7fc3625
 
-PODFILE CHECKSUM: cf55468a3f3afb8cfe32e0938c3413db4d5f729c
+PODFILE CHECKSUM: cc1e5d1e782baceec51e4068233283ba0ccbce5c
 
 COCOAPODS: 1.8.3

@@ -1,12 +1,3 @@
-/**
- * Copyright (c) 2017-present, Viro, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -16,6 +7,8 @@ import {
   PixelRatio,
   TouchableHighlight,
 } from 'react-native';
+
+import { NavigationContainer } from '@react-navigation/native';
 
 import {
   ViroVRSceneNavigator,
@@ -71,28 +64,30 @@ export default class ViroSample extends Component {
   // Presents the user with a choice of an AR or VR experience
   _getExperienceSelector() {
     return (
-      <View style={localStyles.outer} >
-        <View style={localStyles.inner} >
+      <NavigationContainer>
+        <View style={localStyles.outer} >
+          <View style={localStyles.inner} >
 
-          <Text style={localStyles.titleText}>
-            Choose your desired experience:
-          </Text>
+            <Text style={localStyles.titleText}>
+              Choose your desired experience:
+            </Text>
 
-          <TouchableHighlight style={localStyles.buttons}
-            onPress={this._getExperienceButtonOnPress(AR_NAVIGATOR_TYPE)}
-            underlayColor={'#68a0ff'} >
+            <TouchableHighlight style={localStyles.buttons}
+              onPress={this._getExperienceButtonOnPress(AR_NAVIGATOR_TYPE)}
+              underlayColor={'#68a0ff'} >
 
-            <Text style={localStyles.buttonText}>AR</Text>
-          </TouchableHighlight>
+              <Text style={localStyles.buttonText}>AR</Text>
+            </TouchableHighlight>
 
-          <TouchableHighlight style={localStyles.buttons}
-            onPress={this._getExperienceButtonOnPress(VR_NAVIGATOR_TYPE)}
-            underlayColor={'#68a0ff'} >
+            <TouchableHighlight style={localStyles.buttons}
+              onPress={this._getExperienceButtonOnPress(VR_NAVIGATOR_TYPE)}
+              underlayColor={'#68a0ff'} >
 
-            <Text style={localStyles.buttonText}>VR</Text>
-          </TouchableHighlight>
+              <Text style={localStyles.buttonText}>VR</Text>
+            </TouchableHighlight>
+          </View>
         </View>
-      </View>
+      </NavigationContainer>
     );
   }
 

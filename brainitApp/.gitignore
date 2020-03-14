@@ -2,6 +2,11 @@
 #
 .DS_Store
 
+# ios VR
+/ios/Pods/GVRSDK
+/ios/Pods/React
+
+
 # Xcode
 #
 build/
@@ -30,7 +35,6 @@ build/
 local.properties
 *.iml
 
-/ios/Pods/GVRSDK
 
 # node.js
 #
