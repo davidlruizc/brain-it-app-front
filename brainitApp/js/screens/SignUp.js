@@ -5,22 +5,51 @@ import { Input, Button } from 'react-native-elements';
 import Layout from '../components/Auth/Layout';
 import { primaryColor } from '../colors';
 
-const Login = ({ navigation }) => {
+const SignUp = ({ navigation }) => {
+  const [name, setName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleOnPressLogin = () => {
-    console.warn('Logged in');
+  const handleOnPressSignUp = () => {
+    console.warn('signup');
   };
 
-  const handleCreateAccountNavigation = () => {
-    navigation.navigate('SignUp')
+  const handleNavigationTerms = () => {
+    navigation.navigate('Terms');
   };
+
+  const validateForm = () => {
+    return (
+      name.length > 0 &&
+      lastName.length > 0 &&
+      email.length > 0 &&
+      password.length > 0 &&
+      password === confirmPassword
+    );
+  }
 
   return(
     <Layout>
       <View style={styles.container}>
-        <Text style={styles.title}>WELCOME</Text>
+        <Text style={styles.title}>REGISTER</Text>
+        <Input
+          placeholder='Name'
+          style={styles.input}
+          inputContainerStyle={styles.inputContainer}
+          keyboardType="default"
+          onChangeText={name => setName(name)}
+          labelStyle={styles.padding}
+        />
+        <Input
+          placeholder='Last Name'
+          style={styles.input}
+          inputContainerStyle={styles.inputContainer}
+          keyboardType="default"
+          onChangeText={lastName => setLastName(lastName)}
+          labelStyle={styles.padding}
+        />
         <Input
           placeholder='Email'
           style={styles.input}
@@ -37,6 +66,22 @@ const Login = ({ navigation }) => {
           labelStyle={styles.padding}
           secureTextEntry={true}
         />
+        <Input
+          placeholder="Confirm Password"
+          style={styles.input}
+          inputContainerStyle={styles.inputContainer}
+          onChangeText={confirmPassword => setConfirmPassword(confirmPassword)}
+          labelStyle={styles.padding}
+          secureTextEntry={true}
+        />
+        <View style={styles.wrapper}>
+          <Text style={styles.text}>By tapping "Sign Up" you agree to the</Text>
+          <TouchableOpacity
+            onPress={handleNavigationTerms}
+          >
+            <Text style={styles.textCreate}>terms & conditions</Text>
+          </TouchableOpacity>
+        </View>
         <Button
           containerStyle={{
             marginTop: 25,
@@ -44,25 +89,12 @@ const Login = ({ navigation }) => {
             width: '95%',
             alignSelf: 'center',
           }}
-          title="Sign in"
-          onPress={handleOnPressLogin}
+          title="Sign up"
+          onPress={handleOnPressSignUp}
           buttonStyle={styles.button}
           titleStyle={styles.buttonText}
-          disabled={email == '' || password == ''}
+          disabled={!validateForm()}
         />
-        <TouchableOpacity
-          style={styles.wrapperForgot}
-        >
-          <Text style={styles.textLabel}>Forgot your password?</Text>
-        </TouchableOpacity>
-        <View style={styles.wrapper}>
-          <Text style={styles.text}>Don't have an account?</Text>
-          <TouchableOpacity
-            onPress={handleCreateAccountNavigation}
-          >
-            <Text style={styles.textCreate}>Create new account</Text>
-          </TouchableOpacity>
-        </View>
       </View>
     </Layout>
   );
@@ -122,12 +154,9 @@ const styles = StyleSheet.create({
     color: primaryColor,
     alignSelf: 'center'
   },
-  wrapperForgot: {
-    flexDirection: 'row'
-  },
   wrapper: {
-    marginTop: 50
+    marginTop: 30
   }
 });
 
-export default Login;
+export default SignUp;
