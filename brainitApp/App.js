@@ -9,11 +9,14 @@ import {
 } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import {
   ViroVRSceneNavigator,
   ViroARSceneNavigator
 } from 'react-viro';
+
+import Login from './js/screens/Login';
 
 /*
  TODO: Insert your API key below
@@ -34,6 +37,12 @@ const AR_NAVIGATOR_TYPE = "AR";
 // be presented with a choice of AR or VR. By default, we offer the user a choice.
 const defaultNavigatorType = UNSET;
 
+/**
+ * Create the stack navigator declaration 
+ */
+const Stack = createStackNavigator();
+
+
 export default class ViroSample extends Component {
   constructor() {
     super();
@@ -42,7 +51,6 @@ export default class ViroSample extends Component {
       navigatorType : defaultNavigatorType,
       sharedProps : sharedProps
     }
-    this._getExperienceSelector = this._getExperienceSelector.bind(this);
     this._getARNavigator = this._getARNavigator.bind(this);
     this._getVRNavigator = this._getVRNavigator.bind(this);
     this._getExperienceButtonOnPress = this._getExperienceButtonOnPress.bind(this);
@@ -52,41 +60,17 @@ export default class ViroSample extends Component {
   // Replace this function with the contents of _getVRNavigator() or _getARNavigator()
   // if you are building a specific type of experience.
   render() {
-    if (this.state.navigatorType == UNSET) {
-      return this._getExperienceSelector();
-    } else if (this.state.navigatorType == VR_NAVIGATOR_TYPE) {
-      return this._getVRNavigator();
-    } else if (this.state.navigatorType == AR_NAVIGATOR_TYPE) {
-      return this._getARNavigator();
-    }
-  }
-
-  // Presents the user with a choice of an AR or VR experience
-  _getExperienceSelector() {
-    return (
+    return(
       <NavigationContainer>
-        <View style={localStyles.outer} >
-          <View style={localStyles.inner} >
-
-            <Text style={localStyles.titleText}>
-              Choose your desired experience:
-            </Text>
-
-            <TouchableHighlight style={localStyles.buttons}
-              onPress={this._getExperienceButtonOnPress(AR_NAVIGATOR_TYPE)}
-              underlayColor={'#68a0ff'} >
-
-              <Text style={localStyles.buttonText}>AR</Text>
-            </TouchableHighlight>
-
-            <TouchableHighlight style={localStyles.buttons}
-              onPress={this._getExperienceButtonOnPress(VR_NAVIGATOR_TYPE)}
-              underlayColor={'#68a0ff'} >
-
-              <Text style={localStyles.buttonText}>VR</Text>
-            </TouchableHighlight>
-          </View>
-        </View>
+        <Stack.Navigator>
+          <Stack.Screen
+            name="Login screen"
+            component={Login}
+            options={{
+              headerShown: false
+            }}
+          />
+        </Stack.Navigator>
       </NavigationContainer>
     );
   }
@@ -124,60 +108,5 @@ export default class ViroSample extends Component {
     })
   }
 }
-
-const localStyles = StyleSheet.create({
-  viroContainer :{
-    flex : 1,
-    backgroundColor: "black",
-  },
-  outer : {
-    flex : 1,
-    flexDirection: 'row',
-    alignItems:'center',
-    backgroundColor: "black",
-  },
-  inner: {
-    flex : 1,
-    flexDirection: 'column',
-    alignItems:'center',
-    backgroundColor: "black",
-  },
-  titleText: {
-    paddingTop: 30,
-    paddingBottom: 20,
-    color:'#fff',
-    textAlign:'center',
-    fontSize : 25
-  },
-  buttonText: {
-    color:'#fff',
-    textAlign:'center',
-    fontSize : 20
-  },
-  buttons : {
-    height: 80,
-    width: 150,
-    paddingTop:20,
-    paddingBottom:20,
-    marginTop: 10,
-    marginBottom: 10,
-    backgroundColor:'#68a0cf',
-    borderRadius: 10,
-    borderWidth: 1,
-    borderColor: '#fff',
-  },
-  exitButton : {
-    height: 50,
-    width: 100,
-    paddingTop:10,
-    paddingBottom:10,
-    marginTop: 10,
-    marginBottom: 10,
-    backgroundColor:'#68a0cf',
-    borderRadius: 10,
-    borderWidth: 1,
-    borderColor: '#fff',
-  }
-});
 
 module.exports = ViroSample
