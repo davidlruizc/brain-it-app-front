@@ -19,6 +19,7 @@ import {
 import Login from './js/screens/Login';
 import SignUp from './js/screens/SignUp';
 import Home from './js/screens/Home';
+import Terms from './js/screens/Terms';
 
 /*
  TODO: Insert your API key below
@@ -52,7 +53,7 @@ export default class ViroSample extends Component {
     this.state = {
       navigatorType : defaultNavigatorType,
       sharedProps : sharedProps,
-      isLoggedIn: false
+      isLoggedIn: false // verify is there any token in the app
     }
     this._getARNavigator = this._getARNavigator.bind(this);
     this._getVRNavigator = this._getVRNavigator.bind(this);
@@ -87,6 +88,13 @@ export default class ViroSample extends Component {
                 component={SignUp}
                 options={{
                   headerShown: false
+                }}
+              />
+              <Stack.Screen
+                name="Terms"
+                component={Terms}
+                options={{
+                  title: 'Terms & Conditions'
                 }}
               />
             </>
