@@ -17,6 +17,8 @@ import {
 } from 'react-viro';
 
 import Login from './js/screens/Login';
+import SignUp from './js/screens/SignUp';
+import Home from './js/screens/Home';
 
 /*
  TODO: Insert your API key below
@@ -49,7 +51,8 @@ export default class ViroSample extends Component {
 
     this.state = {
       navigatorType : defaultNavigatorType,
-      sharedProps : sharedProps
+      sharedProps : sharedProps,
+      isLoggedIn: false
     }
     this._getARNavigator = this._getARNavigator.bind(this);
     this._getVRNavigator = this._getVRNavigator.bind(this);
@@ -63,13 +66,31 @@ export default class ViroSample extends Component {
     return(
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen
-            name="Login screen"
-            component={Login}
-            options={{
-              headerShown: false
-            }}
-          />
+          {this.state.isLoggedIn ?(
+            <>
+              <Stack.Screen
+                name="Home"
+                component={Home}
+              />
+            </>
+          ) : (
+            <>
+              <Stack.Screen
+                name="Login"
+                component={Login}
+                options={{
+                  headerShown: false
+                }}
+              />
+              <Stack.Screen
+                name="SignUp"
+                component={SignUp}
+                options={{
+                  headerShown: false
+                }}
+              />
+            </>
+          )}
         </Stack.Navigator>
       </NavigationContainer>
     );
