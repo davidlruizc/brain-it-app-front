@@ -20,6 +20,8 @@ import Login from './js/screens/Login';
 import SignUp from './js/screens/SignUp';
 import Home from './js/screens/Home';
 import Terms from './js/screens/Terms';
+import Auth from './js/navigation/Auth';
+import BottomTab from './js/navigation/BottomTab';
 
 /*
  TODO: Insert your API key below
@@ -53,7 +55,7 @@ export default class ViroSample extends Component {
     this.state = {
       navigatorType : defaultNavigatorType,
       sharedProps : sharedProps,
-      isLoggedIn: false // verify is there any token in the app
+      isLoggedIn: true // verify is there any token in the app
     }
     this._getARNavigator = this._getARNavigator.bind(this);
     this._getVRNavigator = this._getVRNavigator.bind(this);
@@ -66,40 +68,18 @@ export default class ViroSample extends Component {
   render() {
     return(
       <NavigationContainer>
-        <Stack.Navigator>
-          {this.state.isLoggedIn ?(
-            <>
-              <Stack.Screen
-                name="Home"
-                component={Home}
-              />
-            </>
-          ) : (
-            <>
-              <Stack.Screen
-                name="Login"
-                component={Login}
-                options={{
-                  headerShown: false
-                }}
-              />
-              <Stack.Screen
-                name="SignUp"
-                component={SignUp}
-                options={{
-                  headerShown: false
-                }}
-              />
-              <Stack.Screen
-                name="Terms"
-                component={Terms}
-                options={{
-                  title: 'Terms & Conditions'
-                }}
-              />
-            </>
-          )}
-        </Stack.Navigator>
+        {this.state.isLoggedIn ?(
+          <Stack.Navigator initialRouteName="Home" >
+            <Stack.Screen
+              name="Home"
+              component={BottomTab}
+            />
+          </Stack.Navigator>
+        ) : (
+          <>
+            <Auth />
+          </>
+        )}
       </NavigationContainer>
     );
   }
