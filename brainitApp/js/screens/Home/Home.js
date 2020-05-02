@@ -3,18 +3,34 @@ import { View, Text, StyleSheet, ScrollView } from 'react-native';
 
 import Layout from '../../components/Global/Layout';
 import VieoCard from '../../components/Home/VideoCard';
- 
+
+const tempData = [
+  {
+    title: 'Welcome to brainit',
+    description: 'Short description of the video to give an intro for the audience'
+  },
+  {
+    title: 'Simple past',
+    description: 'Short description of the video to give an intro for the audience'
+  },
+  {
+    title: 'Past continuous',
+    description: 'Short description of the video to give an intro for the audience'
+  },
+  {
+    title: 'Past perfect',
+    description: 'Short description of the video to give an intro for the audience'
+  },
+];
+
 const Home = () => {
   return(
     <Layout>
       <ScrollView style={styles.container} showsVerticalScrollIndicator={false} >
         <Text style={styles.title}>Watch the lessons</Text>
-        <VieoCard />
-        <VieoCard />
-        <VieoCard />
-        <VieoCard />
-        <VieoCard />
-        <VieoCard />
+        {tempData.map((card, index) => (
+          <VieoCard key={index} {...card} />
+        ))}
       </ScrollView>
     </Layout>
   );

@@ -3,7 +3,7 @@ import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 
 import {secondaryColor} from '../../colors';
 
-const VideoCard = () => (
+const VideoCard = ({title, description}) => (
   <TouchableOpacity style={styles.wrapper}>
     <View>
       <Image
@@ -12,9 +12,9 @@ const VideoCard = () => (
       />
     </View>
     <View style={styles.textWrapper}>
-      <Text style={styles.title}>Welcome to brainit</Text>
+      <Text style={styles.title}>{title}</Text>
       <View style={{flexDirection: 'row'}}>
-        <Text style={styles.description}>Short description of the video to give an intro for the audience</Text>
+        <Text style={styles.description}>{description}</Text>
       </View>
     </View>
   </TouchableOpacity>
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     borderRadius: 10
   },
   textWrapper: {
-    marginHorizontal: 7
+    marginHorizontal: 5,
   },
   title: {
     fontSize: 14,
