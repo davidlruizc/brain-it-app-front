@@ -18,7 +18,7 @@ import {
 
 import Login from './js/screens/Login';
 import SignUp from './js/screens/SignUp';
-import Home from './js/screens/Home';
+import Home from './js/screens/Home/Home';
 import Terms from './js/screens/Terms';
 import Auth from './js/navigation/Auth';
 import BottomTab from './js/navigation/BottomTab';

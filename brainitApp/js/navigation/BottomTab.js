@@ -2,7 +2,7 @@ import * as React from 'react';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { Icon } from 'react-native-elements';
 
-import Home from '../screens/Home';
+import Home from '../screens/Home/Home';
 import HomeNav from './Home';
 import {primaryColor, secondaryColor} from '../colors';
 
