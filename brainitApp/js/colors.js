@@ -1,4 +1,5 @@
 export const primaryColor = "#851A1A";
+export const secondaryColor = "#4a0f0f";
 
 export const navBarColor = "#789DD0";
 export const navIconColor = "#BFCEE5";
