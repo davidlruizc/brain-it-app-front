@@ -23,13 +23,17 @@ const tempData = [
   },
 ];
 
-const Home = () => {
+const Home = ({navigation}) => {
+  const handleVideoNav = () => {
+    navigation.navigate('VideoPlayer');
+  };
+
   return(
     <Layout>
       <ScrollView style={styles.container} showsVerticalScrollIndicator={false} >
         <Text style={styles.title}>Watch the lessons</Text>
         {tempData.map((card, index) => (
-          <VieoCard key={index} {...card} />
+          <VieoCard key={index} {...card} handleNavigation={handleVideoNav} />
         ))}
       </ScrollView>
     </Layout>

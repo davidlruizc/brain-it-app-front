@@ -3,8 +3,8 @@ import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 
 import {secondaryColor} from '../../colors';
 
-const VideoCard = ({title, description}) => (
-  <TouchableOpacity style={styles.wrapper}>
+const VideoCard = ({title, description, handleNavigation}) => (
+  <TouchableOpacity style={styles.wrapper} onPress={() => handleNavigation()} >
     <View>
       <Image
         source={require('../../../assets/thumbnail.jpg')}
