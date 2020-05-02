@@ -2,8 +2,11 @@ import * as React from 'react';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { Icon } from 'react-native-elements';
 
-import Home from '../screens/Home/Home';
 import HomeNav from './Home';
+import GrammarNav from './Grammar';
+import InteractiveNav from './Interactive';
+import ChatNav from './Chat';
+import ProfileNav from './Profile';
 import {primaryColor, secondaryColor} from '../colors';
 
 const Tab = createMaterialBottomTabNavigator();
@@ -18,7 +21,7 @@ const BottomTab = () => {
       sceneAnimationEnabled={false}
     >
       <Tab.Screen
-        name="Home"
+        name="HomeNav"
         component={HomeNav}
         options={{
           tabBarLabel: 'Home',
@@ -28,8 +31,8 @@ const BottomTab = () => {
         }}
       />
       <Tab.Screen
-        name="Grammar"
-        component={HomeNav}
+        name="GrammarNav"
+        component={GrammarNav}
         options={{
           tabBarLabel: 'Grammar',
           tabBarIcon: ({ color }) => (
@@ -38,8 +41,8 @@ const BottomTab = () => {
         }}
       />
       <Tab.Screen
-        name="Interactive"
-        component={HomeNav}
+        name="InteractiveNav"
+        component={InteractiveNav}
         options={{
           tabBarLabel: 'Interactive',
           tabBarIcon: ({ color }) => (
@@ -48,8 +51,8 @@ const BottomTab = () => {
         }}
       />
       <Tab.Screen
-        name="Chat"
-        component={HomeNav}
+        name="ChatNav"
+        component={ChatNav}
         options={{
           tabBarLabel: 'Chat',
           tabBarIcon: ({ color }) => (
@@ -58,8 +61,8 @@ const BottomTab = () => {
         }}
       />
       <Tab.Screen
-        name="Profile"
-        component={HomeNav}
+        name="ProfileNav"
+        component={ProfileNav}
         options={{
           tabBarLabel: 'Profile',
           tabBarIcon: ({ color }) => (
