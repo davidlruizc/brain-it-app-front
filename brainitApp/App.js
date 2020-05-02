@@ -73,6 +73,9 @@ export default class ViroSample extends Component {
             <Stack.Screen
               name="Home"
               component={BottomTab}
+              options={{
+                headerShown: false
+              }}
             />
           </Stack.Navigator>
         ) : (

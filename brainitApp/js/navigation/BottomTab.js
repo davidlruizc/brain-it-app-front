@@ -3,6 +3,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { Icon } from 'react-native-elements';
 
 import Home from '../screens/Home';
+import HomeNav from './Home';
 import {primaryColor, secondaryColor} from '../colors';
 
 const Tab = createMaterialBottomTabNavigator();
@@ -18,8 +19,9 @@ const BottomTab = () => {
     >
       <Tab.Screen
         name="Home"
-        component={Home}
+        component={HomeNav}
         options={{
+          tabBarLabel: 'Home',
           tabBarIcon: ({ color }) => (
             <Icon name="home" type="materia" color={color} size={26} />
           ),
@@ -27,8 +29,9 @@ const BottomTab = () => {
       />
       <Tab.Screen
         name="Grammar"
-        component={Home}
+        component={HomeNav}
         options={{
+          tabBarLabel: 'Grammar',
           tabBarIcon: ({ color }) => (
             <Icon name="unread" type="entypo" color={color} size={26} />
           ),
@@ -36,8 +39,9 @@ const BottomTab = () => {
       />
       <Tab.Screen
         name="Interactive"
-        component={Home}
+        component={HomeNav}
         options={{
+          tabBarLabel: 'Interactive',
           tabBarIcon: ({ color }) => (
             <Icon name="appstore1" type="antdesign" color={color} size={26} />
           ),
@@ -45,8 +49,9 @@ const BottomTab = () => {
       />
       <Tab.Screen
         name="Chat"
-        component={Home}
+        component={HomeNav}
         options={{
+          tabBarLabel: 'Chat',
           tabBarIcon: ({ color }) => (
             <Icon name="chat" type="material" color={color} size={26} />
           ),
@@ -54,8 +59,9 @@ const BottomTab = () => {
       />
       <Tab.Screen
         name="Profile"
-        component={Home}
+        component={HomeNav}
         options={{
+          tabBarLabel: 'Profile',
           tabBarIcon: ({ color }) => (
             <Icon name="face-profile" type="material-community" color={color} size={26} />
           ),
