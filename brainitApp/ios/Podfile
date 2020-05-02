@@ -15,4 +15,6 @@ target 'brainitApp' do
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
+  pod 'RCTYouTube', :path => '../node_modules/react-native-youtube'
+
 end

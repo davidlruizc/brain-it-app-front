@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     borderRadius: 10
   },
   textWrapper: {
-    marginHorizontal: 5,
+    marginHorizontal: 7,
   },
   title: {
     fontSize: 14,
