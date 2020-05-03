@@ -3,8 +3,8 @@ import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 
 import {secondaryColor} from '../../colors';
 
-const VideoCard = ({title, description, handleNavigation}) => (
-  <TouchableOpacity style={styles.wrapper} onPress={() => handleNavigation()} >
+const VideoCard = ({title, description, shortDescription, handleNavigation, videoId}) => (
+  <TouchableOpacity style={styles.wrapper} onPress={() => handleNavigation({title, description, videoId})} >
     <View>
       <Image
         source={require('../../../assets/thumbnail.jpg')}
@@ -14,7 +14,7 @@ const VideoCard = ({title, description, handleNavigation}) => (
     <View style={styles.textWrapper}>
       <Text style={styles.title}>{title}</Text>
       <View style={{flexDirection: 'row'}}>
-        <Text style={styles.description}>{description}</Text>
+        <Text style={styles.description}>{shortDescription}</Text>
       </View>
     </View>
   </TouchableOpacity>

@@ -5,21 +5,22 @@ import YouTube from "react-native-youtube";
 import Layout from '../../components/Global/Layout';
 import Button from '../../components/Global/Button';
 
-const VideoPlayer = () => {
+const VideoPlayer = ({navigation, route}) => {
+  const { args } = route.params;
   return (
     <Layout>
       <YouTube
         apiKey="AIzaSyAXd-BG6vu7AUnd-VcsEGV3mIztzIU9z2U"
-        videoId="JFqiSr9A-Go"
+        videoId={args.videoId}
         play={false}
         style={styles.videPlayer}
       />
       <View style={styles.wrapper}>
-        <Text style={styles.title}>Title of the video</Text>
-        <Text style={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+        <Text style={styles.title}>{args.title}</Text>
+        <Text style={styles.description}>{args.description}</Text>
       </View>
       <View style={styles.button} >
-        <Button title="Back to playlist" />
+        <Button title="Back to playlist" onPress={() => navigation.navigate('Feed')} />
       </View>
     </Layout>
   );

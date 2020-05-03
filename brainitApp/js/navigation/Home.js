@@ -8,7 +8,7 @@ const Stack = createStackNavigator();
 
 const HomeNav = () => (
   <Stack.Navigator
-    initialRouteName="VideoPlayer"
+    initialRouteName="Feed"
   >
     <Stack.Screen
       name="Feed"
