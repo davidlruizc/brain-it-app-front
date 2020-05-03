@@ -3,9 +3,9 @@ import {TouchableOpacity, View, Text, StyleSheet} from 'react-native';
 
 import {secondaryColor} from '../../colors';
 
-const Button = ({title}) => {
+const Button = ({title, onPress}) => {
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onPress} >
       <View style={{alignSelf: 'center'}}>
         <Text style={styles.title}>{title}</Text>
       </View>
