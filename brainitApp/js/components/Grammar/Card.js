@@ -1,16 +1,16 @@
 import React from 'react';
 import {View, Text, StyleSheet, ImageBackground, TouchableOpacity, } from 'react-native';
 
-const image = require('../../../assets/grammar-one.jpg');
+// const image = require('../../../assets/grammar-one.jpg');
 
-const Card = () => (
+const Card = ({title, image}) => (
   <TouchableOpacity style={styles.container}>
     <ImageBackground
       source={image}
       style={styles.image}
       imageStyle={{borderRadius: 10, backgroundColor: 'rgba(0,0,0,.6)'}}
     >
-      <Text style={styles.title}>Simple Past</Text>
+      <Text style={styles.title}>{title}</Text>
     </ImageBackground>
   </TouchableOpacity>
 );
