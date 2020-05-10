@@ -3,10 +3,10 @@ import {View, Text, StyleSheet, ImageBackground, TouchableOpacity, } from 'react
 
 // const image = require('../../../assets/grammar-one.jpg');
 
-const Card = ({title, image}) => (
-  <TouchableOpacity style={styles.container}>
+const Card = ({title, image, text, textTitle, handleNavigateToText}) => (
+  <TouchableOpacity style={styles.container} onPress={() => handleNavigateToText(textTitle, image, text)}>
     <ImageBackground
-      source={image}
+      source={{uri: image}}
       style={styles.image}
       imageStyle={{borderRadius: 10, backgroundColor: 'rgba(0,0,0,.6)'}}
     >
