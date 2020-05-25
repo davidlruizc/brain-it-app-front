@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, ImageBackground, StyleSheet, ScrollView} from 'react-native';
 
 import Layout from '../../components/Global/Layout';
+import Button from '../../components/Global/Button';
 
 const Lecture = ({navigation, route}) => {
   const {item} = route.params;
@@ -14,6 +15,10 @@ const Lecture = ({navigation, route}) => {
       <ScrollView style={styles.wrapper}>
         <Text style={styles.title}>{item.title}</Text>
         <Text style={styles.text}>{item.text}</Text>
+        <Button
+          title="Answer the follow questions"
+          onPress={() => navigation.navigate('LectureQuiz')}
+        />
       </ScrollView>
     </Layout>
   );
