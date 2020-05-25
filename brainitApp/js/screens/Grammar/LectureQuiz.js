@@ -7,15 +7,32 @@ import Button from '../../components/Global/Button';
 const LectureQuiz = ({navigation, route}) => {
   return (
     <Layout>
-      <Text>Quiz</Text>
-      <View>
-        <Button
-          title="a) This is the correct one"
-          onPress={() => console.warn('-')}
-        />
+      <View style={styles.container}>
+        <Text style={styles.title}>Quiz</Text>
+        <View style={styles.wrapperButton}>
+          <Button
+            title="a) This is the correct one"
+            onPress={() => console.warn('-')}
+          />
+        </View>
       </View>
     </Layout>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    justifyContent: 'center',
+  },
+  title: {
+    fontSize: 36,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: 'white'
+  },
+  wrapperButton: {
+    margin: 30
+  }
+})
 
 export default LectureQuiz;
