@@ -3,11 +3,22 @@ import {TouchableOpacity, View, Text, StyleSheet} from 'react-native';
 
 import {secondaryColor} from '../../colors';
 
-const Button = ({title, onPress}) => {
+const Button = ({
+  title,
+  onPress,
+  styleContainer,
+  styleTitle,
+  titlePosition
+}) => {
   return (
-    <TouchableOpacity style={styles.container} onPress={onPress} >
-      <View style={{alignSelf: 'center'}}>
-        <Text style={styles.title}>{title}</Text>
+    <TouchableOpacity style={{
+      ...styles.container,
+      ...styleContainer
+    }} onPress={onPress} >
+      <View style={{
+        alignSelf: titlePosition === 'left' ? 'flex-start' : 'center', 
+        paddingHorizontal: 15}}>
+        <Text style={styleTitle ? styleTitle : styles.title}>{title}</Text>
       </View>
     </TouchableOpacity>
   );
@@ -22,7 +33,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: 'white'
+    color: 'white',
   }
 })
 

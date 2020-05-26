@@ -1,37 +1,52 @@
 import React from 'react';
-import {View,Text, StyleSheet} from 'react-native';
+import {View,Text, StyleSheet, ScrollView} from 'react-native';
 
 import Layout from '../../components/Global/Layout';
 import Button from '../../components/Global/Button';
 
 const LectureQuiz = ({navigation, route}) => {
+  const {item} = route.params;
   return (
     <Layout>
-      <View style={styles.container}>
-        <Text style={styles.title}>Quiz</Text>
-        <View style={styles.wrapperButton}>
-          <Button
-            title="a) This is the correct one"
-            onPress={() => console.warn('-')}
-          />
-        </View>
-      </View>
+      <ScrollView style={styles.container}>
+        {item.quiz.map((item, index) => (
+          <View key={index}>
+            <Text style={styles.title}>{item.question}</Text>
+            <View style={styles.wrapperButton}>
+              {item.options.map((option, index) => (
+                <Button
+                  key={index}
+                  styleContainer={{marginTop: 10}}
+                  titlePosition="left"
+                  styleTitle={styles.buttonTitle}
+                  title={option}
+                  onPress={() => console.warn('-', item.correctAnswer)}
+                />
+              ))}
+            </View>  
+          </View>
+        ))}
+      </ScrollView>
     </Layout>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    justifyContent: 'center',
+    paddingHorizontal: 30,
   },
   title: {
-    fontSize: 36,
+    fontSize: 26,
     fontWeight: 'bold',
     textAlign: 'center',
     color: 'white'
   },
   wrapperButton: {
-    margin: 30
+    margin: 19
+  },
+  buttonTitle: {
+    fontSize: 15,
+    color: 'white',
   }
 })
 

@@ -17,7 +17,7 @@ const Lecture = ({navigation, route}) => {
         <Text style={styles.text}>{item.text}</Text>
         <Button
           title="Answer the follow questions"
-          onPress={() => navigation.navigate('LectureQuiz')}
+          onPress={() => navigation.navigate('LectureQuiz', {item})}
         />
       </ScrollView>
     </Layout>

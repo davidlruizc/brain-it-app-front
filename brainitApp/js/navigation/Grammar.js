@@ -30,7 +30,7 @@ const GrammarNav = () => (
       name="LectureQuiz"
       component={LectureQuiz}
       options={{
-        title: "Quiz",
+        title: "Quiz about the text",
         headerStyle: {
           backgroundColor: primaryColor,
         },
