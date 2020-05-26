@@ -1,11 +1,20 @@
 import React from 'react';
-import {View,Text, StyleSheet, ScrollView} from 'react-native';
+import {View,Text, StyleSheet, ScrollView, Alert} from 'react-native';
 
 import Layout from '../../components/Global/Layout';
 import Button from '../../components/Global/Button';
 
 const LectureQuiz = ({navigation, route}) => {
   const {item} = route.params;
+
+  const handleEvaluateQuestion = (answer, correct) => {
+    if (answer === correct) {
+      Alert.alert('CORRECT', 'you made it🥳!');
+    } else {
+      Alert.alert('WRONG', 'please, try again 😭');
+    }
+  };
+
   return (
     <Layout>
       <ScrollView style={styles.container}>
@@ -20,7 +29,7 @@ const LectureQuiz = ({navigation, route}) => {
                   titlePosition="left"
                   styleTitle={styles.buttonTitle}
                   title={option}
-                  onPress={() => console.warn('-', item.correctAnswer)}
+                  onPress={() => handleEvaluateQuestion(option, item.correctAnswer)}
                 />
               ))}
             </View>  
