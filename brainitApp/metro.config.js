@@ -14,12 +14,16 @@ const { getDefaultConfig } = require("metro-config");
 
 module.exports = (async () => {
   const {
-    resolver: { assetExts }
+    resolver: { sourceExts, assetExts }
   } = await getDefaultConfig();
 
   return {
+    transformer: {
+      babelTransformerPath: require.resolve("react-native-svg-transformer")
+    },
     resolver: {
-      assetExts: [...assetExts, "obj", "mtl", "JPG", "vrx", "hdr", "gltf", "glb", "bin", "arobject", "gif"]
+      assetExts: [...assetExts, "obj", "mtl", "JPG", "vrx", "hdr", "gltf", "glb", "bin", "arobject", "gif"],
+      sourceExts: [...sourceExts, "svg"]
     }
   };
 })();

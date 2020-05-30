@@ -17,4 +17,6 @@ target 'brainitApp' do
 
   pod 'RCTYouTube', :path => '../node_modules/react-native-youtube'
 
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
 end
