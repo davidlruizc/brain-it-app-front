@@ -2,6 +2,7 @@ import * as React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
 import Chat from '../screens/Chat/Chat';
+import {primaryColor} from '../colors';
 
 const Stack = createStackNavigator();
 
@@ -13,7 +14,14 @@ const ChatNav = () => (
       name="Chat"
       component={Chat}
       options={{
-        title: 'Chat'
+        title: "Talk with Watson",
+        headerStyle: {
+          backgroundColor: primaryColor,
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
       }}
     />
   </Stack.Navigator>

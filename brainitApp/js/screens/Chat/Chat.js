@@ -8,13 +8,13 @@ const msg = [
   {
     key: "-M82KYYF0vTCVO9acmEx",
     sender: "-M82I4ySsw4Uh8ZsCC-t",
-    text: "Iiiii",
+    text: `Hi, I'm Watson, nice to see you here 😁`,
     timeStamp: 1590266982662
   },
   {
     key: "-M82I8vzh6FzgMe9azTu",
     sender: "-M827jNV8nOyHBNMB3LA",
-    text: "Hu3hu3hu3",
+    text: "Hello, Watson.",
     timeStamp: 1590266994748,
   }
 ];
