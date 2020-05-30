@@ -13,7 +13,7 @@ const ChatNav = () => (
       name="Chat"
       component={Chat}
       options={{
-        headerShown: false
+        title: 'Chat'
       }}
     />
   </Stack.Navigator>
