@@ -7,7 +7,7 @@ const VideoCard = ({title, description, shortDescription, handleNavigation, vide
   <TouchableOpacity style={styles.wrapper} onPress={() => handleNavigation({title, description, videoId})} >
     <View>
       <Image
-        source={require('../../../assets/thumbnail.jpg')}
+        source={require('../../../assets/tempThumbnail.jpeg')}
         style={styles.thumbnail}
       />
     </View>
