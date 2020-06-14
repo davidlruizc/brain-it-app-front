@@ -6,13 +6,10 @@ import {View, Text, StyleSheet, ImageBackground, TouchableOpacity, } from 'react
 const Card = ({
   title,
   image,
-  text,
-  textTitle,
-  quiz,
   handleNavigateToText,
   uri
 }) => (
-  <TouchableOpacity style={styles.container} onPress={() => handleNavigateToText(textTitle, image, text, quiz)}>
+  <TouchableOpacity style={styles.container} onPress={() => handleNavigateToText()}>
     <ImageBackground
       source={uri ? {uri: image} : image}
       style={styles.image}

@@ -140,7 +140,11 @@ const Grammar = ({navigation}) => {
             <Text style={styles.title}>Grammar</Text>
           )}
           renderItem={({item, index}) => (
-            <Card {...item} handleNavigateToText={handleNavigateToText} />
+            <Card 
+              {...item}
+              handleNavigateToText={handleNavigateToText}
+              uri
+            />
           )}
         />
       </ScrollView>
