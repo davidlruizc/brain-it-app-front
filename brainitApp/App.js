@@ -22,6 +22,7 @@ import Home from './js/screens/Home/Home';
 import Terms from './js/screens/Terms';
 import Auth from './js/navigation/Auth';
 import BottomTab from './js/navigation/BottomTab';
+import VREnvironment from './js/screens/Interactive/VREnvironment';
 
 /*
  TODO: Insert your API key below
@@ -73,6 +74,13 @@ export default class ViroSample extends Component {
             <Stack.Screen
               name="Home"
               component={BottomTab}
+              options={{
+                headerShown: false
+              }}
+            />
+            <Stack.Screen
+              name="VR"
+              component={VREnvironment}
               options={{
                 headerShown: false
               }}
