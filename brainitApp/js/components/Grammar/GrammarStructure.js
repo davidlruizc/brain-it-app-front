@@ -4,43 +4,29 @@ import { View, Text, StyleSheet } from 'react-native';
 import Layout from '../Global/Layout';
 import GrammarCard from './GrammarCard';
 
-const GrammarStructure = () => {
+const GrammarStructure = ({
+  title,
+  description,
+  keywords,
+  sentences
+}) => {
   return (
     <Layout>
       <View style={styles.container}>
-        <Text style={styles.title}>Simple Past</Text>
-        <Text style={styles.text}>It is used to describe past habits or facts.</Text>
+        <Text style={styles.title}>{title}</Text>
+        <Text style={styles.text}>{description}</Text>
         <View style={styles.keyWrapper}>
           <Text style={styles.boxText}>
             <Text style={{...styles.text, ...styles.bold}}>Keywords: </Text>
-            <Text style={styles.text}>yesterday, last week, last month, last year, this morning (when meaning is past), 2 hours/days ago, in 1995/2009, that year/day/week/month.</Text>
+            <Text style={styles.text}>{keywords}</Text>
           </Text>
         </View>
-        <GrammarCard
-          sentence="Affirmative"
-          subjectEj="You"
-          verb="Verb in past"
-          verbEj="worked"
-          complementEj="at home last month"
-        />
-        <GrammarCard
-          sentence="Negative"
-          subjectEj="You"
-          negative="DID NOT"
-          negativeEj="did not"
-          verb="Verb infinitive"
-          verbEj="work"
-          complementEj="at home last month"
-        />
-        <GrammarCard
-          sentence="Interrogative"
-          interrogative="DID"
-          interrogativeEj="Did"
-          subjectEj="you"
-          verb="Verb infinitive"
-          verbEj="work"
-          complementEj="at home last month"
-        />
+        {sentences.map((item, index) => (
+          <GrammarCard
+            key={index}
+            {...item}
+          />
+        ))}
       </View>
     </Layout>
   );

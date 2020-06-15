@@ -24,6 +24,7 @@ import Auth from './js/navigation/Auth';
 import BottomTab from './js/navigation/BottomTab';
 import VREnvironment from './js/screens/Interactive/VREnvironment';
 import SimplePastGrammar from './js/screens/Grammar/SimplePastGrammar';
+import PasContinuousGrammar from './js/screens/Grammar/PastContinuousGrammar';
 import { primaryColor } from './js/colors';
 
 /*
@@ -72,7 +73,7 @@ export default class ViroSample extends Component {
     return(
       <NavigationContainer>
         {this.state.isLoggedIn ?(
-          <Stack.Navigator initialRouteName="Home" >
+          <Stack.Navigator initialRouteName="PastContinuous" >
             <Stack.Screen
               name="Home"
               component={BottomTab}
@@ -90,6 +91,20 @@ export default class ViroSample extends Component {
             <Stack.Screen
               name="SimplePast"
               component={SimplePastGrammar}
+              options={{
+                title: "Grammar Structure",
+                headerStyle: {
+                  backgroundColor: primaryColor,
+                },
+                headerTintColor: '#fff',
+                headerTitleStyle: {
+                  fontWeight: 'bold',
+                },
+              }}
+            />
+            <Stack.Screen
+              name="PastContinuous"
+              component={PasContinuousGrammar}
               options={{
                 title: "Grammar Structure",
                 headerStyle: {

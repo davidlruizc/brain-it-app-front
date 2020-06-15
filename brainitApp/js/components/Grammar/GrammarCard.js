@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native'; 
+import { View, Text, StyleSheet, ScrollView } from 'react-native'; 
 
 import {cardColor, textColorOne, textColorTwo, textColorThree, textColorFour} from '../../colors';
 
@@ -12,10 +12,15 @@ const GrammarCard = ({
   negative,
   negativeEj,
   interrogative,
-  interrogativeEj
+  interrogativeEj,
+  secondVerb,
+  secondVerbEj
 }) => {
   return (
-    <View style={styles.container}>
+    <ScrollView 
+      style={styles.container}
+      horizontal={true}
+      showsHorizontalScrollIndicator={false}>
       <Text style={styles.text()}>{sentence}: </Text>
         {interrogative ? (
           <>
@@ -31,6 +36,15 @@ const GrammarCard = ({
           <Text style={styles.text(textColorOne)}>{subjectEj}</Text>
         </View>
         <Text style={{...styles.text(), marginHorizontal: 8}}>+</Text>
+        {secondVerb ? (
+          <>
+            <View>
+              <Text style={styles.text(textColorFour)}>{secondVerb}</Text>
+              <Text style={styles.text(textColorFour)}>{secondVerbEj}</Text>
+            </View>
+            <Text style={{...styles.text(), marginHorizontal: 8}}>+</Text>
+          </>
+        ) : null}
         {negative ? (
           <>
             <View>
@@ -45,17 +59,17 @@ const GrammarCard = ({
           <Text style={styles.text(textColorTwo)}>{verbEj}</Text>
         </View>
         <Text style={{...styles.text(), marginHorizontal: 8}}>+</Text>
-        <View style={styles.textWrapper}>
+        <View style={{paddingRight: 19}}>
           <Text style={styles.text(textColorThree)}>Complement</Text>
           <Text style={styles.text(textColorThree)}>{complementEj}</Text>
         </View>
         {interrogative ? (
-          <>
+          <View style={{paddingRight: 19, flexDirection: 'row'}}>
             <Text style={{...styles.text(), marginHorizontal: 8}}>+</Text>
             <Text style={{...styles.text(), marginHorizontal: 8}}>?</Text>
-          </>
+          </View>
         ) : null}
-    </View>
+    </ScrollView>
   );
 };
 
@@ -66,6 +80,7 @@ const styles = StyleSheet.create({
     backgroundColor: cardColor,
     borderRadius: 10,
     marginTop: 19,
+    flexWrap: 'wrap'
   },
   text: (color) => ({
     textAlign: 'center',
