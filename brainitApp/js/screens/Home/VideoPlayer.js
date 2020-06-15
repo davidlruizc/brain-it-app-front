@@ -12,7 +12,7 @@ const VideoPlayer = ({navigation, route}) => {
   const handleGrammarStructure = () => {
     navigation.dispatch(
       CommonActions.navigate({
-        name: 'SimplePast',
+        name: args.title,
       })
     );
   };
@@ -30,7 +30,9 @@ const VideoPlayer = ({navigation, route}) => {
         <Text style={styles.description}>{args.description}</Text>
       </View>
       <View style={styles.button} >
-        <Button styleContainer={{marginBottom: 19}} title="Grammar Structure" onPress={() => handleGrammarStructure()} />
+        {args.title === 'Welcome to brainit' ? null : (
+          <Button styleContainer={{marginBottom: 19}} title="Grammar Structure" onPress={() => handleGrammarStructure()} />
+        )}
         <Button title="Back to playlist" onPress={() => navigation.navigate('Feed')} />
       </View>
     </Layout>
