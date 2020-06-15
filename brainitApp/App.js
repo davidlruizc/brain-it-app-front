@@ -23,6 +23,8 @@ import Terms from './js/screens/Terms';
 import Auth from './js/navigation/Auth';
 import BottomTab from './js/navigation/BottomTab';
 import VREnvironment from './js/screens/Interactive/VREnvironment';
+import SimplePastGrammar from './js/screens/Grammar/SimplePastGrammar';
+import { primaryColor } from './js/colors';
 
 /*
  TODO: Insert your API key below
@@ -83,6 +85,20 @@ export default class ViroSample extends Component {
               component={VREnvironment}
               options={{
                 headerShown: false
+              }}
+            />
+            <Stack.Screen
+              name="SimplePast"
+              component={SimplePastGrammar}
+              options={{
+                title: "Grammar Structure",
+                headerStyle: {
+                  backgroundColor: primaryColor,
+                },
+                headerTintColor: '#fff',
+                headerTitleStyle: {
+                  fontWeight: 'bold',
+                },
               }}
             />
           </Stack.Navigator>

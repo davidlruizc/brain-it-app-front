@@ -13,9 +13,6 @@ const Interactive = ({navigation}) => {
     navigation.dispatch(
       CommonActions.navigate({
         name: 'VR',
-        params: {
-          user: 'jane',
-        },
       })
     );
   };
