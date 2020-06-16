@@ -21,7 +21,7 @@ export default class HelloWorldScene extends Component {
   render() {
     return (
       <ViroScene>
-        <Viro360Image source={require('./res/beach.jpg')} />
+        <Viro360Image source={require('./res/360_westlake.jpg')} />
         <ViroText text="Hello World!" width={2} height={2} position={[0, 0, -2]} style={styles.helloWorldTextStyle} />
       </ViroScene>
     );
