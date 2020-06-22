@@ -50,7 +50,7 @@ const BottomTab = () => {
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="ChatNav"
         component={ChatNav}
         options={{
@@ -59,7 +59,7 @@ const BottomTab = () => {
             <Icon name="chat" type="material" color={color} size={26} />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name="ProfileNav"
         component={ProfileNav}

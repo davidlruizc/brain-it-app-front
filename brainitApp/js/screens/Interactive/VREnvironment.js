@@ -4,6 +4,7 @@ import {
 } from 'react-viro';
 
 const InitialVRScene = require('../../HelloWorldScene');
+
 const UNSET = "UNSET";
 const defaultNavigatorType = UNSET;
 

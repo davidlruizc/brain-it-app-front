@@ -5,7 +5,8 @@ import { CommonActions } from '@react-navigation/native';
 import Layout from '../../components/Global/Layout';
 import Card from '../../components/Interactive/Card';
 
-const bgImage = require('../../../assets/vr.png');
+const vrImage = require('../../../assets/vr.png');
+const listeningImage = require('../../../assets/sound.jpg')
 
 const Interactive = ({navigation}) => {
 
@@ -17,14 +18,23 @@ const Interactive = ({navigation}) => {
     );
   };
 
+  const navigateListening = () => {
+    navigation.navigate('Listening');
+  };
+
   return (
     <Layout>
       <View style={styles.container}>
         <Text style={styles.title}>Interactive experience</Text>
         <Card
           title="Start VR experience"
-          image={bgImage}
+          image={vrImage}
           handleNavigateToText={navigateVR}
+        />
+        <Card
+          title="Practice your listening"
+          image={listeningImage}
+          handleNavigateToText={navigateListening}
         />
       </View>
     </Layout>
