@@ -11,6 +11,9 @@ export const textColorTwo = "#241C21";
 export const textColorThree = "#404076";
 export const textColorFour = "#0C0A26";
 
+export const layerColor = "#7979C5";
+export const layerMiniColor = "#32ABF5";
+
 export const navBarColor = "#789DD0";
 export const navIconColor = "#BFCEE5";
 
