@@ -4,14 +4,20 @@ import { View, Text, StyleSheet } from 'react-native';
 import Layout from '../../components/Global/Layout';
 import Card from '../../components/Interactive/ActivityCard';
 
-const Listening = () => {
+const Listening = ({ navigation }) => {
+
+  // navigate to Listening Exercise View
+  const navigateToExercise = () => {
+    navigation.navigate('ListeningExercise');
+  };
+
   return (
     <Layout>
       <View style={styles.container}>
         <Text style={styles.title}>Activity List</Text>
         <Text style={styles.subTitle}>Practice your skills</Text>
-        <Card />
-        <Card />
+        <Card onPress={navigateToExercise} />
+        <Card onPress={navigateToExercise} />
       </View>
     </Layout>
   );

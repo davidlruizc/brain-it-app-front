@@ -4,9 +4,13 @@ import { Icon } from 'react-native-elements';
 
 import { secondaryColor, layerColor, layerMiniColor } from '../../colors';
 
-const ActivityCard = () => {
+const ActivityCard = ({
+  title,
+  questions,
+  onPress,
+}) => {
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onPress} >
       <View style={styles.topWrapper}>
         <View style={styles.titleContent}>
           <Icon name="local-activity" type="materia" color={layerColor} size={20} />

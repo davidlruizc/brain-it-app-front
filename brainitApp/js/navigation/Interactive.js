@@ -3,6 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import Interactive from '../screens/Interactive/Interactive';
 import Listening from '../screens/Interactive/Listening';
+import ListeningExercise from '../screens/Interactive/ListeningExercise';
 import { primaryColor } from '../colors';
 
 const Stack = createStackNavigator();
@@ -23,6 +24,20 @@ const InteractiveNav = () => (
       component={Listening}
       options={{
         title: "Let's Practice",
+        headerStyle: {
+          backgroundColor: primaryColor,
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      }}
+    />
+    <Stack.Screen
+      name="ListeningExercise"
+      component={ListeningExercise}
+      options={{
+        title: "Exercises",
         headerStyle: {
           backgroundColor: primaryColor,
         },
