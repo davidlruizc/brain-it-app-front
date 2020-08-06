@@ -13,7 +13,7 @@ const ListeningExercise = () => {
       {/* <Text>Question 1 of 5</Text>
       <PlayButton /> */}
       <View style={{flex: 1}}>
-          <ProgressSteps>
+          <ProgressSteps activeStepIconBorderColor="blue" activeLabelColor="blue">
               <ProgressStep label="First Step">
                   <View style={{ alignItems: 'center' }}>
                       <Text>This is the content within step 1!</Text>
