@@ -7,7 +7,7 @@ import { secondaryColor } from '../../colors';
 const ProgressStepsLayout = () => {
   return (
     <ProgressSteps activeStepIconBorderColor={secondaryColor} activeLabelColor={secondaryColor}>
-      <ProgressStep label="First Step" nextBtnTextStyle={{color: 'green'}}>
+      <ProgressStep label="First Step" nextBtnTextStyle={{ color: 'green' }}>
         <View style={{ alignItems: 'center' }}>
           <Text>This is the content within step 1!</Text>
         </View>
