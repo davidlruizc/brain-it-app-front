@@ -180,6 +180,7 @@ dependencies {
     implementation 'com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.7.7'
     implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
+    compile project(':react-native-sound')
 }
 
 // Run this once to be able to run the application with BUCK

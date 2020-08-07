@@ -18,8 +18,9 @@ const Listening = ({ navigation }) => {
       <View style={styles.container}>
         <Text style={styles.title}>Activity List</Text>
         <Text style={styles.subTitle}>Practice your skills</Text>
-        {console.warn(activities)}
-        {/* {activities.map(item) => <Card onPress={navigateToExercise} title={item.topic} questions={questions_count} />} */}
+        {activities.map((item) => (
+          <Card onPress={navigateToExercise} title={item.topic} questions={item.questions_count} />
+        ))}
       </View>
     </Layout>
   );

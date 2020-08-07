@@ -1,13 +1,16 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-use-before-define */
 import React from 'react';
 import { View, Text, StyleSheet, Linking } from 'react-native';
+import SoundPlayer from 'react-native-sound-player';
+import Sound from 'react-native-sound';
 
 import { ProgressSteps, ProgressStep } from 'react-native-progress-steps';
 import { secondaryColor } from '../../colors';
 import PlayButton from '../Player/PlayPause';
 import Button from '../Global/Button';
 
-const ProgressStepsLayout = () => {
+const ProgressStepsLayout = ({ data }) => {
   return (
     <ProgressSteps activeStepIconBorderColor={secondaryColor} activeLabelColor={secondaryColor}>
       <ProgressStep label="First Step" nextBtnTextStyle={{ color: 'green' }}>
@@ -17,7 +20,15 @@ const ProgressStepsLayout = () => {
           <Text style={styles.notes}>Note: Select the correct answer according the audio</Text>
           <Button
             title="asdf"
-            onPress={() => Linking.openURL('tel:1234567890')}
+            onPress={() => {
+              const track = new Sound('https://www.soundjay.com/button/button-1.mp3', null, (e) => {
+                if (e) {
+                  console.log('error loading track:', e);
+                } else {
+                  track.play();
+                }
+              });
+            }}
             styleContainer={{ marginTop: 10 }}
             titlePosition="left"
           />

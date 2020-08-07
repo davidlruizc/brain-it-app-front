@@ -14,6 +14,7 @@ import org.reactnative.maskedview.RNCMaskedViewPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
+import com.zmxv.RNSound.RNSoundPackage;
 
 import com.viromedia.bridge.ReactViroPackage;
 import com.facebook.soloader.SoLoader;
@@ -41,6 +42,7 @@ public class MainApplication extends Application implements ReactApplication {
             new ReanimatedPackage(),
             new RNGestureHandlerPackage(),
             new RNCMaskedViewPackage(),
+            new RNSoundPackage(),
           new ReactViroPackage(ReactViroPackage.ViroPlatform.valueOf(BuildConfig.VR_PLATFORM))
       );
     }
