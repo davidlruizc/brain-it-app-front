@@ -1,15 +1,26 @@
+/* eslint-disable no-use-before-define */
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet, Linking } from 'react-native';
 
 import { ProgressSteps, ProgressStep } from 'react-native-progress-steps';
 import { secondaryColor } from '../../colors';
+import PlayButton from '../Player/PlayPause';
+import Button from '../Global/Button';
 
 const ProgressStepsLayout = () => {
   return (
     <ProgressSteps activeStepIconBorderColor={secondaryColor} activeLabelColor={secondaryColor}>
       <ProgressStep label="First Step" nextBtnTextStyle={{ color: 'green' }}>
         <View style={{ alignItems: 'center' }}>
-          <Text>This is the content within step 1!</Text>
+          <Text style={styles.title}>Play the audio</Text>
+          <PlayButton />
+          <Text style={styles.notes}>Note: Select the correct answer according the audio</Text>
+          <Button
+            title="asdf"
+            onPress={() => Linking.openURL('tel:1234567890')}
+            styleContainer={{ marginTop: 10 }}
+            titlePosition="left"
+          />
         </View>
       </ProgressStep>
       <ProgressStep label="Second Step">
@@ -25,5 +36,18 @@ const ProgressStepsLayout = () => {
     </ProgressSteps>
   );
 };
+
+const styles = StyleSheet.create({
+  title: {
+    fontWeight: 'bold',
+    fontSize: 24,
+    color: 'white',
+    marginBottom: 10,
+  },
+  notes: {
+    color: '#F7F7F7',
+    fontSize: 12,
+  },
+});
 
 export default ProgressStepsLayout;

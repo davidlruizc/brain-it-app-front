@@ -1,6 +1,7 @@
+/* eslint-disable import/prefer-default-export */
 const Sound = require('react-native-sound');
 
-const activities = [
+export const activities = [
   {
     id: 1,
     topic: 'Past Simple',
@@ -13,7 +14,7 @@ const activities = [
         options: [
           `Because of Colombia's independence day.`,
           `Because we hadn’t been in Bogotá since January`,
-          `Because they wanted some lemons from Argentina`
+          `Because they wanted some lemons from Argentina`,
         ],
         correctAnswer: `Because we hadn’t been in Bogotá since January`,
       },
@@ -24,9 +25,9 @@ const activities = [
         options: [
           `Because of the strong smell`,
           `Because of our big luggage`,
-          `Because we had drugs in our luggage`
+          `Because we had drugs in our luggage`,
         ],
-        correctAnswer: `Because of the strong smell`
+        correctAnswer: `Because of the strong smell`,
       },
       {
         id: 3,
@@ -35,10 +36,10 @@ const activities = [
         options: [
           `We couldn’t take our flight.`,
           `We took our flight on time`,
-          `Security guards didn’t let us go. `
+          `Security guards didn’t let us go. `,
         ],
-        correctAnswer: `We took our flight on time`
+        correctAnswer: `We took our flight on time`,
       },
-    ]
-  }
+    ],
+  },
 ];

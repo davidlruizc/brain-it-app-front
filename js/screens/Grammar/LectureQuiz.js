@@ -32,7 +32,7 @@ const LectureQuiz = ({navigation, route}) => {
                   onPress={() => handleEvaluateQuestion(option, item.correctAnswer)}
                 />
               ))}
-            </View>  
+            </View>
           </View>
         ))}
       </ScrollView>
