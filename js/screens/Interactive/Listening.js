@@ -9,8 +9,8 @@ import { activities } from './resource';
 
 const Listening = ({ navigation }) => {
   // navigate to Listening Exercise View
-  const navigateToExercise = () => {
-    navigation.navigate('ListeningExercise');
+  const navigateToExercise = (questions) => {
+    navigation.navigate('ListeningExercise', { questions });
   };
 
   return (
@@ -19,7 +19,12 @@ const Listening = ({ navigation }) => {
         <Text style={styles.title}>Activity List</Text>
         <Text style={styles.subTitle}>Practice your skills</Text>
         {activities.map((item) => (
-          <Card onPress={navigateToExercise} title={item.topic} questions={item.questions_count} />
+          <Card
+            key={item.id}
+            onPress={navigateToExercise(item.questions)}
+            title={item.topic}
+            questions={item.questions_count}
+          />
         ))}
       </View>
     </Layout>

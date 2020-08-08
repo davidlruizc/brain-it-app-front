@@ -1,5 +1,4 @@
 /* eslint-disable import/prefer-default-export */
-// const Sound = require('react-native-sound');
 
 export const activities = [
   {
@@ -9,7 +8,7 @@ export const activities = [
     questions: [
       {
         id: 1,
-        // sound: new Sound('activity.ogg', Sound.MAIN_BUNDLE),
+        sound: 'https://ccrma.stanford.edu/~jos/mp3/gtr-nylon22.mp3',
         question: 'Why did our grandparents invite us to spend some time in Bogota?',
         options: [
           `Because of Colombia's independence day.`,
@@ -20,7 +19,7 @@ export const activities = [
       },
       {
         id: 2,
-        // sound: new Sound('activity.ogg', Sound.MAIN_BUNDLE),
+        sound: 'https://ccrma.stanford.edu/~jos/mp3/Harpsichord.mp3',
         question: 'Why did the dog start to follow us at the airport?',
         options: [
           `Because of the strong smell`,
@@ -31,7 +30,7 @@ export const activities = [
       },
       {
         id: 3,
-        // sound: new Sound('activity.ogg', Sound.MAIN_BUNDLE),
+        sound: 'https://ccrma.stanford.edu/~jos/mp3/bass.mp3',
         question: 'What happened at the end of the story?',
         options: [
           `We couldn’t take our flight.`,
