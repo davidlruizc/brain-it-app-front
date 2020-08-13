@@ -10,3 +10,7 @@ Academic application for English learning
 - [ ] Diseño UI perfil.
 - [ ] Añadir thumbnails para los videos.
 - [ ] Llenar base de datos de las preguntas.
+
+## Contribuciones
+
+Para colabolar en el proyecto se debe hacer una rama especifica relacionada a la feature que se esté trabajando `feature-<feature name>`. No se pueden hacer contribuciones directamente a `master`, debe hacerse un pull request para validar el merge debido a la rama `develop`. Estos merge solo serán aprobados por los contribuidores que estén asignados a la revisión.
