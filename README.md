@@ -14,7 +14,3 @@ Academic application for English learning
 ## Contribuciones
 
 Para colabolar en el proyecto se debe hacer una rama especifica relacionada a la feature que se esté trabajando `feature-<feature name>`. No se pueden hacer contribuciones directamente a `master`, debe hacerse un pull request para validar el merge debido a la rama `develop`. Estos merge solo serán aprobados por los contribuidores que estén asignados a la revisión.
-
-<p align="center">
-<img align="center" src="https://github-readme-stats.vercel.app/api?username=davidlruizc&&show_icons=true&theme=dark" alt="davidlruizc's Github Stats">
-</p>  
