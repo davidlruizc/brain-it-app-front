@@ -17,7 +17,7 @@ Academic application for English learning
 - [ ] Añadir thumbnails para los videos.
 - [ ] Llenar base de datos de las preguntas.
 - [ ] Investigar react-native-sound si está deprecada buscar alternativa de react-native-sound e implementar.
-- [ ] Feature Listening: De la actividad de lectura de textos reproducir audio y responder las preguntas de selecci√≥n multiple.
+- [ ] Feature Listening: De la actividad de lectura de textos reproducir audio y responder las preguntas de selección multiple.
 - [ ] Diseño UI perfil.
 
 
