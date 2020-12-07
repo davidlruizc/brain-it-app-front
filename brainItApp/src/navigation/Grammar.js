@@ -9,28 +9,26 @@ import {primaryColor} from '../colors';
 const Stack = createStackNavigator();
 
 const GrammarNav = () => (
-  <Stack.Navigator
-    initialRouteName="Grammar"
-  >
+  <Stack.Navigator initialRouteName="Grammar">
     <Stack.Screen
       name="Grammar"
       component={Grammar}
       options={{
-        headerShown: false
+        headerShown: false,
       }}
     />
     <Stack.Screen
       name="Lecture"
       component={Lecture}
       options={{
-        headerShown: false
+        headerShown: false,
       }}
     />
     <Stack.Screen
       name="LectureQuiz"
       component={LectureQuiz}
       options={{
-        title: "Quiz about the text",
+        title: 'Quiz about the text',
         headerStyle: {
           backgroundColor: primaryColor,
         },

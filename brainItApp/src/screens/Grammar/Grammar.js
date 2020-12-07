@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView, FlatList } from 'react-native';
+import {Text, StyleSheet, ScrollView, FlatList} from 'react-native';
 
 import Layout from '../../components/Global/Layout';
 import Card from '../../components/Grammar/Card';
@@ -16,33 +16,34 @@ const tempData = [
     `,
     quiz: [
       {
-        question: 'Why did our grandparents invite us to spend some time in Bogota?',
+        question:
+          'Why did our grandparents invite us to spend some time in Bogota?',
         options: [
           `Because of Colombia's independence day.`,
           `Because we hadn’t been in Bogotá since January`,
-          `Because they wanted some lemons from Argentina`
+          `Because they wanted some lemons from Argentina`,
         ],
-        correctAnswer: `Because we hadn’t been in Bogotá since January`
+        correctAnswer: `Because we hadn’t been in Bogotá since January`,
       },
       {
         question: 'Why did the dog start to follow us at the airport?',
         options: [
           `Because of the strong smell`,
           `Because of our big luggage`,
-          `Because we had drugs in our luggage`
+          `Because we had drugs in our luggage`,
         ],
-        correctAnswer: `Because of the strong smell`
+        correctAnswer: `Because of the strong smell`,
       },
       {
         question: 'What happened at the end of the story?',
         options: [
           `We couldn’t take our flight.`,
           `We took our flight on time`,
-          `Security guards didn’t let us go. `
+          `Security guards didn’t let us go. `,
         ],
-        correctAnswer: `We took our flight on time`
+        correctAnswer: `We took our flight on time`,
       },
-    ]
+    ],
   },
   {
     title: 'Past Progressive',
@@ -56,32 +57,24 @@ const tempData = [
     quiz: [
       {
         question: 'How did we go to Acacias?',
-        options: [
-          `By airplane`,
-          `By bus`,
-          `By train`
-        ],
-        correctAnswer: `By bus`
+        options: [`By airplane`, `By bus`, `By train`],
+        correctAnswer: `By bus`,
       },
       {
         question: 'Who was grilling the meat?',
-        options: [
-          `Ana and Paul`,
-          `Mike and I`,
-          `Mike and Paul`
-        ],
-        correctAnswer: `Mike and Paul`
+        options: [`Ana and Paul`, `Mike and I`, `Mike and Paul`],
+        correctAnswer: `Mike and Paul`,
       },
       {
         question: 'What did we promise not to talk about ever again?',
         options: [
           `The BBQ party`,
           `Our parents getting drunk`,
-          `Paul’s mother visit.`
+          `Paul’s mother visit.`,
         ],
-        correctAnswer: `Our parents getting drunk`
+        correctAnswer: `Our parents getting drunk`,
       },
-    ]
+    ],
   },
   {
     title: 'Past Perfect',
@@ -94,57 +87,45 @@ const tempData = [
     quiz: [
       {
         question: 'How did Sophie meet Ethan?',
-        options: [
-          `By WhatsApp`,
-          `By Tinder`,
-          `By Instagram`
-        ],
-        correctAnswer: `By Tinder`
+        options: [`By WhatsApp`, `By Tinder`, `By Instagram`],
+        correctAnswer: `By Tinder`,
       },
       {
         question: 'Who did Sophie call when she was feeling sad? ',
-        options: [
-          `Her ex-boyfriend`,
-          `Her parents`,
-          `Ethan`
-        ],
-        correctAnswer: `Her ex-boyfriend`
+        options: [`Her ex-boyfriend`, `Her parents`, `Ethan`],
+        correctAnswer: `Her ex-boyfriend`,
       },
       {
         question: 'How did Shopie collect the money for her trip?',
         options: [
           `She sold her apartment.`,
           `Her parents gave her the money`,
-          `Ethan paid her expenses.`
+          `Ethan paid her expenses.`,
         ],
-        correctAnswer: `She sold her apartment.`
+        correctAnswer: `She sold her apartment.`,
       },
-    ]
+    ],
   },
-]
+];
 
+/**
+ * Grammar seccion
+ */
 const Grammar = ({navigation}) => {
-
   const handleNavigateToText = (title, image, text, quiz) => {
     const obj = {title, image, text, quiz};
     navigation.navigate('Lecture', {item: obj});
-  }
+  };
 
-  return(
+  return (
     <Layout>
-      <ScrollView style={styles.container} showsVerticalScrollIndicator={false} >
+      <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
         <FlatList
           data={tempData}
           keyExtractor={(item, index) => index.toString()}
-          ListHeaderComponent={() => (
-            <Text style={styles.title}>Grammar</Text>
-          )}
+          ListHeaderComponent={() => <Text style={styles.title}>Grammar</Text>}
           renderItem={({item, index}) => (
-            <Card 
-              {...item}
-              handleNavigateToText={handleNavigateToText}
-              uri
-            />
+            <Card {...item} handleNavigateToText={handleNavigateToText} uri />
           )}
         />
       </ScrollView>
@@ -155,13 +136,13 @@ const Grammar = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 30,
-    marginTop: 30
+    marginTop: 30,
   },
   title: {
     fontSize: 36,
     fontWeight: 'bold',
-    color: 'white'
-  }
+    color: 'white',
+  },
 });
 
 export default Grammar;

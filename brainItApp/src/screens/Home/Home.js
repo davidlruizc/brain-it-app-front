@@ -39,6 +39,14 @@ const tempData = [
   },
 ];
 
+/**
+ * List intro videos about the topi.
+ *
+ * E.g:
+ * ```js
+ * <Home />
+ * ```
+ */
 const Home = ({navigation}) => {
   const handleVideoNav = (args) => {
     navigation.navigate('VideoPlayer', {args});

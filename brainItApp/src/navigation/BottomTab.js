@@ -5,12 +5,16 @@ import {Icon} from 'react-native-elements';
 import HomeNav from './Home';
 import GrammarNav from './Grammar';
 import InteractiveNav from './Interactive';
-import ChatNav from './Chat';
+//import ChatNav from './Chat';
 import ProfileNav from './Profile';
 import {primaryColor, secondaryColor} from '../colors';
 
 const Tab = createMaterialBottomTabNavigator();
 
+/**
+ * Main App navigation
+ * Here you can find all the main tabs available in the app using a React Navigation `Bottom Tab navigator`.
+ */
 const BottomTab = () => {
   return (
     <Tab.Navigator
