@@ -1,31 +1,40 @@
-/* eslint-disable no-use-before-define */
-import React, { useState } from 'react';
-import { View, TouchableOpacity, StyleSheet, Alert } from 'react-native';
-import { Icon } from 'react-native-elements';
+import React, {useState} from 'react';
+import {View, TouchableOpacity, StyleSheet, Alert} from 'react-native';
+import {Icon} from 'react-native-elements';
 import Sound from 'react-native-sound';
 
-import { secondaryColor } from '../../colors';
+import {secondaryColor} from '../../colors';
 
-const PlayPause = ({ audioClip }) => {
+const PlayPause = ({audioClip}) => {
   const [toggle, setToggle] = useState(false);
 
   const toggleIcon = () => {
-    const track = new Sound(audioClip, null, (e) => {
-      if (e) {
-        Alert.alert('error loading track:', e);
-      } else {
-        track.play();
-        setToggle(true);
-        setTimeout(() => {
-          setToggle(null);
-        }, track.getDuration() * 1000);
-      }
-    });
+    if (!true) {
+      const track = new Sound(audioClip, null, (e) => {
+        if (e) {
+          Alert.alert('error loading track:', e);
+        } else {
+          track.play();
+          setToggle(true);
+          setTimeout(() => {
+            setToggle(null);
+          }, track.getDuration() * 1000);
+        }
+      });
+    } else {
+      Alert.alert(
+        'Sorry',
+        `You are facing issues with trying to play the sound, engineering team it's currently working on it.`,
+      );
+    }
   };
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.button} onPress={toggleIcon} disabled={toggle}>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={toggleIcon}
+        disabled={toggle}>
         {toggle ? (
           <Icon name="stop" type="font-awesome" color="white" size={26} />
         ) : (

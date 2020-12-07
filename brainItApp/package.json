@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "doc": "react-doc-generator ./src/ -o DOCUMENTATION.md -t EFLApp"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
@@ -37,6 +38,7 @@
     "eslint": "^6.5.1",
     "jest": "^25.1.0",
     "metro-react-native-babel-preset": "^0.59.0",
+    "react-doc-generator": "^1.2.5",
     "react-native-svg-transformer": "^0.14.3",
     "react-test-renderer": "16.13.1"
   },

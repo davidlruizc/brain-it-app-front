@@ -1,5 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-
 export const activities = [
   {
     id: 1,
@@ -9,7 +7,8 @@ export const activities = [
       {
         id: 1,
         sound: 'https://ccrma.stanford.edu/~jos/mp3/gtr-nylon22.mp3',
-        question: 'Why did our grandparents invite us to spend some time in Bogota?',
+        question:
+          'Why did our grandparents invite us to spend some time in Bogota?',
         options: [
           `Because of Colombia's independence day.`,
           `Because we hadn’t been in Bogotá since January`,
