@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
-import { CommonActions } from '@react-navigation/native';
+import React from 'react';
+import {View, Text, StyleSheet, Linking, Platform, Alert} from 'react-native';
 
 import Layout from '../../components/Global/Layout';
 import Card from '../../components/Interactive/Card';
 
 const vrImage = require('../../../assets/vr.png');
-const listeningImage = require('../../../assets/sound.jpg')
+const listeningImage = require('../../../assets/sound.jpg');
 
 const Interactive = ({navigation}) => {
-
   const navigateVR = () => {
-    navigation.dispatch(
-      CommonActions.navigate({
-        name: 'VR',
-      })
-    );
+    if (Platform.OS === 'android') {
+      Linking.openURL(
+        'http://www.mediafire.com/file/ffifwmwfsstjjdf/brain-it-vr.apk/file',
+      );
+    } else {
+      Alert.alert('Sorry', 'This feature is only supported on android devices');
+    }
   };
 
   const navigateListening = () => {
@@ -44,13 +44,13 @@ const Interactive = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 30,
-    marginTop: 30
+    marginTop: 30,
   },
   title: {
     fontSize: 34,
     fontWeight: 'bold',
-    color: 'white'
-  }
+    color: 'white',
+  },
 });
 
 export default Interactive;

@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface brainItAppTests : XCTestCase
+@interface BrainitAppTests : XCTestCase
 
 @end
 
-@implementation brainItAppTests
+@implementation BrainitAppTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {

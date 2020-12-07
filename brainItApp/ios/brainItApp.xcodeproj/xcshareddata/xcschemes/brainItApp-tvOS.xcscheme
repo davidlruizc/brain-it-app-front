@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "brainItApp-tvOS.app"
-               BlueprintName = "brainItApp-tvOS"
-               ReferencedContainer = "container:brainItApp.xcodeproj">
+               BuildableName = "BrainitApp-tvOS.app"
+               BlueprintName = "BrainitApp-tvOS"
+               ReferencedContainer = "container:BrainitApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "brainItApp-tvOSTests.xctest"
-               BlueprintName = "brainItApp-tvOSTests"
-               ReferencedContainer = "container:brainItApp.xcodeproj">
+               BuildableName = "BrainitApp-tvOSTests.xctest"
+               BlueprintName = "BrainitApp-tvOSTests"
+               ReferencedContainer = "container:BrainitApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "brainItApp-tvOS.app"
-            BlueprintName = "brainItApp-tvOS"
-            ReferencedContainer = "container:brainItApp.xcodeproj">
+            BuildableName = "BrainitApp-tvOS.app"
+            BlueprintName = "BrainitApp-tvOS"
+            ReferencedContainer = "container:BrainitApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "brainItApp-tvOS.app"
-            BlueprintName = "brainItApp-tvOS"
-            ReferencedContainer = "container:brainItApp.xcodeproj">
+            BuildableName = "BrainitApp-tvOS.app"
+            BlueprintName = "BrainitApp-tvOS"
+            ReferencedContainer = "container:BrainitApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

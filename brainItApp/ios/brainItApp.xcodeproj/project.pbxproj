@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* brainItAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* brainItAppTests.m */; };
+		00E356F31AD99517003FC87E /* BrainitAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BrainitAppTests.m */; };
 		04EB31310E0142C784FAB28A /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70A1E66D3CA14C1F86346359 /* Ionicons.ttf */; };
 		12E1E8E6E0E6474AB481144C /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 464EC8A8F2814923B96F5A27 /* Zocial.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1492A7A1F24246138F004F90 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36EA13DF545445C29EF92752 /* FontAwesome5_Brands.ttf */; };
-		19764F9105FC4D6C22425BC6 /* libPods-brainItApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8AD98DE88695E2BE844D9A1 /* libPods-brainItApp-tvOSTests.a */; };
+		19764F9105FC4D6C22425BC6 /* libPods-BrainitApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8AD98DE88695E2BE844D9A1 /* libPods-BrainitApp-tvOSTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* brainItAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* brainItAppTests.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* BrainitAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BrainitAppTests.m */; };
 		3967F2A879D74FDEB34F366D /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F75DBBBBD2C949C4A7871CC7 /* AntDesign.ttf */; };
-		3FAF4DFCB58113A520582FC9 /* libPods-brainItApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3937E951D3067663DBE24648 /* libPods-brainItApp-tvOS.a */; };
+		3FAF4DFCB58113A520582FC9 /* libPods-BrainitApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3937E951D3067663DBE24648 /* libPods-BrainitApp-tvOS.a */; };
 		5D9CF1451753490A80ED8DA7 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DD5078840844189AE174A46 /* Foundation.ttf */; };
 		65C85826AD1C4714BB98F40A /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3492A26A73BA476C8850CD87 /* Fontisto.ttf */; };
-		7178ED1048C49995EF659AA5 /* libPods-brainItApp-brainItAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FD5FA11CE9EF630CF5E2A7 /* libPods-brainItApp-brainItAppTests.a */; };
+		7178ED1048C49995EF659AA5 /* libPods-BrainitApp-BrainitAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FD5FA11CE9EF630CF5E2A7 /* libPods-BrainitApp-BrainitAppTests.a */; };
 		7D2219FC51A242CE9E2B65E3 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFCF742FEA0542C9929B1067 /* FontAwesome5_Regular.ttf */; };
 		7EA8E87C679342508B2E7B1E /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 526601D78CE9466695C020C4 /* Octicons.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -33,7 +33,7 @@
 		B102A1C753AB49A292988F11 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29F481DA85DD481B9BB5D1D7 /* EvilIcons.ttf */; };
 		BE032B02E2A04661B299C661 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A51F169CFA264BADB882E152 /* Entypo.ttf */; };
 		D587FBF38F894D98860CD186 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F03D13AD80041DCA21EF6B7 /* FontAwesome.ttf */; };
-		DC05967D7DFE2DA71D8A6A03 /* libPods-brainItApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859F2079607519A72D80965F /* libPods-brainItApp.a */; };
+		DC05967D7DFE2DA71D8A6A03 /* libPods-BrainitApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 859F2079607519A72D80965F /* libPods-BrainitApp.a */; };
 		E30907DA3BC444A2BC912861 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 920996F656EB4883A9A6E4C4 /* FontAwesome5_Solid.ttf */; };
 		F07757466A514C7280FF102E /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C42A21F15F241D997DA5CFB /* MaterialIcons.ttf */; };
 /* End PBXBuildFile section */
@@ -44,56 +44,56 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = brainItApp;
+			remoteInfo = BrainitApp;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "brainItApp-tvOS";
+			remoteInfo = "BrainitApp-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* brainItAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brainItAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* BrainitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* brainItAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = brainItAppTests.m; sourceTree = "<group>"; };
-		018948F300DDCA1F61CCB051 /* Pods-brainItApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brainItApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-brainItApp-tvOSTests/Pods-brainItApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* brainItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brainItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = brainItApp/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = brainItApp/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = brainItApp/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = brainItApp/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = brainItApp/main.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* BrainitAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrainitAppTests.m; sourceTree = "<group>"; };
+		018948F300DDCA1F61CCB051 /* Pods-BrainitApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainitApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-BrainitApp-tvOSTests/Pods-BrainitApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* BrainitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = BrainitApp/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = BrainitApp/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BrainitApp/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BrainitApp/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BrainitApp/main.m; sourceTree = "<group>"; };
 		29F481DA85DD481B9BB5D1D7 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		2C42A21F15F241D997DA5CFB /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* brainItApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "brainItApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* brainItApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "brainItApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* BrainitApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BrainitApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* BrainitApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BrainitApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD5078840844189AE174A46 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		3492A26A73BA476C8850CD87 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		36EA13DF545445C29EF92752 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
-		3937E951D3067663DBE24648 /* libPods-brainItApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-brainItApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3937E951D3067663DBE24648 /* libPods-BrainitApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BrainitApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F03D13AD80041DCA21EF6B7 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		464EC8A8F2814923B96F5A27 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		472865F08FD3F161B7658001 /* Pods-brainItApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brainItApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-brainItApp-tvOSTests/Pods-brainItApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		472865F08FD3F161B7658001 /* Pods-BrainitApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainitApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-BrainitApp-tvOSTests/Pods-BrainitApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		526601D78CE9466695C020C4 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
-		5EDFAAD7B7262D14A4274B46 /* Pods-brainItApp-brainItAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brainItApp-brainItAppTests.release.xcconfig"; path = "Target Support Files/Pods-brainItApp-brainItAppTests/Pods-brainItApp-brainItAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		690870A5931091C93E349F1C /* Pods-brainItApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brainItApp.release.xcconfig"; path = "Target Support Files/Pods-brainItApp/Pods-brainItApp.release.xcconfig"; sourceTree = "<group>"; };
+		5EDFAAD7B7262D14A4274B46 /* Pods-BrainitApp-BrainitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainitApp-BrainitAppTests.release.xcconfig"; path = "Target Support Files/Pods-BrainitApp-BrainitAppTests/Pods-BrainitApp-BrainitAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		690870A5931091C93E349F1C /* Pods-BrainitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainitApp.release.xcconfig"; path = "Target Support Files/Pods-BrainitApp/Pods-BrainitApp.release.xcconfig"; sourceTree = "<group>"; };
 		70A1E66D3CA14C1F86346359 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		7287391F45C932A9D1D40884 /* Pods-brainItApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brainItApp.debug.xcconfig"; path = "Target Support Files/Pods-brainItApp/Pods-brainItApp.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = brainItApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		855C2B21C2C18B790CA5A7B4 /* Pods-brainItApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brainItApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-brainItApp-tvOS/Pods-brainItApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		859F2079607519A72D80965F /* libPods-brainItApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-brainItApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8877FA7646A8505C9F0D8024 /* Pods-brainItApp-brainItAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brainItApp-brainItAppTests.debug.xcconfig"; path = "Target Support Files/Pods-brainItApp-brainItAppTests/Pods-brainItApp-brainItAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7287391F45C932A9D1D40884 /* Pods-BrainitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainitApp.debug.xcconfig"; path = "Target Support Files/Pods-BrainitApp/Pods-BrainitApp.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BrainitApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		855C2B21C2C18B790CA5A7B4 /* Pods-BrainitApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainitApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-BrainitApp-tvOS/Pods-BrainitApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		859F2079607519A72D80965F /* libPods-BrainitApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BrainitApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8877FA7646A8505C9F0D8024 /* Pods-BrainitApp-BrainitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainitApp-BrainitAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BrainitApp-BrainitAppTests/Pods-BrainitApp-BrainitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		920996F656EB4883A9A6E4C4 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		A51F169CFA264BADB882E152 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		A8FD5FA11CE9EF630CF5E2A7 /* libPods-brainItApp-brainItAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-brainItApp-brainItAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8FD5FA11CE9EF630CF5E2A7 /* libPods-BrainitApp-BrainitAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BrainitApp-BrainitAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8B2EAF0FB94A7E930F7100 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		C8AD98DE88695E2BE844D9A1 /* libPods-brainItApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-brainItApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8AD98DE88695E2BE844D9A1 /* libPods-BrainitApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BrainitApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD718C69D20430A98149FA6 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
-		D23F339AC99746C6FF5A8296 /* Pods-brainItApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brainItApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-brainItApp-tvOS/Pods-brainItApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		D23F339AC99746C6FF5A8296 /* Pods-BrainitApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainitApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-BrainitApp-tvOS/Pods-BrainitApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		DFCF742FEA0542C9929B1067 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7178ED1048C49995EF659AA5 /* libPods-brainItApp-brainItAppTests.a in Frameworks */,
+				7178ED1048C49995EF659AA5 /* libPods-BrainitApp-BrainitAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC05967D7DFE2DA71D8A6A03 /* libPods-brainItApp.a in Frameworks */,
+				DC05967D7DFE2DA71D8A6A03 /* libPods-BrainitApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FAF4DFCB58113A520582FC9 /* libPods-brainItApp-tvOS.a in Frameworks */,
+				3FAF4DFCB58113A520582FC9 /* libPods-BrainitApp-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,20 +130,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19764F9105FC4D6C22425BC6 /* libPods-brainItApp-tvOSTests.a in Frameworks */,
+				19764F9105FC4D6C22425BC6 /* libPods-BrainitApp-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* brainItAppTests */ = {
+		00E356EF1AD99517003FC87E /* BrainitAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* brainItAppTests.m */,
+				00E356F21AD99517003FC87E /* BrainitAppTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = brainItAppTests;
+			path = BrainitAppTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -157,20 +157,20 @@
 		0AA91F6C319F73A2B5240A9B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7287391F45C932A9D1D40884 /* Pods-brainItApp.debug.xcconfig */,
-				690870A5931091C93E349F1C /* Pods-brainItApp.release.xcconfig */,
-				8877FA7646A8505C9F0D8024 /* Pods-brainItApp-brainItAppTests.debug.xcconfig */,
-				5EDFAAD7B7262D14A4274B46 /* Pods-brainItApp-brainItAppTests.release.xcconfig */,
-				855C2B21C2C18B790CA5A7B4 /* Pods-brainItApp-tvOS.debug.xcconfig */,
-				D23F339AC99746C6FF5A8296 /* Pods-brainItApp-tvOS.release.xcconfig */,
-				472865F08FD3F161B7658001 /* Pods-brainItApp-tvOSTests.debug.xcconfig */,
-				018948F300DDCA1F61CCB051 /* Pods-brainItApp-tvOSTests.release.xcconfig */,
+				7287391F45C932A9D1D40884 /* Pods-BrainitApp.debug.xcconfig */,
+				690870A5931091C93E349F1C /* Pods-BrainitApp.release.xcconfig */,
+				8877FA7646A8505C9F0D8024 /* Pods-BrainitApp-BrainitAppTests.debug.xcconfig */,
+				5EDFAAD7B7262D14A4274B46 /* Pods-BrainitApp-BrainitAppTests.release.xcconfig */,
+				855C2B21C2C18B790CA5A7B4 /* Pods-BrainitApp-tvOS.debug.xcconfig */,
+				D23F339AC99746C6FF5A8296 /* Pods-BrainitApp-tvOS.release.xcconfig */,
+				472865F08FD3F161B7658001 /* Pods-BrainitApp-tvOSTests.debug.xcconfig */,
+				018948F300DDCA1F61CCB051 /* Pods-BrainitApp-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* brainItApp */ = {
+		13B07FAE1A68108700A75B9A /* BrainitApp */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -181,7 +181,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = brainItApp;
+			name = BrainitApp;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -189,10 +189,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				859F2079607519A72D80965F /* libPods-brainItApp.a */,
-				A8FD5FA11CE9EF630CF5E2A7 /* libPods-brainItApp-brainItAppTests.a */,
-				3937E951D3067663DBE24648 /* libPods-brainItApp-tvOS.a */,
-				C8AD98DE88695E2BE844D9A1 /* libPods-brainItApp-tvOSTests.a */,
+				859F2079607519A72D80965F /* libPods-BrainitApp.a */,
+				A8FD5FA11CE9EF630CF5E2A7 /* libPods-BrainitApp-BrainitAppTests.a */,
+				3937E951D3067663DBE24648 /* libPods-BrainitApp-tvOS.a */,
+				C8AD98DE88695E2BE844D9A1 /* libPods-BrainitApp-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,9 +207,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* brainItApp */,
+				13B07FAE1A68108700A75B9A /* BrainitApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* brainItAppTests */,
+				00E356EF1AD99517003FC87E /* BrainitAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				0AA91F6C319F73A2B5240A9B /* Pods */,
@@ -223,10 +223,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* brainItApp.app */,
-				00E356EE1AD99517003FC87E /* brainItAppTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* brainItApp-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* brainItApp-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* BrainitApp.app */,
+				00E356EE1AD99517003FC87E /* BrainitAppTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* BrainitApp-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* BrainitApp-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,9 +258,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* brainItAppTests */ = {
+		00E356ED1AD99517003FC87E /* BrainitAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "brainItAppTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BrainitAppTests" */;
 			buildPhases = (
 				84B9E357BE63B17DBFFE0057 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -273,14 +273,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = brainItAppTests;
-			productName = brainItAppTests;
-			productReference = 00E356EE1AD99517003FC87E /* brainItAppTests.xctest */;
+			name = BrainitAppTests;
+			productName = BrainitAppTests;
+			productReference = 00E356EE1AD99517003FC87E /* BrainitAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* brainItApp */ = {
+		13B07F861A680F5B00A75B9A /* BrainitApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "brainItApp" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BrainitApp" */;
 			buildPhases = (
 				231DA455BFA185834ECFF3D3 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -294,14 +294,14 @@
 			);
 			dependencies = (
 			);
-			name = brainItApp;
-			productName = brainItApp;
-			productReference = 13B07F961A680F5B00A75B9A /* brainItApp.app */;
+			name = BrainitApp;
+			productName = BrainitApp;
+			productReference = 13B07F961A680F5B00A75B9A /* BrainitApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* brainItApp-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* BrainitApp-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "brainItApp-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "BrainitApp-tvOS" */;
 			buildPhases = (
 				A2F04542114A5B25D87CE32F /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -314,14 +314,14 @@
 			);
 			dependencies = (
 			);
-			name = "brainItApp-tvOS";
-			productName = "brainItApp-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* brainItApp-tvOS.app */;
+			name = "BrainitApp-tvOS";
+			productName = "BrainitApp-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* BrainitApp-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* brainItApp-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* BrainitApp-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "brainItApp-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "BrainitApp-tvOSTests" */;
 			buildPhases = (
 				3CC0D81A417161F832CB49F7 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -333,9 +333,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "brainItApp-tvOSTests";
-			productName = "brainItApp-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* brainItApp-tvOSTests.xctest */;
+			name = "BrainitApp-tvOSTests";
+			productName = "BrainitApp-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* BrainitApp-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -364,7 +364,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "brainItApp" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "BrainitApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -377,10 +377,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* brainItApp */,
-				00E356ED1AD99517003FC87E /* brainItAppTests */,
-				2D02E47A1E0B4A5D006451C7 /* brainItApp-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* brainItApp-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* BrainitApp */,
+				00E356ED1AD99517003FC87E /* BrainitAppTests */,
+				2D02E47A1E0B4A5D006451C7 /* BrainitApp-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* BrainitApp-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -465,7 +465,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-brainItApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BrainitApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -478,7 +478,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-brainItApp/Pods-brainItApp-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BrainitApp/Pods-BrainitApp-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -521,7 +521,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-brainItApp/Pods-brainItApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrainitApp/Pods-BrainitApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
@@ -553,7 +553,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-brainItApp-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BrainitApp-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -575,7 +575,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-brainItApp-brainItAppTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BrainitApp-BrainitAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -597,7 +597,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-brainItApp-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BrainitApp-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -610,7 +610,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-brainItApp-brainItAppTests/Pods-brainItApp-brainItAppTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BrainitApp-BrainitAppTests/Pods-BrainitApp-BrainitAppTests-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -653,7 +653,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-brainItApp-brainItAppTests/Pods-brainItApp-brainItAppTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrainitApp-BrainitAppTests/Pods-BrainitApp-BrainitAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -701,7 +701,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* brainItAppTests.m in Sources */,
+				00E356F31AD99517003FC87E /* BrainitAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,7 +727,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* brainItAppTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* BrainitAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,12 +736,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* brainItApp */;
+			target = 13B07F861A680F5B00A75B9A /* BrainitApp */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* brainItApp-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* BrainitApp-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -749,14 +749,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8877FA7646A8505C9F0D8024 /* Pods-brainItApp-brainItAppTests.debug.xcconfig */;
+			baseConfigurationReference = 8877FA7646A8505C9F0D8024 /* Pods-BrainitApp-BrainitAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = brainItAppTests/Info.plist;
+				INFOPLIST_FILE = BrainitAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -766,17 +766,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/brainItApp.app/brainItApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainitApp.app/BrainitApp";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EDFAAD7B7262D14A4274B46 /* Pods-brainItApp-brainItAppTests.release.xcconfig */;
+			baseConfigurationReference = 5EDFAAD7B7262D14A4274B46 /* Pods-BrainitApp-BrainitAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = brainItAppTests/Info.plist;
+				INFOPLIST_FILE = BrainitAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -786,19 +786,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/brainItApp.app/brainItApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainitApp.app/BrainitApp";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7287391F45C932A9D1D40884 /* Pods-brainItApp.debug.xcconfig */;
+			baseConfigurationReference = 7287391F45C932A9D1D40884 /* Pods-BrainitApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = brainItApp/Info.plist;
+				INFOPLIST_FILE = BrainitApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -806,7 +806,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = brainItApp;
+				PRODUCT_NAME = BrainitApp;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -815,12 +815,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 690870A5931091C93E349F1C /* Pods-brainItApp.release.xcconfig */;
+			baseConfigurationReference = 690870A5931091C93E349F1C /* Pods-BrainitApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = brainItApp/Info.plist;
+				INFOPLIST_FILE = BrainitApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -828,7 +828,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = brainItApp;
+				PRODUCT_NAME = BrainitApp;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -836,7 +836,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 855C2B21C2C18B790CA5A7B4 /* Pods-brainItApp-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 855C2B21C2C18B790CA5A7B4 /* Pods-BrainitApp-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -847,14 +847,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "brainItApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "BrainitApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.brainItApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.BrainitApp-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -864,7 +864,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D23F339AC99746C6FF5A8296 /* Pods-brainItApp-tvOS.release.xcconfig */;
+			baseConfigurationReference = D23F339AC99746C6FF5A8296 /* Pods-BrainitApp-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -875,14 +875,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "brainItApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "BrainitApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.brainItApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.BrainitApp-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -892,7 +892,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 472865F08FD3F161B7658001 /* Pods-brainItApp-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 472865F08FD3F161B7658001 /* Pods-BrainitApp-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -902,24 +902,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "brainItApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "BrainitApp-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.brainItApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.BrainitApp-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/brainItApp-tvOS.app/brainItApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainitApp-tvOS.app/BrainitApp-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 018948F300DDCA1F61CCB051 /* Pods-brainItApp-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 018948F300DDCA1F61CCB051 /* Pods-BrainitApp-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -929,17 +929,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "brainItApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "BrainitApp-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.brainItApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.BrainitApp-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/brainItApp-tvOS.app/brainItApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainitApp-tvOS.app/BrainitApp-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -1060,7 +1060,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "brainItAppTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BrainitAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1069,7 +1069,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "brainItApp" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BrainitApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1078,7 +1078,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "brainItApp-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "BrainitApp-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1087,7 +1087,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "brainItApp-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "BrainitApp-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1096,7 +1096,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "brainItApp" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "BrainitApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

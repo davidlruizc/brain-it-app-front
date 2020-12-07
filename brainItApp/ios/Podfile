@@ -3,7 +3,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'brainItApp' do
+target 'BrainitApp' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
@@ -12,7 +12,7 @@ target 'brainItApp' do
 
   pod 'RNSound', :path => '../node_modules/react-native-sound'
 
-  target 'brainItAppTests' do
+  target 'BrainitAppTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -27,10 +27,10 @@ target 'brainItApp' do
   end
 end
 
-target 'brainItApp-tvOS' do
-  # Pods for brainItApp-tvOS
+target 'BrainitApp-tvOS' do
+  # Pods for BrainitApp-tvOS
 
-  target 'brainItApp-tvOSTests' do
+  target 'BrainitApp-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

@@ -1,16 +1,16 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
 import Layout from '../../components/Global/Layout';
 import Card from '../../components/Interactive/ActivityCard';
-import { activities } from './resource';
+import {activities} from './resource';
 
-const Listening = ({ navigation }) => {
+const Listening = ({navigation}) => {
   // navigate to Listening Exercise View
   const navigateToExercise = (questions) => {
-    navigation.navigate('ListeningExercise', { questions });
+    navigation.navigate('ListeningExercise', {questions});
   };
 
   return (
