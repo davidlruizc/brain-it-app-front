@@ -51,11 +51,6 @@ E.g:
 ```js
 <Home />
 ```   
-
-
-
-
-
 ## TODO
 
 *David*
