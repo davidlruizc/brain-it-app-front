@@ -102,7 +102,7 @@ EFLApp
 ### 1. BottomTab
 
 Main App navigation
-Here you can find all the main tabs available in the app.   
+Here you can find all the main tabs available in the app using a React Navigation `Bottom Tab navigator`.   
 
 
 
@@ -136,6 +136,16 @@ Here you can find all the main tabs available in the app.
 
 ### 1. InteractiveNav
 
+Navigation flow for interactive section.
+
+This section is for the excercises like VR and listening
+
+```html
+<Interactive />
+<Listening />
+<ListeningExercise />
+```   
+
 
 
 
@@ -160,6 +170,8 @@ Here you can find all the main tabs available in the app.
 
 ### 1. Grammar
 
+Grammar section listing some excercises   
+
 
 
 
@@ -167,6 +179,9 @@ Here you can find all the main tabs available in the app.
 **src/screens/Grammar/Lecture.js**
 
 ### 1. Lecture
+
+Reading seccion.
+Quiz type for reading practice.   
 
 
 
@@ -183,6 +198,13 @@ Here you can find all the main tabs available in the app.
 **src/screens/Home/Home.js**
 
 ### 1. Home
+
+List intro videos about the topi.
+
+E.g:
+```js
+<Home />
+```   
 
 
 

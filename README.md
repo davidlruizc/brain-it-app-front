@@ -2,6 +2,60 @@
 
 Academic application for English learning
 
+
+**src/navigation/BottomTab.js**
+
+### 1. BottomTab
+
+Main App navigation
+Here you can find all the main tabs available in the app using a React Navigation `Bottom Tab navigator`.   
+
+-----
+**src/navigation/Interactive.js**
+
+### 1. InteractiveNav
+
+Navigation flow for interactive section.
+
+This section is for the excercises like VR and listening
+
+```html
+<Interactive />
+<Listening />
+<ListeningExercise />
+```   
+
+-----
+**src/screens/Grammar/Grammar.js**
+
+### 1. Grammar
+
+Grammar section listing some excercises   
+
+-----
+**src/screens/Grammar/Lecture.js**
+
+### 1. Lecture
+
+Reading seccion.
+Quiz type for reading practice.   
+
+-----
+**src/screens/Home/Home.js**
+
+### 1. Home
+
+List intro videos about the topi.
+
+E.g:
+```js
+<Home />
+```   
+
+
+
+
+
 ## TODO
 
 *David*

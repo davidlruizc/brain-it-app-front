@@ -8,6 +8,17 @@ import {primaryColor} from '../colors';
 
 const Stack = createStackNavigator();
 
+/**
+ * Navigation flow for interactive section.
+ *
+ * This section is for the excercises like VR and listening
+ *
+ * ```html
+ * <Interactive />
+ * <Listening />
+ * <ListeningExercise />
+ * ```
+ */
 const InteractiveNav = () => (
   <Stack.Navigator initialRouteName="Interactive">
     <Stack.Screen

@@ -1,22 +1,25 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-use-before-define */
 import React from 'react';
-import { Text, ImageBackground, StyleSheet, ScrollView } from 'react-native';
+import {Text, ImageBackground, StyleSheet, ScrollView} from 'react-native';
 
 import Layout from '../../components/Global/Layout';
 import Button from '../../components/Global/Button';
-
-const Lecture = ({ navigation, route }) => {
-  const { item } = route.params;
+/**
+ * Reading seccion.
+ * Quiz type for reading practice.
+ */
+const Lecture = ({navigation, route}) => {
+  const {item} = route.params;
   return (
     <Layout>
-      <ImageBackground style={styles.image} source={{ uri: item.image }} />
+      <ImageBackground style={styles.image} source={{uri: item.image}} />
       <ScrollView style={styles.wrapper}>
         <Text style={styles.title}>{item.title}</Text>
         <Text style={styles.text}>{item.text}</Text>
         <Button
           title="Answer the following questions"
-          onPress={() => navigation.navigate('LectureQuiz', { item })}
+          onPress={() => navigation.navigate('LectureQuiz', {item})}
         />
       </ScrollView>
     </Layout>

@@ -109,7 +109,7 @@ const tempData = [
 ];
 
 /**
- * Grammar seccion
+ * Grammar section listing some excercises
  */
 const Grammar = ({navigation}) => {
   const handleNavigateToText = (title, image, text, quiz) => {
