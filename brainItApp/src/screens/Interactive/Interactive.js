@@ -3,11 +3,14 @@ import {View, Text, StyleSheet, Linking, Platform, Alert} from 'react-native';
 
 import Layout from '../../components/Global/Layout';
 import Card from '../../components/Interactive/Card';
+import {useNavigation} from '@react-navigation/native';
 
 const vrImage = require('../../../assets/vr.png');
 const listeningImage = require('../../../assets/sound.jpg');
 
-const Interactive = ({navigation}) => {
+const Interactive = () => {
+  const navigation = useNavigation();
+
   const navigateVR = () => {
     if (Platform.OS === 'android') {
       Linking.openURL(

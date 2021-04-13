@@ -1,20 +1,21 @@
 import React from 'react';
-import {View, Text, StyleSheet, ImageBackground, TouchableOpacity, } from 'react-native';
+import {
+  Text,
+  StyleSheet,
+  ImageBackground,
+  TouchableOpacity,
+} from 'react-native';
 
 // const image = require('../../../assets/grammar-one.jpg');
 
-const Card = ({
-  title,
-  image,
-  handleNavigateToText,
-  uri
-}) => (
-  <TouchableOpacity style={styles.container} onPress={() => handleNavigateToText()}>
+const Card = ({title, image, handleNavigateToText, uri}) => (
+  <TouchableOpacity
+    style={styles.container}
+    onPress={() => handleNavigateToText()}>
     <ImageBackground
       source={uri ? {uri: image} : image}
       style={styles.image}
-      imageStyle={{borderRadius: 10, backgroundColor: 'rgba(0,0,0,.6)'}}
-    >
+      imageStyle={{borderRadius: 10, backgroundColor: 'rgba(0,0,0,.6)'}}>
       <Text style={styles.title}>{title}</Text>
     </ImageBackground>
   </TouchableOpacity>
@@ -23,7 +24,7 @@ const Card = ({
 const styles = StyleSheet.create({
   container: {
     alignSelf: 'center',
-    marginTop: 19
+    marginTop: 19,
   },
   image: {
     width: 344,
@@ -35,7 +36,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 24,
     color: 'white',
-  }
-})
+  },
+});
 
 export default Card;

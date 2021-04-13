@@ -1,17 +1,22 @@
-/* eslint-disable no-use-before-define */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Button} from 'react-native';
 
 import Layout from '../../components/Global/Layout';
 import Card from '../../components/Interactive/ActivityCard';
 import {activities} from './resource';
+import {useNavigation} from '@react-navigation/native';
 
-const Listening = ({navigation}) => {
+const Listening = () => {
+  const navigation = useNavigation();
+
   // navigate to Listening Exercise View
-  const navigateToExercise = (questions) => {
-    navigation.navigate('ListeningExercise', {questions});
-  };
+  const navigateToExercise = React.useCallback(
+    (questions) => {
+      navigation.navigate('ListeningExercise', {questions});
+    },
+    [navigation],
+  );
 
   return (
     <Layout>

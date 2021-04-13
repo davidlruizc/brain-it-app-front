@@ -1,22 +1,32 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { Icon } from 'react-native-elements';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {Icon} from 'react-native-elements';
 
-import { secondaryColor, layerColor, layerMiniColor } from '../../colors';
+import {secondaryColor, layerColor, layerMiniColor} from '../../colors';
 
-const ActivityCard = ({ title, questions, onPress }) => {
+const ActivityCard = ({title, questions, onPress}) => {
   return (
     <TouchableOpacity style={styles.container} onPress={onPress}>
       <View style={styles.topWrapper}>
         <View style={styles.titleContent}>
-          <Icon name="local-activity" type="materia" color={layerColor} size={20} />
+          <Icon
+            name="local-activity"
+            type="materia"
+            color={layerColor}
+            size={20}
+          />
           <Text style={styles.contentText}>{title}</Text>
         </View>
         <View style={styles.loadContent}>
           <Text style={styles.moreText}>More</Text>
-          <Icon name="keyboard-arrow-right" type="materia" color={layerMiniColor} size={20} />
+          <Icon
+            name="keyboard-arrow-right"
+            type="materia"
+            color={layerMiniColor}
+            size={20}
+          />
         </View>
       </View>
       <View style={styles.downWrapper}>
