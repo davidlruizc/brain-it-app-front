@@ -26,7 +26,7 @@ const Listening = () => {
         {activities.map((item) => (
           <Card
             key={item.id}
-            onPress={navigateToExercise(item.questions)}
+            onPress={() => navigateToExercise(item.questions)}
             title={item.topic}
             questions={item.questions_count}
           />
