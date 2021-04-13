@@ -9,22 +9,23 @@ import {useRoute} from '@react-navigation/native';
 
 const ListeningExercise = () => {
   const route = useRoute();
+  const [questions, setQuestions] = React.useState(null);
 
-  //React.useEffect(() => {
-  //if (route.params.questions) {
-  //console.log(route.params.questions);
-  //}
-  //}, [route]);
+  React.useEffect(() => {
+    if (route.params.questions) {
+      setQuestions(route.params.questions, questions);
+    }
+  }, [route, questions]);
 
   return (
     <Layout>
       {/* <Text>Question 1 of 5</Text>
       <PlayButton /> */}
-      <View style={{flex: 1}}>
-        <Text>asdfasdf</Text>
-        {/*        <Progress data={questions} />
-         */}
-      </View>
+      {questions !== null && (
+        <View style={{flex: 1}}>
+          <Progress data={questions} />
+        </View>
+      )}
     </Layout>
   );
 };
