@@ -3,7 +3,16 @@ import {View, Text, StyleSheet} from 'react-native';
 import PlayButton from '../Player/PlayPause';
 import Button from '../Global/Button';
 
-const Steps = ({sound, options, question}) => {
+const Steps = ({sound, options, question, correctAnswer, nextStep}) => {
+  const isCorrectAnswer = (answer) => {
+    if (answer === correctAnswer) {
+      console.log('correct');
+      nextStep();
+    } else {
+      console.log('try again');
+    }
+  };
+
   return (
     <View style={{alignItems: 'center'}}>
       <Text style={styles.title}>Play the audio</Text>
@@ -20,6 +29,7 @@ const Steps = ({sound, options, question}) => {
             styleContainer={{marginTop: 10}}
             titlePosition="left"
             styleTitle={styles.buttonTitle}
+            onPress={() => isCorrectAnswer(item)}
           />
         ))}
       </View>

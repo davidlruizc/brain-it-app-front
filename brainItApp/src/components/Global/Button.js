@@ -1,25 +1,29 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { TouchableOpacity, View, Text, StyleSheet } from 'react-native';
+import {TouchableOpacity, View, Text, StyleSheet} from 'react-native';
 
-import { secondaryColor } from '../../colors';
+import {secondaryColor} from '../../colors';
 
-const Button = ({ title, onPress, styleContainer, styleTitle, titlePosition }) => {
+const Button = ({
+  title,
+  onPress,
+  styleContainer,
+  styleTitle,
+  titlePosition,
+}) => {
   return (
     <TouchableOpacity
       style={{
         ...styles.container,
         ...styleContainer,
       }}
-      onPress={onPress}
-    >
+      onPress={onPress}>
       <View
         style={{
           alignSelf: titlePosition === 'left' ? 'flex-start' : 'center',
           paddingHorizontal: 15,
-        }}
-      >
+        }}>
         <Text style={styleTitle || styles.title}>{title}</Text>
       </View>
     </TouchableOpacity>

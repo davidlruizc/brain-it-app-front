@@ -28,6 +28,7 @@
     "react-native-sound": "^0.11.0",
     "react-native-svg": "^12.1.0",
     "react-native-vector-icons": "^7.1.0",
+    "react-native-wizard": "^2.1.0",
     "react-native-youtube": "^2.0.1"
   },
   "devDependencies": {

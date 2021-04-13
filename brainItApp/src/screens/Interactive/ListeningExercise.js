@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 // import SoundPlayer from 'react-native-sound-player';
 
 import Layout from '../../components/Global/Layout';
