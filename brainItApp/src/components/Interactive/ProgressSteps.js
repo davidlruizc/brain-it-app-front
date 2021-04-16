@@ -4,7 +4,6 @@ import Steps from './Steps';
 import Wizard from 'react-native-wizard';
 import {Text, View} from 'react-native';
 import {StyleSheet} from 'react-native';
-import Button from '../Global/Button';
 import {Popup} from 'popup-ui';
 
 const NUMBER_QUESTIONS = 3;
