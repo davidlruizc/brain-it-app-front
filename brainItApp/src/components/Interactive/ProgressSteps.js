@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import {secondaryColor} from '../../colors';
 import Steps from './Steps';
 import Wizard from 'react-native-wizard';
 import {Text, View, SafeAreaView} from 'react-native';
