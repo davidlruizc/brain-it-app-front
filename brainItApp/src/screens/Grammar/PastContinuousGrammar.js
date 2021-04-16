@@ -11,26 +11,26 @@ const PastContinuousGrammar = () => {
       verbEj: 'was',
       secondVerb: 'Verb -ing',
       secondVerbEj: 'washing',
-      complementEj: 'the dishes'
+      complementEj: 'the dishes',
     },
     {
-      sentence: "Negative",
-      subjectEj: "She",
-      negative: "Verb ToBe in negative form  Was not / Were not",
-      negativeEj: "was not",
-      verb: "Verb -ing",
-      verbEj: "washing",
-      complementEj: "the dishes",
+      sentence: 'Negative',
+      subjectEj: 'She',
+      negative: 'Verb ToBe in negative form  Was not / Were not',
+      negativeEj: 'was not',
+      verb: 'Verb -ing',
+      verbEj: 'washing',
+      complementEj: 'the dishes',
     },
     {
-      sentence: "Interrogative",
-      interrogative: "Verb ToBe in Past Was/Were",
-      interrogativeEj: "Was",
-      subjectEj: "she",
-      verb: "Verb -ing",
-      verbEj: "washing",
-      complementEj: "the dishes",
-    }
+      sentence: 'Interrogative',
+      interrogative: 'Verb ToBe in Past Was/Were',
+      interrogativeEj: 'Was',
+      subjectEj: 'she',
+      verb: 'Verb -ing',
+      verbEj: 'washing',
+      complementEj: 'the dishes',
+    },
   ];
   return (
     <>

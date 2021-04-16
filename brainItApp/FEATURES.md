@@ -2,12 +2,12 @@
 
 ### David
 - [x] Ejercicios interactive cambiar componente por un wizard
-- [ ] Grammar section wizard
-- [ ] Fix imagenes Grammar
+- [x] Fix imagenes Grammar
 - [x] interactive preguntas, respuestas aleatorias
+- [x] Borrar Tab perfil
+- [ ] Grammar section wizard
 - [ ] Textos preguntas aleatorias  - respuestas
 - [ ] Documentación código
-- [x] Borrar Tab perfil
 - [ ] Probrar VR y ver que está fallando
 
 
