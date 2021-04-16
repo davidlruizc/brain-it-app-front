@@ -1,9 +1,10 @@
 # Features 12-04-2021
 
 ### David
-- [ ] Ejercicios interactive cambiar componente por un wizard
+- [x] Ejercicios interactive cambiar componente por un wizard
 - [ ] Grammar section wizard
 - [ ] Fix imagenes Grammar
+- [x] interactive preguntas, respuestas aleatorias
 - [ ] Textos preguntas aleatorias  - respuestas
 - [ ] Documentación código
 - [x] Borrar Tab perfil
