@@ -30,15 +30,15 @@ const ProgressStepsLayout = ({data}) => {
     let tmp,
       current,
       top = questions.length;
-    if (top)
+    if (top) {
       while (--top) {
         current = Math.floor(Math.random() * (top + 1));
         tmp = questions[current];
         questions[current] = questions[top];
         questions[top] = tmp;
       }
+    }
 
-    console.log(questions);
     setSuffleQuestionItem(questions);
   }, []);
 
