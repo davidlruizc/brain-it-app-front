@@ -126,12 +126,6 @@ const ProgressStepsLayout = ({data}) => {
           steps={stepList}
           isFirstStep={(val) => setIsFirstStep(val)}
           isLastStep={(val) => setIsLastStep(val)}
-          onNext={() => {
-            console.log('Next Step Called');
-          }}
-          onPrev={() => {
-            console.log('Previous Step Called');
-          }}
           currentStep={({currentStep, isLastStep, isFirstStep}) => {
             setCurrentStep(currentStep);
           }}
@@ -151,18 +145,6 @@ const ProgressStepsLayout = ({data}) => {
               />
             ))}
           </React.Fragment>
-        </View>
-        <View style={{flexDirection: 'row', margin: 18}}>
-          <View style={{width: '40%', marginRight: 10}}>
-            <Button
-              disabled={isFirstStep}
-              title="Prev"
-              onPress={() => wizard.current.prev()}
-            />
-          </View>
-          <View style={{width: '40%', marginLeft: 10}}>
-            <Button disabled={isLastStep} title="Next" onPress={nextStep} />
-          </View>
         </View>
       </View>
     </View>
