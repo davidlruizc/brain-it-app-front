@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-use-before-define */
 import React from 'react';
 import {Text, ImageBackground, StyleSheet, ScrollView} from 'react-native';
 
