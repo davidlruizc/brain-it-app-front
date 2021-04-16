@@ -5,15 +5,32 @@ import {Text, ImageBackground, StyleSheet, ScrollView} from 'react-native';
 
 import Layout from '../../components/Global/Layout';
 import Button from '../../components/Global/Button';
+
+const imageOne = require('../../../assets/grammar-one.jpg');
+const imageTwo = require('../../../assets/grammar-two.jpg');
+const imageThree = require('../../../assets/grammar-three.jpg');
+
 /**
  * Reading seccion.
  * Quiz type for reading practice.
  */
 const Lecture = ({navigation, route}) => {
   const {item} = route.params;
+
+  const imageSelected = React.useMemo(() => {
+    const image = item.image;
+    if (image === 'grammar-one') {
+      return imageOne;
+    } else if (image === 'grammar-two') {
+      return imageTwo;
+    } else {
+      return imageThree;
+    }
+  }, [item]);
+
   return (
     <Layout>
-      <ImageBackground style={styles.image} source={{uri: item.image}} />
+      <ImageBackground style={styles.image} source={imageSelected} />
       <ScrollView style={styles.wrapper}>
         <Text style={styles.title}>{item.title}</Text>
         <Text style={styles.text}>{item.text}</Text>
