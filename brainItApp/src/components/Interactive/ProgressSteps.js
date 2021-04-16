@@ -3,7 +3,9 @@ import React from 'react';
 import {secondaryColor} from '../../colors';
 import Steps from './Steps';
 import Wizard from 'react-native-wizard';
-import {Text, View, SafeAreaView, Button} from 'react-native';
+import {Text, View, SafeAreaView} from 'react-native';
+import {StyleSheet} from 'react-native';
+import Button from '../Global/Button';
 
 const ProgressStepsLayout = ({data}) => {
   const wizard = React.useRef();
@@ -53,31 +55,13 @@ const ProgressStepsLayout = ({data}) => {
 
   return (
     <View>
-      <SafeAreaView style={{backgroundColor: '#FFF'}}>
-        <View
-          style={{
-            justifyContent: 'space-between',
-            flexDirection: 'row',
-            backgroundColor: '#FFF',
-            borderBottomColor: '#dedede',
-            borderBottomWidth: 1,
-          }}>
-          {console.log('-', isLastStep)}
-          <Button
-            disabled={isFirstStep}
-            title="Prev"
-            onPress={() => wizard.current.prev()}
-          />
-          <Text>{currentStep + 1}. Step</Text>
-          <Button disabled={isLastStep} title="Next" onPress={nextStep} />
-        </View>
-      </SafeAreaView>
       <View
         style={{
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
         }}>
+        <Text style={styles.title}>Question {currentStep + 1}</Text>
         <Wizard
           ref={wizard}
           steps={stepList}
@@ -94,22 +78,46 @@ const ProgressStepsLayout = ({data}) => {
           }}
         />
         <View style={{flexDirection: 'row', margin: 18}}>
-          {stepList.map((val, index) => (
-            <View
-              key={'step-indicator-' + index}
-              style={{
-                width: 10,
-                marginHorizontal: 6,
-                height: 10,
-                borderRadius: 5,
-                backgroundColor: index === currentStep ? '#fc0' : '#000',
-              }}
+          <React.Fragment>
+            {stepList.map((val, index) => (
+              <View
+                key={'step-indicator-' + index}
+                style={{
+                  width: 10,
+                  marginHorizontal: 6,
+                  height: 10,
+                  borderRadius: 5,
+                  backgroundColor: index === currentStep ? '#fc0' : '#000',
+                }}
+              />
+            ))}
+          </React.Fragment>
+        </View>
+        <View style={{flexDirection: 'row', margin: 18}}>
+          <View style={{width: '40%', marginRight: 10}}>
+            <Button
+              disabled={isFirstStep}
+              title="Prev"
+              onPress={() => wizard.current.prev()}
             />
-          ))}
+          </View>
+          <View style={{width: '40%', marginLeft: 10}}>
+            <Button disabled={isLastStep} title="Next" onPress={nextStep} />
+          </View>
         </View>
       </View>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  title: {
+    fontWeight: 'bold',
+    fontSize: 26,
+    color: 'white',
+    marginBottom: 10,
+    marginTop: 10,
+  },
+});
 
 export default ProgressStepsLayout;
