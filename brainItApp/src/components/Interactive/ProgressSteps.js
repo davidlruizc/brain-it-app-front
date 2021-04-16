@@ -7,20 +7,49 @@ import {StyleSheet} from 'react-native';
 import Button from '../Global/Button';
 import {Popup} from 'popup-ui';
 
+const NUMBER_QUESTIONS = 3;
+
 const ProgressStepsLayout = ({data}) => {
   const wizard = React.useRef();
   const [isFirstStep, setIsFirstStep] = React.useState();
   const [isLastStep, setIsLastStep] = React.useState();
   const [currentStep, setCurrentStep] = React.useState(0);
+  const [suffleQuestionItem, setSuffleQuestionItem] = React.useState([]);
 
   const nextStep = React.useCallback(() => {
     wizard.current.next();
   }, []);
 
+  const suffleQuestions = React.useCallback(() => {
+    let questions, i;
+
+    for (questions = [], i = 0; i < NUMBER_QUESTIONS; ++i) {
+      questions[i] = i;
+    }
+
+    let tmp,
+      current,
+      top = questions.length;
+    if (top)
+      while (--top) {
+        current = Math.floor(Math.random() * (top + 1));
+        tmp = questions[current];
+        questions[current] = questions[top];
+        questions[top] = tmp;
+      }
+
+    console.log(questions);
+    setSuffleQuestionItem(questions);
+  }, []);
+
+  React.useEffect(() => {
+    suffleQuestions();
+  }, [suffleQuestions]);
+
   React.useEffect(() => {
     Popup.show({
       type: 'Warning',
-      title: 'Welcome to this Quiz exercise',
+      title: 'Welcome to this quiz exercise',
       button: true,
       textBody:
         'Answer the questions according the audio list, each question uses different audio, pay attation and good luck! 😸',
@@ -32,35 +61,47 @@ const ProgressStepsLayout = ({data}) => {
   const stepList = [
     {
       content: (
-        <Steps
-          sound={data[0].sound}
-          options={data[0].options}
-          question={data[0].question}
-          nextStep={nextStep}
-          correctAnswer={data[0].correctAnswer}
-        />
+        <React.Fragment>
+          {suffleQuestionItem.length > 0 && (
+            <Steps
+              sound={data[suffleQuestionItem[0]].sound}
+              options={data[suffleQuestionItem[0]].options}
+              question={data[suffleQuestionItem[0]].question}
+              nextStep={nextStep}
+              correctAnswer={data[suffleQuestionItem[0]].correctAnswer}
+            />
+          )}
+        </React.Fragment>
       ),
     },
     {
       content: (
-        <Steps
-          sound={data[1].sound}
-          options={data[1].options}
-          question={data[1].question}
-          nextStep={nextStep}
-          correctAnswer={data[1].correctAnswer}
-        />
+        <React.Fragment>
+          {suffleQuestionItem.length > 0 && (
+            <Steps
+              sound={data[suffleQuestionItem[1]].sound}
+              options={data[suffleQuestionItem[1]].options}
+              question={data[suffleQuestionItem[1]].question}
+              nextStep={nextStep}
+              correctAnswer={data[suffleQuestionItem[1]].correctAnswer}
+            />
+          )}
+        </React.Fragment>
       ),
     },
     {
       content: (
-        <Steps
-          sound={data[2].sound}
-          options={data[2].options}
-          question={data[2].question}
-          correctAnswer={data[2].correctAnswer}
-          nextStep={nextStep}
-        />
+        <React.Fragment>
+          {suffleQuestionItem.length > 0 && (
+            <Steps
+              sound={data[suffleQuestionItem[2]].sound}
+              options={data[suffleQuestionItem[2]].options}
+              question={data[suffleQuestionItem[2]].question}
+              nextStep={nextStep}
+              correctAnswer={data[suffleQuestionItem[2]].correctAnswer}
+            />
+          )}
+        </React.Fragment>
       ),
     },
   ];
