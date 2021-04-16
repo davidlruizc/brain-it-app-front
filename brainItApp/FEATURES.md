@@ -5,7 +5,7 @@
 - [ ] Fix imagenes Grammar
 - [ ] Textos preguntas aleatorias  - respuestas
 - [ ] Documentación código
-- [ ] Borrar Tab perfil
+- [x] Borrar Tab perfil
 - [ ] Probrar VR y ver que está fallando
 
 
@@ -16,3 +16,7 @@
 - [ ] Video para VR
 
 > FECHA LIMITE: 19-04-2020
+
+### IDEAS
+
+- Sistema basado en puntuación y premios como un certificado 

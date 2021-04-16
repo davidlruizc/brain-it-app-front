@@ -63,7 +63,7 @@ const BottomTab = () => {
           ),
         }}
       /> */}
-      <Tab.Screen
+      {/*<Tab.Screen
         name="ProfileNav"
         component={ProfileNav}
         options={{
@@ -77,7 +77,7 @@ const BottomTab = () => {
             />
           ),
         }}
-      />
+      />*/}
     </Tab.Navigator>
   );
 };
