@@ -2,6 +2,7 @@
 
 ### David
 - [ ] Ejercicios interactive cambiar componente por un wizard
+- [ ] Grammar section wizard
 - [ ] Fix imagenes Grammar
 - [ ] Textos preguntas aleatorias  - respuestas
 - [ ] Documentación código

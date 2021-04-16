@@ -2,9 +2,10 @@
 import React from 'react';
 import Steps from './Steps';
 import Wizard from 'react-native-wizard';
-import {Text, View, SafeAreaView} from 'react-native';
+import {Text, View} from 'react-native';
 import {StyleSheet} from 'react-native';
 import Button from '../Global/Button';
+import {Popup} from 'popup-ui';
 
 const ProgressStepsLayout = ({data}) => {
   const wizard = React.useRef();
@@ -14,6 +15,18 @@ const ProgressStepsLayout = ({data}) => {
 
   const nextStep = React.useCallback(() => {
     wizard.current.next();
+  }, []);
+
+  React.useEffect(() => {
+    Popup.show({
+      type: 'Warning',
+      title: 'Welcome to this Quiz exercise',
+      button: true,
+      textBody:
+        'Answer the questions according the audio list, each question uses different audio, pay attation and good luck! 😸',
+      buttonText: `Let's go!`,
+      callback: () => Popup.hide(),
+    });
   }, []);
 
   const stepList = [

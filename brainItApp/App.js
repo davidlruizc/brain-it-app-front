@@ -15,6 +15,7 @@ import PasContinuousGrammar from './src/screens/Grammar/PastContinuousGrammar';
 import PastPerfectGrammar from './src/screens/Grammar/PastPerfectGrammar';
 import {primaryColor} from './src/colors';
 import Toast from 'react-native-toast-message';
+import {Root} from 'popup-ui';
 
 /**
  * Create the stack navigator declaration
@@ -26,7 +27,7 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      <React.Fragment>
+      <Root>
         {isLoggedIn ? (
           <Stack.Navigator initialRouteName="Home">
             <Stack.Screen
@@ -91,7 +92,7 @@ const App = () => {
             <Auth />
           </>
         )}
-      </React.Fragment>
+      </Root>
 
       <Toast ref={(ref) => Toast.setRef(ref)} />
     </NavigationContainer>
