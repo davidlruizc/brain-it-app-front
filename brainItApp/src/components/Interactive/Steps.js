@@ -3,23 +3,49 @@ import {View, Text, StyleSheet} from 'react-native';
 import PlayButton from '../Player/PlayPause';
 import Button from '../Global/Button';
 import Toast from 'react-native-toast-message';
+import {Popup} from 'popup-ui';
+import {useNavigation} from '@react-navigation/native';
 
-const Steps = ({sound, options, question, correctAnswer, nextStep}) => {
+const Steps = ({
+  sound,
+  options,
+  question,
+  correctAnswer,
+  nextStep,
+  currentIndex,
+  numberQuestions,
+}) => {
+  const navigation = useNavigation();
   const isCorrectAnswer = (answer) => {
-    if (answer === correctAnswer) {
-      Toast.show({
-        type: 'success',
-        text1: `That's correct!`,
-        text2: 'Congratulations go to the next question👏🏻',
+    if (currentIndex === numberQuestions) {
+      Popup.show({
+        type: 'Success',
+        title: 'You made it! 👏🏻',
+        button: true,
+        textBody:
+          'You have finished this quiz section keep learning and improving your skills',
+        buttonText: `Go to list`,
+        callback: () => {
+          navigation.navigate('Interactive');
+          Popup.hide();
+        },
       });
-
-      nextStep();
     } else {
-      Toast.show({
-        type: 'error',
-        text1: `Ups!`,
-        text2: `That's not the correct answer, try again 🥵`,
-      });
+      if (answer === correctAnswer) {
+        Toast.show({
+          type: 'success',
+          text1: `That's correct!`,
+          text2: 'Congratulations go to the next question 👏🏻',
+        });
+
+        nextStep();
+      } else {
+        Toast.show({
+          type: 'error',
+          text1: `Ups!`,
+          text2: `That's not the correct answer, try again 😿`,
+        });
+      }
     }
   };
 

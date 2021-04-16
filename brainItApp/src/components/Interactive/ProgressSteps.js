@@ -69,6 +69,8 @@ const ProgressStepsLayout = ({data}) => {
               question={data[suffleQuestionItem[0]].question}
               nextStep={nextStep}
               correctAnswer={data[suffleQuestionItem[0]].correctAnswer}
+              currentIndex={currentStep + 1}
+              numberQuestions={NUMBER_QUESTIONS}
             />
           )}
         </React.Fragment>
@@ -84,6 +86,8 @@ const ProgressStepsLayout = ({data}) => {
               question={data[suffleQuestionItem[1]].question}
               nextStep={nextStep}
               correctAnswer={data[suffleQuestionItem[1]].correctAnswer}
+              currentIndex={currentStep + 1}
+              numberQuestions={NUMBER_QUESTIONS}
             />
           )}
         </React.Fragment>
@@ -99,6 +103,8 @@ const ProgressStepsLayout = ({data}) => {
               question={data[suffleQuestionItem[2]].question}
               nextStep={nextStep}
               correctAnswer={data[suffleQuestionItem[2]].correctAnswer}
+              currentIndex={currentStep + 1}
+              numberQuestions={NUMBER_QUESTIONS}
             />
           )}
         </React.Fragment>
