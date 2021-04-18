@@ -26,7 +26,7 @@ const Steps = ({
           'You have finished this quiz section keep learning and improving your skills',
         buttonText: `Go to list`,
         callback: () => {
-          navigation.navigate('Interactive');
+          navigation.navigate('Grammar');
           Popup.hide();
         },
       });
