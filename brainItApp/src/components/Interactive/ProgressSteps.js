@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import Steps from './Steps';
 import Wizard from 'react-native-wizard';
@@ -131,7 +130,7 @@ const ProgressStepsLayout = ({data}) => {
         />
         <View style={{flexDirection: 'row', margin: 18}}>
           <React.Fragment>
-            {stepList.map((val, index) => (
+            {stepList.map((_, index) => (
               <View
                 key={'step-indicator-' + index}
                 style={{
