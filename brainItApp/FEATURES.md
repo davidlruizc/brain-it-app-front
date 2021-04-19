@@ -5,8 +5,8 @@
 - [x] Fix imagenes Grammar
 - [x] interactive preguntas, respuestas aleatorias
 - [x] Borrar Tab perfil
-- [ ] Grammar section wizard
-- [ ] Textos preguntas aleatorias  - respuestas
+- [x] Grammar section wizard
+- [x] Textos preguntas aleatorias  - respuestas
 - [ ] Documentación código
 - [ ] Probrar VR y ver que está fallando
 
