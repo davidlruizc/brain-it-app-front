@@ -9,6 +9,11 @@
 - [x] Textos preguntas aleatorias  - respuestas
 - [ ] Documentación código
 - [ ] Probrar VR y ver que está fallando
+- [ ] Review Contenido
+
+
+- [ ] Audios listening
+- [ ] Contenido del video
 
 
 ### Duvan
