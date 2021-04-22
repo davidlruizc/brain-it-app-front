@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Linking, Platform, Alert} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
 import Layout from '../../components/Global/Layout';
 import Card from '../../components/Interactive/Card';
@@ -12,13 +12,7 @@ const Interactive = () => {
   const navigation = useNavigation();
 
   const navigateVR = () => {
-    if (Platform.OS === 'android') {
-      Linking.openURL(
-        'http://www.mediafire.com/file/ffifwmwfsstjjdf/brain-it-vr.apk/file',
-      );
-    } else {
-      Alert.alert('Sorry', 'This feature is only supported on android devices');
-    }
+    navigation.navigate('VRScreen');
   };
 
   const navigateListening = () => {

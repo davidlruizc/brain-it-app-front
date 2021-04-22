@@ -5,6 +5,7 @@ import Interactive from '../screens/Interactive/Interactive';
 import Listening from '../screens/Interactive/Listening';
 import ListeningExercise from '../screens/Interactive/ListeningExercise';
 import {primaryColor} from '../colors';
+import VRExperience from '../screens/Interactive/VREnvironment';
 
 const Stack = createStackNavigator();
 
@@ -26,6 +27,20 @@ const InteractiveNav = () => (
       component={Interactive}
       options={{
         headerShown: false,
+      }}
+    />
+    <Stack.Screen
+      name="VRScreen"
+      component={VRExperience}
+      options={{
+        title: 'VR experience',
+        headerStyle: {
+          backgroundColor: primaryColor,
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
       }}
     />
     <Stack.Screen

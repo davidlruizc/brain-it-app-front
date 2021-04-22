@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, ScrollView} from 'react-native';
+import {Text, StyleSheet, ScrollView} from 'react-native';
 
 import Layout from '../../components/Global/Layout';
 import VieoCard from '../../components/Home/VideoCard';
