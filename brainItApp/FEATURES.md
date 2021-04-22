@@ -7,9 +7,11 @@
 - [x] Borrar Tab perfil
 - [x] Grammar section wizard
 - [x] Textos preguntas aleatorias  - respuestas
-- [ ] Documentación código
-- [ ] Probrar VR y ver que está fallando
 - [ ] Review Contenido
+- [ ] Sección VR añadir screen con explicación para usar VR
+- [ ] Probrar VR y ver que está fallando
+- [ ] Documentación código
+
 
 
 - [ ] Audios listening
@@ -17,10 +19,10 @@
 
 
 ### Duvan
-- [ ] Sección VR añadir screen con explicación para usar VR
 - [ ] Fix audios
 - [ ] Manual de usuario
 - [ ] Video para VR
+- [ ] Thubmnail
 
 > FECHA LIMITE: 19-04-2020
 

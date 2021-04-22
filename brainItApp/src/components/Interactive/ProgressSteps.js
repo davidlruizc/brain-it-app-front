@@ -1,11 +1,11 @@
 import React from 'react';
 import Steps from './Steps';
 import Wizard from 'react-native-wizard';
-import {Text, View} from 'react-native';
+import {ScrollView, Text, View} from 'react-native';
 import {StyleSheet} from 'react-native';
 import {Popup} from 'popup-ui';
 
-const NUMBER_QUESTIONS = 3;
+const NUMBER_QUESTIONS = 6;
 
 const ProgressStepsLayout = ({data}) => {
   const wizard = React.useRef();
@@ -108,10 +108,61 @@ const ProgressStepsLayout = ({data}) => {
         </React.Fragment>
       ),
     },
+    {
+      content: (
+        <React.Fragment>
+          {suffleQuestionItem.length > 0 && (
+            <Steps
+              sound={data[suffleQuestionItem[3]].sound}
+              options={data[suffleQuestionItem[3]].options}
+              question={data[suffleQuestionItem[3]].question}
+              nextStep={nextStep}
+              correctAnswer={data[suffleQuestionItem[3]].correctAnswer}
+              currentIndex={currentStep + 1}
+              numberQuestions={NUMBER_QUESTIONS}
+            />
+          )}
+        </React.Fragment>
+      ),
+    },
+    {
+      content: (
+        <React.Fragment>
+          {suffleQuestionItem.length > 0 && (
+            <Steps
+              sound={data[suffleQuestionItem[4]].sound}
+              options={data[suffleQuestionItem[4]].options}
+              question={data[suffleQuestionItem[4]].question}
+              nextStep={nextStep}
+              correctAnswer={data[suffleQuestionItem[4]].correctAnswer}
+              currentIndex={currentStep + 1}
+              numberQuestions={NUMBER_QUESTIONS}
+            />
+          )}
+        </React.Fragment>
+      ),
+    },
+    {
+      content: (
+        <React.Fragment>
+          {suffleQuestionItem.length > 0 && (
+            <Steps
+              sound={data[suffleQuestionItem[5]].sound}
+              options={data[suffleQuestionItem[5]].options}
+              question={data[suffleQuestionItem[5]].question}
+              nextStep={nextStep}
+              correctAnswer={data[suffleQuestionItem[5]].correctAnswer}
+              currentIndex={currentStep + 1}
+              numberQuestions={NUMBER_QUESTIONS}
+            />
+          )}
+        </React.Fragment>
+      ),
+    },
   ];
 
   return (
-    <View>
+    <ScrollView>
       <View
         style={{
           flexDirection: 'column',
@@ -145,7 +196,7 @@ const ProgressStepsLayout = ({data}) => {
           </React.Fragment>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 

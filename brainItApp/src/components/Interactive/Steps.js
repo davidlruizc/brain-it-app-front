@@ -110,7 +110,7 @@ const Steps = ({
 const styles = StyleSheet.create({
   title: {
     fontWeight: 'bold',
-    fontSize: 24,
+    fontSize: 20,
     color: 'white',
     marginBottom: 10,
     marginTop: 10,
