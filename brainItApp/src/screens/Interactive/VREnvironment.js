@@ -5,6 +5,9 @@ import YouTube from 'react-native-youtube';
 import Layout from '../../components/Global/Layout';
 import Button from '../../components/Global/Button';
 import {useNavigation} from '@react-navigation/native';
+import IntentLauncher from 'react-native-intent-launcher';
+
+const PACKAGE_NAME = 'com.DefaultCompany.BrainitVR';
 
 const VREnvironment = () => {
   const navigation = useNavigation();
@@ -17,6 +20,21 @@ const VREnvironment = () => {
     } else {
       Alert.alert('Sorry', 'This feature is only supported on android devices');
     }
+  };
+
+  const openPackageApp = () => {
+    IntentLauncher.isAppInstalled(PACKAGE_NAME)
+      .then((result) => {
+        IntentLauncher.startAppByPackageName(PACKAGE_NAME).catch((error) =>
+          Alert.alert(
+            'Error',
+            'There is a problem trying to open the app, please try later',
+          ),
+        );
+      })
+      .catch((error) => {
+        downloadVRApp();
+      });
   };
 
   return (
@@ -40,7 +58,7 @@ const VREnvironment = () => {
         <Button
           styleContainer={{marginBottom: 19}}
           title="Go and try the VR"
-          onPress={() => downloadVRApp()}
+          onPress={() => openPackageApp()}
         />
         <Button
           title="Go Back"
