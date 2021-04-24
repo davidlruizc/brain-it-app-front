@@ -8,7 +8,7 @@
 - [x] Grammar section wizard
 - [x] Textos preguntas aleatorias  - respuestas
 - [x] Review Contenido
-- [ ] Sección VR añadir screen con explicación para usar VR
+- [x] Sección VR añadir screen con explicación para usar VR
 - [ ] Probrar VR y ver que está fallando
 - [ ] Documentación código
 
