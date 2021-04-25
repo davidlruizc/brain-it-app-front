@@ -8,15 +8,15 @@ import {useNavigation} from '@react-navigation/native';
 import IntentLauncher from 'react-native-intent-launcher';
 
 const PACKAGE_NAME = 'com.DefaultCompany.BrainitVR';
+const DOWNLOAD_VR =
+  'http://www.mediafire.com/file/ffifwmwfsstjjdf/brain-it-vr.apk/file';
 
 const VREnvironment = () => {
   const navigation = useNavigation();
 
   const downloadVRApp = () => {
     if (Platform.OS === 'android') {
-      Linking.openURL(
-        'http://www.mediafire.com/file/ffifwmwfsstjjdf/brain-it-vr.apk/file',
-      );
+      Linking.openURL(DOWNLOAD_VR);
     } else {
       Alert.alert('Sorry', 'This feature is only supported on android devices');
     }
