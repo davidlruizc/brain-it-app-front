@@ -9,7 +9,7 @@ import IntentLauncher from 'react-native-intent-launcher';
 
 const PACKAGE_NAME = 'com.DefaultCompany.BrainitVR';
 const DOWNLOAD_VR =
-  'http://www.mediafire.com/file/ffifwmwfsstjjdf/brain-it-vr.apk/file';
+  'https://www.mediafire.com/file/viy2979uircv79s/brain-it-vr-1.0.apk/file';
 
 const VREnvironment = () => {
   const navigation = useNavigation();
