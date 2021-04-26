@@ -9,7 +9,7 @@
 - [x] Textos preguntas aleatorias  - respuestas
 - [x] Review Contenido
 - [x] Sección VR añadir screen con explicación para usar VR
-- [ ] Probrar VR y ver que está fallando
+- [x] Probrar VR y ver que está fallando
 - [ ] Documentación código
 
 
