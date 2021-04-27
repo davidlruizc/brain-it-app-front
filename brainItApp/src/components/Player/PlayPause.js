@@ -1,49 +1,88 @@
-import React, {useState} from 'react';
-import {View, TouchableOpacity, StyleSheet, Alert} from 'react-native';
+import React from 'react';
+import {View, Text, TouchableOpacity, StyleSheet, Alert} from 'react-native';
 import {Icon} from 'react-native-elements';
 import Sound from 'react-native-sound';
 
 import {secondaryColor} from '../../colors';
 
-const PlayPause = ({audioClip}) => {
-  const [toggle, setToggle] = useState(false);
+class PlayPause extends React.PureComponent {
+  constructor(props) {
+    super(props);
 
-  const toggleIcon = () => {
-    if (!true) {
-      const track = new Sound(audioClip, null, (e) => {
-        if (e) {
-          Alert.alert('error loading track:', e);
-        } else {
-          track.play();
-          setToggle(true);
-          setTimeout(() => {
-            setToggle(null);
-          }, track.getDuration() * 1000);
-        }
-      });
-    } else {
-      Alert.alert(
-        'Sorry',
-        `You are facing issues with trying to play the sound, engineering team it's currently working on it.`,
-      );
-    }
+    this.state = {
+      toggle: false,
+      duration: 0,
+      current: 0,
+    };
+  }
+
+  componentWillMount() {
+    Sound.setCategory('Playback');
+    this.sound = new Sound(this.props.audioClip, Sound.MAIN_BUNDLE, (error) => {
+      if (error) {
+        console.log('failed to load the sound', error);
+        return;
+      }
+
+      this.setState({duration: this.sound.getDuration()});
+      //this.play();
+    });
+  }
+
+  componentWillUnMount() {
+    this.sound.stop();
+    clearInterval(this.tickInterval);
+    this.tickInterval = null;
+  }
+
+  tick() {
+    this.sound.getCurrentTime((seconds) => {
+      if (this.tickInterval) {
+        this.setState({current: seconds});
+      }
+    });
+  }
+
+  play() {
+    this.tickInterval = setInterval(() => this.tick(), 250);
+    this.setState({toggle: true});
+    this.sound.play((success) => {
+      if (success) {
+        this.setState({toggle: false});
+        clearInterval(this.tickInterval);
+        this.tickInterval = null;
+      } else {
+        console.log('playback failed due to audio decoding errors');
+      }
+    });
+  }
+
+  rewind = () => {
+    this.setState({toggle: true});
+    this.sound.stop(() => this.play());
   };
 
-  return (
-    <View style={styles.container}>
-      <TouchableOpacity
-        style={styles.button}
-        onPress={toggleIcon}
-        disabled={toggle}>
-        {toggle ? (
-          <Icon name="stop" type="font-awesome" color="white" size={26} />
-        ) : (
-          <Icon name="play" type="font-awesome" color="white" size={26} />
-        )}
-      </TouchableOpacity>
-    </View>
-  );
-};
+  render() {
+    return (
+      <View style={styles.container}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={this.rewind}
+          disabled={this.state.toggle}>
+          {this.state.toggle ? (
+            <Icon name="stop" type="font-awesome" color="white" size={26} />
+          ) : (
+            <Icon name="play" type="font-awesome" color="white" size={26} />
+          )}
+        </TouchableOpacity>
+        <Text
+          style={{
+            color: 'white',
+          }}>{`${this.state.current} - ${this.state.duration}`}</Text>
+      </View>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   container: {
