@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, TouchableOpacity, StyleSheet, Alert} from 'react-native';
 import {Icon} from 'react-native-elements';
 import Sound from 'react-native-sound';
+import Slider from '@react-native-community/slider';
 
 import {secondaryColor} from '../../colors';
 
@@ -13,6 +14,7 @@ class PlayPause extends React.PureComponent {
       toggle: false,
       duration: 0,
       current: 0,
+      sliderCurrent: 0,
     };
   }
 
@@ -35,9 +37,15 @@ class PlayPause extends React.PureComponent {
     this.tickInterval = null;
   }
 
+  transformTimeToSlider(current, duration) {
+    const value = (current * 1) / duration;
+    this.setState({sliderCurrent: value});
+  }
+
   tick() {
     this.sound.getCurrentTime((seconds) => {
       if (this.tickInterval) {
+        this.transformTimeToSlider(seconds, this.state.duration);
         this.setState({current: seconds});
       }
     });
@@ -56,6 +64,11 @@ class PlayPause extends React.PureComponent {
       }
     });
   }
+
+  onSliderChange = (position) => {
+    const value = (position * this.state.duration) / 1;
+    this.sound.setCurrentTime(value);
+  };
 
   rewind = () => {
     this.setState({toggle: true});
@@ -79,6 +92,15 @@ class PlayPause extends React.PureComponent {
           style={{
             color: 'white',
           }}>{`${this.state.current} - ${this.state.duration}`}</Text>
+        <Slider
+          style={{width: 200, height: 40}}
+          minimumValue={0}
+          maximumValue={1}
+          value={this.state.sliderCurrent}
+          minimumTrackTintColor="#FFFFFF"
+          maximumTrackTintColor="#000000"
+          onValueChange={this.onSliderChange}
+        />
       </View>
     );
   }
