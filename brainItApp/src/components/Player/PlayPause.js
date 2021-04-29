@@ -4,7 +4,7 @@ import {Icon} from 'react-native-elements';
 import Sound from 'react-native-sound';
 import Slider from '@react-native-community/slider';
 
-import {secondaryColor} from '../../colors';
+import {fourthColor, secondaryColor} from '../../colors';
 
 class PlayPause extends React.PureComponent {
   constructor(props) {
@@ -77,30 +77,47 @@ class PlayPause extends React.PureComponent {
 
   render() {
     return (
-      <View style={styles.container}>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={this.rewind}
-          disabled={this.state.toggle}>
-          {this.state.toggle ? (
-            <Icon name="stop" type="font-awesome" color="white" size={26} />
-          ) : (
-            <Icon name="play" type="font-awesome" color="white" size={26} />
-          )}
-        </TouchableOpacity>
-        <Text
-          style={{
-            color: 'white',
-          }}>{`${this.state.current} - ${this.state.duration}`}</Text>
-        <Slider
-          style={{width: 200, height: 40}}
-          minimumValue={0}
-          maximumValue={1}
-          value={this.state.sliderCurrent}
-          minimumTrackTintColor="#FFFFFF"
-          maximumTrackTintColor="#000000"
-          onValueChange={this.onSliderChange}
-        />
+      <View style={{width: '100%', marginBottom: 17}}>
+        <View style={styles.container}>
+          <Slider
+            style={{width: 300, height: 40}}
+            minimumValue={0}
+            maximumValue={1}
+            value={this.state.sliderCurrent}
+            minimumTrackTintColor={secondaryColor}
+            maximumTrackTintColor="#000000"
+            onValueChange={this.onSliderChange}
+            thumbTintColor={fourthColor}
+          />
+          {/*
+<View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+            }}>
+            <Text
+              style={{
+                color: 'white',
+              }}>{`${this.state.current}`}</Text>
+            <Text style={{color: 'white'}}>{this.state.duration}</Text>
+          </View>
+
+
+          */}
+        </View>
+
+        <View style={styles.container}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={this.rewind}
+            disabled={this.state.toggle}>
+            {this.state.toggle ? (
+              <Icon name="stop" type="font-awesome" color="white" size={20} />
+            ) : (
+              <Icon name="play" type="font-awesome" color="white" size={20} />
+            )}
+          </TouchableOpacity>
+        </View>
       </View>
     );
   }
