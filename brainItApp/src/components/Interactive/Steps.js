@@ -6,6 +6,43 @@ import Toast from 'react-native-toast-message';
 import {Popup} from 'popup-ui';
 import {useNavigation} from '@react-navigation/native';
 
+/** 
+  * Componente carga cada paso dentro del wizard con la información sobre el ejercicio a cursar y combina las respuestas de forma aleatoria.
+  *
+  * ```js 
+  *const suffleAnswers = React.useCallback(() => {
+    let array = options;
+
+    var currentIndex = array.length,
+      temporaryValue,
+      randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+    setStateAnswers(array);
+  }, [options]);
+  * ```
+  * Props del componente:
+  * ```
+  * @param {string} sound - nombre del archivo .mp3
+  * @param {string[]} options - selección múltiple
+  * @param {string} question - pregunta, encabezado
+  * @param {string}  correctAnswer - opción correcta
+  * @param {function} nextStep - acción envia al siguiente ejercicio
+  * @param {number} currentIndex - index actual dentro de wizard
+  * @param {number} numberQuestions - número total de preguntas
+  * ```
+  *
+  * */
 const Steps = ({
   sound,
   options,

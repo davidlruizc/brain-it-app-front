@@ -7,6 +7,33 @@ import Card from '../../components/Interactive/ActivityCard';
 import {activities} from './resource';
 import {useNavigation} from '@react-navigation/native';
 
+/** 
+  * Listado de los ejercicios principales correspondientes a Listening por tema
+  *
+  * ```js
+  * [{
+    id: 1,
+    topic: 'Past Simple',
+    questions_count: 6,
+    questions: [
+      {
+        id: 1,
+        sound: 'audio_one.mp3',
+        question: `question here`,
+        options: [
+          `options`,
+          `options`,
+          `options`,
+          `options`,
+        ],
+        correctAnswer: `options`,
+      },
+    ],
+  },
+];
+  * ```
+  *
+  * */
 const Listening = () => {
   const navigation = useNavigation();
 

@@ -7,6 +7,39 @@ import {Popup} from 'popup-ui';
 
 const NUMBER_QUESTIONS = 6;
 
+/**
+ * Formulario wizard con carga de ejercicios de forma aleatoria usando el siguiente metodo
+ *
+ * ```js 
+ * const suffleQuestions = React.useCallback(() => {
+    let questions, i;
+
+    for (questions = [], i = 0; i < NUMBER_QUESTIONS; ++i) {
+      questions[i] = i;
+    }
+
+    let tmp,
+      current,
+      top = questions.length;
+    if (top) {
+      while (--top) {
+        current = Math.floor(Math.random() * (top + 1));
+        tmp = questions[current];
+        questions[current] = questions[top];
+        questions[top] = tmp;
+      }
+    }
+
+    setSuffleQuestionItem(questions);
+  }, []);
+ * ```
+ *
+ * Parametros necesarios
+ *
+ * ```
+ *@param {object} data - ejecicios 
+ * ```
+ * */
 const ProgressStepsLayout = ({data}) => {
   const wizard = React.useRef();
   const [isFirstStep, setIsFirstStep] = React.useState();

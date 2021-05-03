@@ -11,6 +11,30 @@ const PACKAGE_NAME = 'com.DefaultCompany.BrainitVR';
 const DOWNLOAD_VR =
   'https://www.mediafire.com/file/viy2979uircv79s/brain-it-vr-1.0.apk/file';
 
+/**
+  * Componente muestra información más video tutorial de guía para el uso de la actividad de Realidad Virtual
+  *
+  * Se realiza la siguiente validación para el caso en el que el usuario cuente o no con la aplicación de VR instalada en su dispositivo.
+  * Si se cuenta con la aplicación previamente instalada al accionar el botón este hará un deep linking que abrirá la app y podrá continuar con el flujo de aprendizaje,
+  * en su defecto lo dirije a un link el cual le permitirá descargar la aplicación tal cual se indica en el tutorial.
+  *
+  * ```js
+  * const openPackageApp = () => {
+    IntentLauncher.isAppInstalled(PACKAGE_NAME)
+      .then((result) => {
+        IntentLauncher.startAppByPackageName(PACKAGE_NAME).catch((error) =>
+          Alert.alert(
+            'Error',
+            'There is a problem trying to open the app, please try later',
+          ),
+        );
+      })
+      .catch((error) => {
+        downloadVRApp();
+      });
+  };
+  * ```
+  * */
 const VREnvironment = () => {
   const navigation = useNavigation();
 

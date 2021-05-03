@@ -7,6 +7,13 @@ import {Popup} from 'popup-ui';
 
 import {fourthColor, secondaryColor} from '../../colors';
 
+/**
+ * Permite reproducir audio mostrando una barra de progreso del audio que esté actualmente corriendo
+ *
+ * ```js
+ * @param {string} audioClip - nombre archivo de audio
+ * ```
+ * */
 class PlayPause extends React.PureComponent {
   constructor(props) {
     super(props);
