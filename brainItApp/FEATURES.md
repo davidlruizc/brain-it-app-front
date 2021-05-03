@@ -14,15 +14,15 @@
 
 
 
-- [ ] Audios listening
-- [ ] Contenido del video
+- [x] Audios listening
+- [x] Contenido del video
 
 
 ### Duvan
-- [ ] Fix audios
+- [x] Fix audios
 - [ ] Manual de usuario
 - [ ] Video para VR
-- [ ] Thubmnail
+- [x] Thubmnail
 
 > FECHA LIMITE: 19-04-2020
 
