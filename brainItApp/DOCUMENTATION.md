@@ -269,10 +269,12 @@ Reproducción de video, carga la información proveniente de parametros de naveg
 
 Este componente muestra un video de YouTube junto a información de cada item generado por la pantalla anterior.
 
+```
 Parametros de navegación:
 @param {string} videoId - id de referencia que provee YouTube.
 @param {string} title - titulo del tema
-@param {string} description - descripción del tema   
+@param {string} description - descripción del tema
+```   
 
 
 
