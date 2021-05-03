@@ -35,7 +35,6 @@ class PlayPause extends React.PureComponent {
     Sound.setCategory('Playback');
     this.sound = new Sound(audio, Sound.MAIN_BUNDLE, (error) => {
       if (error) {
-        console.log('SOUND ERROR =>', error);
         this.errorPopup();
         this.setState({toggle: false});
         return;
@@ -90,7 +89,6 @@ class PlayPause extends React.PureComponent {
         clearInterval(this.tickInterval);
         this.tickInterval = null;
       } else {
-        console.log('playback failed due to audio decoding errors');
         this.setState({toggle: false});
         this.errorPopup();
       }
