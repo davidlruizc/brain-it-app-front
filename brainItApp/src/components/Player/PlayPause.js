@@ -1,8 +1,9 @@
 import React from 'react';
-import {View, Text, TouchableOpacity, StyleSheet, Alert} from 'react-native';
+import {View, TouchableOpacity, StyleSheet} from 'react-native';
 import {Icon} from 'react-native-elements';
 import Sound from 'react-native-sound';
 import Slider from '@react-native-community/slider';
+import {Popup} from 'popup-ui';
 
 import {fourthColor, secondaryColor} from '../../colors';
 
@@ -18,17 +19,46 @@ class PlayPause extends React.PureComponent {
     };
   }
 
-  componentWillMount() {
+  errorPopup() {
+    Popup.show({
+      type: 'Danger',
+      title: 'Error',
+      button: true,
+      textBody:
+        'There was an error trying to load the audio please try again later.',
+      buttonText: 'Close',
+      callback: () => Popup.hide(),
+    });
+  }
+
+  initializeSound(audio) {
     Sound.setCategory('Playback');
-    this.sound = new Sound(this.props.audioClip, Sound.MAIN_BUNDLE, (error) => {
+    this.sound = new Sound(audio, Sound.MAIN_BUNDLE, (error) => {
       if (error) {
-        console.log('failed to load the sound', error);
+        console.log('SOUND ERROR =>', error);
+        this.errorPopup();
+        this.setState({toggle: false});
         return;
       }
 
       this.setState({duration: this.sound.getDuration()});
       //this.play();
     });
+  }
+
+  componentWillMount() {
+    this.initializeSound(this.props.audioClip);
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.audioClip !== this.props.audioClip) {
+      this.setState({toggle: false, sliderCurrent: 0, current: 0, duration: 0});
+      this.sound.stop();
+      clearInterval(this.tickInterval);
+      this.tickInterval = null;
+
+      this.initializeSound(this.props.audioClip);
+    }
   }
 
   componentWillUnMount() {
@@ -61,6 +91,8 @@ class PlayPause extends React.PureComponent {
         this.tickInterval = null;
       } else {
         console.log('playback failed due to audio decoding errors');
+        this.setState({toggle: false});
+        this.errorPopup();
       }
     });
   }
@@ -71,8 +103,18 @@ class PlayPause extends React.PureComponent {
   };
 
   rewind = () => {
-    this.setState({toggle: true});
-    this.sound.stop(() => this.play());
+    this.setState((prevState) => {
+      const localState = !prevState.toggle;
+      if (localState) {
+        this.sound.stop(() => this.play());
+      } else {
+        this.sound.stop();
+      }
+
+      return {
+        toggle: !prevState.toggle,
+      };
+    });
   };
 
   render() {
@@ -107,10 +149,7 @@ class PlayPause extends React.PureComponent {
         </View>
 
         <View style={styles.container}>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={this.rewind}
-            disabled={this.state.toggle}>
+          <TouchableOpacity style={styles.button} onPress={this.rewind}>
             {this.state.toggle ? (
               <Icon name="stop" type="font-awesome" color="white" size={20} />
             ) : (

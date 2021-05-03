@@ -6,7 +6,7 @@ export const activities = [
     questions: [
       {
         id: 1,
-        sound: 'https://ccrma.stanford.edu/~jos/mp3/gtr-nylon22.mp3',
+        sound: 'audio_one.mp3',
         question: `While I ________ on my match account (an internet app for dating older people), I ________ my school’s best friend Johan. I immediately ________ to him.  A few hours later, he ________ to me inviting me to Cartagena where another friend ________.`,
         options: [
           `was checking, found, wrote, replied, was living`,
@@ -19,7 +19,7 @@ export const activities = [
       },
       {
         id: 2,
-        sound: 'https://ccrma.stanford.edu/~jos/mp3/Harpsichord.mp3',
+        sound: 'audio_two.mp3',
         question: `As ________  unemployed I ________  to travel there. When I arrived at the airport, I ________ out all our classmates ________ there. They ________ me to Brian’s house.`,
         options: [
           `I was, decided, found, were, took`,
@@ -32,7 +32,7 @@ export const activities = [
       },
       {
         id: 3,
-        sound: 'https://ccrma.stanford.edu/~jos/mp3/bass.mp3',
+        sound: 'audio_three.mp3',
         question: ` There, Brian ________ to tell me he ________ to Jess for 3 years, but they ________ because they couldn’t be together at the same house.`,
         options: [
           'started, have been married, get divorced',
@@ -45,7 +45,7 @@ export const activities = [
       },
       {
         id: 4,
-        sound: 'https://ccrma.stanford.edu/~jos/mp3/bass.mp3',
+        sound: 'audio_four.mp3',
         question: `Then, Johan told me he ________ as a real estate agent, he ________ yet, that is the reason why he ________ the same person, meaning that he ________ still a womanizer.`,
         options: [
           'is working, had not been married, he have been, was',
@@ -58,7 +58,7 @@ export const activities = [
       },
       {
         id: 5,
-        sound: 'https://ccrma.stanford.edu/~jos/mp3/bass.mp3',
+        sound: 'audio_five.mp3',
         question: `After, Brian ________ me about my life and I ________ to tell him that I ________ unemployed because I ________ as an engineer and a few years later I ________ a very successful application.`,
         options: [
           'asked, started, was, graduated, designed',
@@ -71,7 +71,7 @@ export const activities = [
       },
       {
         id: 6,
-        sound: 'https://ccrma.stanford.edu/~jos/mp3/bass.mp3',
+        sound: 'audio_six.mp3',
         question: `By the time I ________ I was a rich guy, I ________ to quit my job. Since then, I ________ about any expenses. After a wonderful holiday, I ________ back home, and I ________ them to visit me the next year.`,
         options: [
           'have found, decided, had not been worried, came, invite',
