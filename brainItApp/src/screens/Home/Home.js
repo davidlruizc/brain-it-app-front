@@ -44,9 +44,23 @@ const tempData = [
 ];
 
 /**
- * List intro videos about the topi.
+ * Primera pantalla que ve el usuario al ingresar, lista de reproducción de videos.
+ * 
+ * Cada item contiene la siguiente información para que sea cargado dentro de cada tarjeta.
  *
- * E.g:
+ * ```js
+ * {
+    title: 'Welcome to brainit',
+    shortDescription:
+      'Welcome to the new app BrainIt. In this video, our hosts invite you to enjoy it.',
+    description:
+      'In these lessons, we are going to work on holidays and vacations. These activities are designed for students at an intermediate level. Then, you will have to do some activities in order to develop skills like reading and listening. You will also practice aspects such as grammar and vocabulary.',
+    videoId: 'PAaJtiIG6ro',
+    image: 'tempThumbnail',
+  }
+ * ```
+ *
+ * Uso: 
  * ```js
  * <Home />
  * ```

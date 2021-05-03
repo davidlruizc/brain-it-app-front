@@ -8,6 +8,14 @@ import {useNavigation} from '@react-navigation/native';
 const vrImage = require('../../../assets/vr.png');
 const listeningImage = require('../../../assets/sound.jpg');
 
+/**
+ * Sección Interactive carga las tarjetas referentes a los ejercicios de Realidad Virtual y listening
+ *
+ * Uso:
+ * ```js
+ * <Interactive />
+ * ```
+ * */
 const Interactive = () => {
   const navigation = useNavigation();
 

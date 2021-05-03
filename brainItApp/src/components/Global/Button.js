@@ -5,6 +5,18 @@ import {TouchableOpacity, View, Text, StyleSheet} from 'react-native';
 
 import {secondaryColor} from '../../colors';
 
+/**
+ * Botón generalizado dentro de la estructura de diseño de la app. Contiene las props nativas
+ * de un botón más las siguientes:
+ *
+ * @param {object} styleContainer - estilos para el contenedor padre
+ * @param {object} styleTitle - estilos de titulo
+ * @param {string} titlePosition - posición del titulo: 'left'
+ *
+ * ```js
+ * < Button />
+ * ```
+ */
 const Button = ({
   title,
   onPress,

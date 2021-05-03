@@ -39,6 +39,17 @@ Este componente tiene como props un componente children children
 
 ### 1. Button
 
+Botón generalizado dentro de la estructura de diseño de la app. Contiene las props nativas
+de un botón más las siguientes:
+
+@param {object} styleContainer - estilos para el contenedor padre
+@param {object} styleTitle - estilos de titulo
+@param {string} titlePosition - posición del titulo: 'left'
+
+```js
+< Button />
+```   
+
 
 
 
@@ -225,9 +236,23 @@ Quiz type for reading practice.
 
 ### 1. Home
 
-List intro videos about the topi.
+Primera pantalla que ve el usuario al ingresar, lista de reproducción de videos.
 
-E.g:
+Cada item contiene la siguiente información para que sea cargado dentro de cada tarjeta.
+
+```js
+{
+    title: 'Welcome to brainit',
+    shortDescription:
+      'Welcome to the new app BrainIt. In this video, our hosts invite you to enjoy it.',
+    description:
+      'In these lessons, we are going to work on holidays and vacations. These activities are designed for students at an intermediate level. Then, you will have to do some activities in order to develop skills like reading and listening. You will also practice aspects such as grammar and vocabulary.',
+    videoId: 'PAaJtiIG6ro',
+    image: 'tempThumbnail',
+  }
+```
+
+Uso: 
 ```js
 <Home />
 ```   
@@ -240,6 +265,15 @@ E.g:
 
 ### 1. VideoPlayer
 
+Reproducción de video, carga la información proveniente de parametros de navegación.
+
+Este componente muestra un video de YouTube junto a información de cada item generado por la pantalla anterior.
+
+Parametros de navegación:
+@param {string} videoId - id de referencia que provee YouTube.
+@param {string} title - titulo del tema
+@param {string} description - descripción del tema   
+
 
 
 
@@ -247,6 +281,13 @@ E.g:
 **src/screens/Interactive/Interactive.js**
 
 ### 1. Interactive
+
+Sección Interactive carga las tarjetas referentes a los ejercicios de Realidad Virtual y listening
+
+Uso:
+```js
+<Interactive />
+```   
 
 
 
