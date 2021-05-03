@@ -8,6 +8,17 @@ import {
 
 const BG_IMAGE = require('../../../assets/home.jpg');
 
+/**
+ * Definición de Layout general, con el color base de la identidad de la app.
+ *
+ * Este componente tiene como props un componente children children
+ *
+ * ```js
+ * <Layout>
+ *  <Text>Hola Mundo</Text>
+ * </Layout>
+ * ```
+ */
 const Layout = ({children}) => (
   <SafeAreaView>
     <StatusBar
