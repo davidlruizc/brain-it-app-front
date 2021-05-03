@@ -10,10 +10,7 @@ import VRExperience from '../screens/Interactive/VREnvironment';
 const Stack = createStackNavigator();
 
 /**
- * Navigation flow for interactive section.
- *
- * This section is for the excercises like VR and listening
- *
+ * Navegación sección interactiva
  * ```html
  * <Interactive />
  * <Listening />

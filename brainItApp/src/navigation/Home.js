@@ -6,6 +6,14 @@ import VideoPlayer from '../screens/Home/VideoPlayer';
 
 const Stack = createStackNavigator();
 
+/**
+ * Navegación inicial con los siguientes componentes:
+ *
+ * ```js
+ * <Home />
+ * <VideoPlayer />
+ * ```
+ * */
 const HomeNav = () => (
   <Stack.Navigator initialRouteName="Feed">
     <Stack.Screen

@@ -213,8 +213,13 @@ Permite reproducir audio mostrando una barra de progreso del audio que esté act
 
 ### 1. BottomTab
 
-Main App navigation
-Here you can find all the main tabs available in the app using a React Navigation `Bottom Tab navigator`.   
+Bottom Tab Navigator contiene la navegación raíz de la aplicación con sus componentes principales
+
+```md
+- Home: Lista de reproducción de videos introductorios al tema
+- Grammar: Taller practico de lectura para gramatica.
+- Interactive: Aplicar conocimientos con actividades ludicas
+```   
 
 
 
@@ -232,6 +237,14 @@ Here you can find all the main tabs available in the app using a React Navigatio
 
 ### 1. GrammarNav
 
+Navegación para gramatica con los siguientes componentes:
+
+```js
+<Grammar />
+<Lecture />
+<LectureQuiz />
+```   
+
 
 
 
@@ -239,6 +252,13 @@ Here you can find all the main tabs available in the app using a React Navigatio
 **src/navigation/Home.js**
 
 ### 1. HomeNav
+
+Navegación inicial con los siguientes componentes:
+
+```js
+<Home />
+<VideoPlayer />
+```   
 
 
 
@@ -248,10 +268,7 @@ Here you can find all the main tabs available in the app using a React Navigatio
 
 ### 1. InteractiveNav
 
-Navigation flow for interactive section.
-
-This section is for the excercises like VR and listening
-
+Navegación sección interactiva
 ```html
 <Interactive />
 <Listening />

@@ -8,6 +8,15 @@ import {primaryColor} from '../colors';
 
 const Stack = createStackNavigator();
 
+/**
+ * Navegación para gramatica con los siguientes componentes:
+ *
+ * ```js
+ * <Grammar />
+ * <Lecture />
+ * <LectureQuiz />
+ * ```
+ * */
 const GrammarNav = () => (
   <Stack.Navigator initialRouteName="Grammar">
     <Stack.Screen

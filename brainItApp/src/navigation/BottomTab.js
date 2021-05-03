@@ -12,8 +12,13 @@ import {primaryColor, secondaryColor} from '../colors';
 const Tab = createMaterialBottomTabNavigator();
 
 /**
- * Main App navigation
- * Here you can find all the main tabs available in the app using a React Navigation `Bottom Tab navigator`.
+ * Bottom Tab Navigator contiene la navegación raíz de la aplicación con sus componentes principales
+ *
+ * ```md
+ * - Home: Lista de reproducción de videos introductorios al tema
+ * - Grammar: Taller practico de lectura para gramatica.
+ * - Interactive: Aplicar conocimientos con actividades ludicas
+ * ```
  */
 const BottomTab = () => {
   return (
