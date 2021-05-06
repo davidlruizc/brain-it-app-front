@@ -65,7 +65,7 @@ const VREnvironment = () => {
     <Layout>
       <YouTube
         apiKey="AIzaSyAXd-BG6vu7AUnd-VcsEGV3mIztzIU9z2U"
-        videoId={'PAaJtiIG6ro'}
+        videoId={'NEJYEFBUG1E'}
         play={false}
         style={styles.videPlayer}
       />
